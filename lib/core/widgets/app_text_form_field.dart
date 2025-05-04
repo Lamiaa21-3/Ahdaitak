@@ -38,66 +38,71 @@ class AppTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: controller,
-      validator: (value) {
-        return validator(value);
-      },
-      obscureText: isObscureText ?? false,
-      style: inputTextStyle ?? StylesManager.font14DartBlueMedium,
-      decoration: InputDecoration(
-        suffixIcon: suffixIcon,
-        hintText: hintText,
-        isDense: true,
-        contentPadding:
-            contentPadding ??
-            EdgeInsets.symmetric(horizontal: 18.w, vertical: 30.h),
-        focusedBorder:
-            focusedBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
+    return SizedBox(
+      height: 70.h,
+      child: TextFormField(
+        keyboardType: TextInputType.phone,
+        textAlign: TextAlign.right,
+        controller: controller,
+        validator: (value) {
+          return validator(value);
+        },
+        obscureText: isObscureText ?? false,
+        style: inputTextStyle ?? StylesManager.font14DartBlueMedium,
+        decoration: InputDecoration(
+          suffixIcon: suffixIcon,
+          hintText: hintText,
+          isDense: true,
+          contentPadding:
+              contentPadding ??
+              EdgeInsets.symmetric(horizontal: 18.w, vertical: 30.h),
+          focusedBorder:
+              focusedBorder ??
+              OutlineInputBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  bottomLeft: Radius.circular(40),
+                ),
+                borderSide: const BorderSide(
+                  color: ColorManager.mainBlue,
+                  width: 1,
+                ),
               ),
-              borderSide: const BorderSide(
-                color: ColorManager.mainBlue,
-                width: 1,
+          errorBorder:
+              errorBorder ??
+                  OutlineInputBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40),
+                      bottomLeft: Radius.circular(40),
+                    ),
+                borderSide: const BorderSide(color: Colors.red, width: 1),
               ),
-            ),
-        errorBorder:
-            errorBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
+          focusedErrorBorder:
+              focusedErrorBorder ??
+              errorBorder ??
+                  OutlineInputBorder(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(40),
+                        bottomLeft: Radius.circular(40),
+                      ),
+                borderSide: const BorderSide(color: Colors.red, width: 1),
               ),
-              borderSide: const BorderSide(color: Colors.red, width: 1),
-            ),
-        focusedErrorBorder:
-            focusedErrorBorder ??
-            errorBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
+          enabledBorder:
+              enableBorder ??
+                  OutlineInputBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(40),
+                      bottomLeft: Radius.circular(40),
+                    ),
+                borderSide: const BorderSide(
+                  color: ColorManager.grey,
+                  width: 1,
+                ),
               ),
-              borderSide: const BorderSide(color: Colors.red, width: 1),
-            ),
-        enabledBorder:
-            enableBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
-              ),
-              borderSide: const BorderSide(
-                color: ColorManager.grey,
-                width: 1,
-              ),
-            ),
-        hintStyle: hintStyle ?? StylesManager.font14LightGrayRegular,
-        fillColor: backGroungColor ?? ColorManager.moreLightGray,
-        filled: true,
+          hintStyle: hintStyle ?? StylesManager.font23LightGrayRegular,
+          fillColor: backGroungColor ?? ColorManager.moreLightGray,
+          filled: true,
+        ),
       ),
     );
   }

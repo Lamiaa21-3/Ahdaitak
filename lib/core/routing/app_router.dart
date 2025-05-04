@@ -8,20 +8,20 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return Login();
+            return LoginScreen();
           },
         );
 
       case Routes.loginScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return Login();
+            return LoginScreen();
           },
         );
       case Routes.homeScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return Login();
+            return LoginScreen();
           },
         );
       default:

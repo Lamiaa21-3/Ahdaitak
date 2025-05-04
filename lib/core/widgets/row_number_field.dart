@@ -10,23 +10,24 @@ class RowNumberField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: 100.0.h,horizontal: 23.w),
+      padding:  EdgeInsets.only(top: 100.0.h,right: 23.w,left: 23.w,bottom: 23.h,),
       child: Row(
         children: [
+
+          Expanded(child: AppTextFormField(hintText:'+20',validator: (value){},),),
           Container(
             width: 100.w,
-            height: 83.h,
+            height: 70.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(40),
-                bottomLeft: Radius.circular(40),
+                topRight: Radius.circular(40),
+                bottomRight: Radius.circular(40),
               ),
               border: Border.all(color: ColorManager.grey,width: 1,),
             ),
             // child: Image.asset('name'),
 
           ),
-          Expanded(child: AppTextFormField(hintText:'+20',validator: (value){},)),
         ],
       ),
     );
