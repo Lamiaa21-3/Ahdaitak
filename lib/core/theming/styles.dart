@@ -26,21 +26,26 @@ class StylesManager {
   );
 
 
-  static TextStyle font16White500 = const TextStyle(
-    fontSize: 16,
+  static TextStyle font16White500 =  TextStyle(
+    fontSize: 16.sp,
     color: Colors.white,
     fontWeight: FontWeight.w500,
   );
 ///////////////////////////
-  static TextStyle font23LightGrayRegular = const TextStyle(
-    fontSize: 23,
-    color: ColorManager.lightGrey,
-    fontWeight: FontWeightHelper.regular,
+  static TextStyle font23LightGrayRegular =  TextStyle(
+    fontSize: 23.sp,
+    color: ColorManager.grey,
+    fontWeight: FontWeightHelper.medium,
   );
   ///////////////////////////////
-  static TextStyle font30DarkGreenRegular = const TextStyle(
-    fontSize: 30,
+  static TextStyle font30DarkGreenRegular =  TextStyle(
+    fontSize: 30.sp,
     color: ColorManager.darkGreen,
+    fontWeight: FontWeightHelper.regular,
+  );
+  static TextStyle font17LightGrayRegular = TextStyle(
+    fontSize: 15.sp,
+    color: ColorManager.grey,
     fontWeight: FontWeightHelper.regular,
   );
 }
