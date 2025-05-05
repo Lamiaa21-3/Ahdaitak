@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theming/styles.dart';
 
@@ -17,20 +18,24 @@ class _LoginCheckBoxWithTextState extends State<LoginCheckBoxWithText> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Text('لا أرغب في تلقي اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
-        Checkbox(
-          value: isChecked,
-          onChanged: (bool? value) {
-            setState(() {
-              isChecked = value;
-            });
-          },
-        ),
+    return Padding(
+      padding:  EdgeInsets.only(right: 10.0.w),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Text('لا أرغب في تلقي اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
+          Checkbox(
+            value: isChecked,
 
-      ],
+            onChanged: (bool? value) {
+              setState(() {
+                isChecked = value;
+              });
+            },
+          ),
+
+        ],
+      ),
     );
   }
 }
