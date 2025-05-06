@@ -1,5 +1,6 @@
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/login/login.dart';
+import 'package:ahdydic/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -8,7 +9,7 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return LoginScreen();
+            return OnboardingScreen();
           },
         );
 

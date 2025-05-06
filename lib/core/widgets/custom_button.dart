@@ -31,7 +31,7 @@ class CustomButton extends StatelessWidget {
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
           ),
         ),
-        child: Text(text, style:textStyle??StylesManager.font16White500 ),
+        child: Text(text, style:textStyle??StylesManager.font30White500 ),
       ),
     );
   }

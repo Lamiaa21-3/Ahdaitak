@@ -26,8 +26,8 @@ class StylesManager {
   );
 
 
-  static TextStyle font16White500 =  TextStyle(
-    fontSize: 16.sp,
+  static TextStyle font30White500 =  TextStyle(
+    fontSize: 30.sp,
     color: Colors.white,
     fontWeight: FontWeight.w500,
   );
@@ -48,4 +48,15 @@ class StylesManager {
     color: ColorManager.grey,
     fontWeight: FontWeightHelper.regular,
   );
+  static TextStyle font24DarkPurpleRegular = TextStyle(
+    fontSize: 24.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.medium,
+  );
+  static TextStyle font42DarkPurpleRegular = TextStyle(
+    fontSize: 42.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.medium,
+  );
+
 }
