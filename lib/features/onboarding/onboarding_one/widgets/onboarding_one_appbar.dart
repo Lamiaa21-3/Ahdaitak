@@ -5,11 +5,12 @@ import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/login/login.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/theming/color.dart';
-import '../../../core/theming/styles.dart';
+import '../../../../core/theming/color.dart';
+import '../../../../core/theming/styles.dart';
 
-class OnboardingAppbar extends StatelessWidget {
-  const OnboardingAppbar({super.key});
+
+class OnboardingOneAppbar extends StatelessWidget {
+  const OnboardingOneAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {

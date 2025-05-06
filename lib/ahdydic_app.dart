@@ -21,7 +21,7 @@ class AhdydicApp extends StatelessWidget {
           primaryColor: ColorManager.mainBlue,
         ),
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: Routes.onBoardingScreen,
+        initialRoute: Routes.onBoardingOneScreen,
       ),
 
     );

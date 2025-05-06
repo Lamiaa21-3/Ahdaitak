@@ -9,23 +9,45 @@ class StylesManager {
   ////////////////////////////
   static TextStyle font30DarkBlue700Weight = TextStyle(
     fontSize: 30.sp,
-    color: ColorManager.darkBlue,
-    fontWeight: FontWeight.w700,
+    color: ColorManager.teal,
+    fontWeight: FontWeightHelper.bold,
+  );
+  static TextStyle font14DarkPurpleBold = TextStyle(
+    fontSize: 14.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.bold,
   );
 
 ////////////////////////////
   static TextStyle font23boldBlueBlod = TextStyle(
     fontSize: 18.sp,
     color: ColorManager.boldBlue,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeightHelper.bold,
+  );
+
+
+
+  static TextStyle font22boldBlueBlod = TextStyle(
+    fontSize: 18.sp,
+    color: ColorManager.boldBlue,
+    fontWeight: FontWeightHelper.bold,
   );
   static TextStyle font14DartBlueMedium = TextStyle(
     fontSize: 14.sp,
-    color: ColorManager.darkBlue,
+    color: ColorManager.teal,
     fontWeight: FontWeightHelper.medium,
   );
 
-
+  static TextStyle font22DartPurpleRegular = TextStyle(
+    fontSize: 22.sp,
+    color: Color(0xff3E6970),
+    fontWeight: FontWeightHelper.regular,
+  );
+  static TextStyle font24DartPurpleBold = TextStyle(
+    fontSize: 24.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.bold,
+  );
   static TextStyle font30White500 =  TextStyle(
     fontSize: 30.sp,
     color: Colors.white,
@@ -44,7 +66,7 @@ class StylesManager {
     fontWeight: FontWeightHelper.regular,
   );
   static TextStyle font17LightGrayRegular = TextStyle(
-    fontSize: 15.sp,
+    fontSize: 17.sp,
     color: ColorManager.grey,
     fontWeight: FontWeightHelper.regular,
   );
