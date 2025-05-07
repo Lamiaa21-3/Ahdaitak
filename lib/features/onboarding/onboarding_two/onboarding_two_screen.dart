@@ -56,6 +56,8 @@ class OnboardingTwoMainContainer extends StatelessWidget {
                 textAlign: TextAlign.right,
 
                 validator: (value) {
+                  return null;
+                
 
                 },
 

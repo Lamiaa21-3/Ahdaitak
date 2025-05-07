@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/routing/app_router.dart';
@@ -15,6 +16,11 @@ class AhdydicApp extends StatelessWidget {
       designSize: Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+
+        supportedLocales: [
+          Locale('en',''),
+          Locale('ar',''),
+        ],
         debugShowCheckedModeBanner:false,
 
         theme: ThemeData(

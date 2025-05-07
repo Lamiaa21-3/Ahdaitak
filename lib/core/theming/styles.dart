@@ -66,7 +66,7 @@ class StylesManager {
     fontWeight: FontWeightHelper.regular,
   );
   static TextStyle font17LightGrayRegular = TextStyle(
-    fontSize: 17.sp,
+    fontSize: 15.sp,
     color: ColorManager.grey,
     fontWeight: FontWeightHelper.regular,
   );

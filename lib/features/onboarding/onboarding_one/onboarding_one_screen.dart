@@ -2,7 +2,6 @@
 
 
 import 'package:ahdydic/core/helper/extensions.dart';
-import 'package:ahdydic/core/routing/app_router.dart';
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/onboarding/onboarding_one/widgets/onboarding_one_appbar.dart';
 import 'package:ahdydic/features/onboarding/onboarding_one/widgets/onboarding_one_column_texts.dart';

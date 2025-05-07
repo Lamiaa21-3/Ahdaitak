@@ -15,7 +15,8 @@ class LoginTextsRow extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 3.0.w),
+          padding:  EdgeInsets.only(right: 9.0.w
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
