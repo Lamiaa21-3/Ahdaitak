@@ -1,3 +1,4 @@
+import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:flutter/material.dart';
 
 import '../theming/styles.dart';
@@ -8,13 +9,14 @@ class CustomButton extends StatelessWidget {
   final String text;
   final void Function()? function;
   final EdgeInsets? padding;
+  final String ? image;
 
   const CustomButton({
     super.key,
     required this.text,
     this.function,
     this.padding,
-    required this.backgroundColor, this.textStyle,
+    required this.backgroundColor, this.textStyle, this.image,
   });
 
   @override
@@ -31,7 +33,15 @@ class CustomButton extends StatelessWidget {
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
           ),
         ),
-        child: Text(text, style:textStyle??StylesManager.font30White500 ),
+        child: Row(
+          children: [
+            horizontalSpace(8),
+            Image.asset(image!),
+            horizontalSpace(12),
+            Text(text, style:textStyle??StylesManager.font30White500 ),
+
+          ],
+        ),
       ),
     );
   }

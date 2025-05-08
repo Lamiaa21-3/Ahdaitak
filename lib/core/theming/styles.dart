@@ -87,5 +87,15 @@ class StylesManager {
     color: ColorManager.darkPurple,
     fontWeight: FontWeightHelper.medium,
   );
+  static TextStyle font20GreyMedium = TextStyle(
+    fontSize: 20.sp,
+    color: ColorManager.grey,
+    fontWeight: FontWeightHelper.medium,
+  );
+  static TextStyle font18PinkMedium = TextStyle(
+    fontSize: 18.sp,
+    color: ColorManager.pink,
+    fontWeight: FontWeightHelper.medium,
+  );
 
 }

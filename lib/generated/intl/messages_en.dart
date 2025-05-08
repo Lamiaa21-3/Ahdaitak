@@ -22,8 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
+      "اكمل باستخدام طريقة اخرى",
+    ),
     "exclusiveOffersAndDiscounts": MessageLookupByLibrary.simpleMessage(
       "عروض وخصومات حصرية",
+    ),
+    "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
+      "سجل باستخدام جوجل",
     ),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
@@ -33,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تحديثات الحالة على عمليات التعبئة",
     ),
     "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع"),
+    "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "youCanTurnItOffAtAnyTime": MessageLookupByLibrary.simpleMessage(
       "يمكنك إيقاف تشغيله في أي وقت ",
     ),

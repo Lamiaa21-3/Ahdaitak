@@ -11,4 +11,8 @@ class ImagesManager{
   static const  afghnastin ='assets/images/afghnastin.png';
   static const  falbin ='assets/images/falbin.png';
   static const  sudia ='assets/images/sudia.png';
+
+  static const  loginOneBackground ='assets/images/login_one_background.png';
+
+  static const  googleLoginOne ='assets/images/google_login_one.png';
 }

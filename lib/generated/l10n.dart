@@ -109,6 +109,36 @@ class S {
       args: [],
     );
   }
+
+  /// `اهلا بعودتك !`
+  String get welcomBack {
+    return Intl.message(
+      'اهلا بعودتك !',
+      name: 'welcomBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `سجل باستخدام جوجل`
+  String get loginWithGoogle {
+    return Intl.message(
+      'سجل باستخدام جوجل',
+      name: 'loginWithGoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `اكمل باستخدام طريقة اخرى`
+  String get completeUsingAnotherMethod {
+    return Intl.message(
+      'اكمل باستخدام طريقة اخرى',
+      name: 'completeUsingAnotherMethod',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
