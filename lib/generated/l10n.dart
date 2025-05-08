@@ -54,13 +54,71 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `ابق على اطلاع`
+  String get stayInformed {
+    return Intl.message(
+      'ابق على اطلاع',
+      name: 'stayInformed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تحديثات الحالة على عمليات التعبئة`
+  String get statusUpdatesOperations {
+    return Intl.message(
+      'تحديثات الحالة على عمليات التعبئة',
+      name: 'statusUpdatesOperations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عروض وخصومات حصرية`
+  String get exclusiveOffersAndDiscounts {
+    return Intl.message(
+      'عروض وخصومات حصرية',
+      name: 'exclusiveOffersAndDiscounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` منتجات جديدة ومثيرة `
+  String get newAndExcitingProducts {
+    return Intl.message(
+      ' منتجات جديدة ومثيرة ',
+      name: 'newAndExcitingProducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التالى`
+  String get next {
+    return Intl.message('التالى', name: 'next', desc: '', args: []);
+  }
+
+  /// `يمكنك إيقاف تشغيله في أي وقت `
+  String get youCanTurnItOffAtAnyTime {
+    return Intl.message(
+      'يمكنك إيقاف تشغيله في أي وقت ',
+      name: 'youCanTurnItOffAtAnyTime',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
-    return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
+    return const <Locale>[
+      Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
+    ];
   }
 
   @override

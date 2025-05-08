@@ -75,6 +75,13 @@ class StylesManager {
     color: ColorManager.darkPurple,
     fontWeight: FontWeightHelper.medium,
   );
+
+
+  static TextStyle font18BlackMedium = TextStyle(
+    fontSize: 18.sp,
+    color: Color(0xff393939),
+    fontWeight: FontWeightHelper.medium,
+  );
   static TextStyle font42DarkPurpleRegular = TextStyle(
     fontSize: 42.sp,
     color: ColorManager.darkPurple,

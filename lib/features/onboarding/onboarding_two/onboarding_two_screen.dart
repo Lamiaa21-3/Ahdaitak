@@ -45,19 +45,5 @@ class OnboardingTwoScreen extends StatelessWidget {
 
 
 
-class OnboardingTwoColumnFlagWithWord extends StatelessWidget {
-  const OnboardingTwoColumnFlagWithWord({super.key, required this.text, required this.image});
-final String text;
-final String image;
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(image),
-        verticalSpace(11),
-        Text(text,style: StylesManager.font22DartPurpleRegular,)
-      ],
-    );
-  }
-}
+
 
