@@ -19,11 +19,13 @@ class OnboardingTwoListCountry extends StatelessWidget {
 
           itemBuilder: (context,index){
             return Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+
               children: [
-                Text('سعودية',style: StylesManager.font17LightGrayRegular,),
-                horizontalSpace(7),
                 Image.asset(ImagesManager.sudia),
+                horizontalSpace(7),
+                Text('سعودية',style: StylesManager.font17LightGrayRegular,),
+
+
 
               ],
             );

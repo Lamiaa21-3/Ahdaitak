@@ -17,11 +17,9 @@ class OnboardingTwoAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        IconButton(onPressed: (){
-          context.pop();
-        }, icon: Icon(Icons.arrow_back_ios,color: ColorManager.white,size: 20,),),
+        Image.asset(ImagesManager.onboardingTwo),
         Padding(
           padding:  EdgeInsets.only(top: 8.0.h),
           child: InkWell(
@@ -31,8 +29,12 @@ class OnboardingTwoAppbar extends StatelessWidget {
               },
               child: Text('تخطى',style: StylesManager.font30White500.copyWith(fontSize: 20),)),
         ),
-        horizontalSpace(50),
-        Image.asset(ImagesManager.onboardingTwo),
+        IconButton(onPressed: (){
+          context.pop();
+        }, icon: Icon(Icons.arrow_forward_ios,color: ColorManager.white,size: 20,),),
+
+
+
       ],
     );
   }
