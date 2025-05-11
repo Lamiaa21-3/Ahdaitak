@@ -21,9 +21,8 @@ class _LoginCheckBoxWithTextState extends State<LoginCheckBoxWithText> {
     return Padding(
       padding:  EdgeInsets.only(right: 10.0.w),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+        // mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Text('لا أرغب في تلقي اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
           Checkbox(
             value: isChecked,
 
@@ -33,6 +32,8 @@ class _LoginCheckBoxWithTextState extends State<LoginCheckBoxWithText> {
               });
             },
           ),
+          Text('لا أرغب في تلقي اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
+
 
         ],
       ),

@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
+import '../../../generated/l10n.dart';
 
 class LoginTextsRow extends StatelessWidget {
   const LoginTextsRow({super.key});
@@ -13,52 +14,39 @@ class LoginTextsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+
       children: [
-        Padding(
-          padding:  EdgeInsets.only(right: 9.0.w
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                'الشروط والأحكام،',
-                style: StylesManager.font17LightGrayRegular.copyWith(
-                  color: ColorManager.purple,
-                ),
-              ),
-              Text(
-                'من خلال الاستمرار فإنك توافق على شروطنا',
-                style: StylesManager.font17LightGrayRegular,
-              ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              S.of(context).withContinueYouAgree,
+              style: StylesManager.font17LightGrayRegular,
+            ),
+            Text(
+              S.of(context).termsAndConditions,
+              style: StylesManager.font18PinkMedium,
+            ),
 
-            ],
-          ),
+          ],
         ),
-        Padding(
-          padding:  EdgeInsets.only(right: 50.0.w),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                ' بيان ملفات تعريف الارتباط ',
-                style: StylesManager.font17LightGrayRegular.copyWith(
-                  color: ColorManager.purple,
-                ),
-              ),
-              Text(
-                  ' و ',
-                  style: StylesManager.font17LightGrayRegular
-              ),
-              Text(
-                'سياسة الخصوصية',
-                style: StylesManager.font17LightGrayRegular.copyWith(
-                  color: ColorManager.purple,
-                ),
-              ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              S.of(context).privacyPolicy,
+              style: StylesManager.font18PinkMedium,
+            ),
+            Text(
+                ' و ',
+                style: StylesManager.font17LightGrayRegular
+            ),
+            Text(
+              S.of(context).cookies,
+              style: StylesManager.font18PinkMedium,
+            ),
 
-
-            ],
-          ),
+          ],
         ),
       ],
     );

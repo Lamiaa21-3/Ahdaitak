@@ -11,6 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/row_number_field.dart';
+import '../../generated/l10n.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -22,42 +23,54 @@ class LoginScreen extends StatelessWidget {
         child: ListView(
           children: [
             Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+              // crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                IconButton(
-                  onPressed: () {
-                    context.pop();
-                  },
-                  icon: Icon(Icons.arrow_forward, color: ColorManager.black),
-                ),
 
                 Padding(
-                  padding: EdgeInsets.only(right: 70.0.w),
-                  child: Text(
-                    'دعنا نسجل دخولك',
-                    style: StylesManager.font30DarkBlue700Weight,
+                  padding:  EdgeInsets.only(right: 300.0.w),
+                  child: IconButton(
+                    onPressed: () {
+                      context.pop();
+                    },
+                    icon: Icon(Icons.arrow_forward_ios, color: ColorManager.black),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 30.0.w),
-                  child: Text(
-                    'سنرسل لك رمزًا عبر رسالة نصية للتحقق من رقمك',
-                    style: StylesManager.font23boldBlueBlod,
-                  ),
+
+                Text(
+                S.of(context).login,
+                  style: StylesManager.font30DarkBlue700Weight,
+                ),
+                Text(
+                  S.of(context).sendCodeForVerification,
+                  style: StylesManager.font18PinkMedium,
                 ),
                 RowNumberField(),
                 LoginCheckBoxWithText(),
                 CustomButton(
-                  text: 'تأكيد رقم الهاتف',
-                  backgroundColor: ColorManager.amber,
-                  textStyle: StylesManager.font30DarkGreenRegular,
+                  text:  S.of(context).ensurePhoneNumber,
+                  backgroundColor: ColorManager.darkPurple,
+                  textStyle: StylesManager.font30White500,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(right: 120.0.w, top: 24.h),
-                  child: Text(
-                    'أو الاستمرار مع',
-                    style: StylesManager.font23LightGrayRegular,
-                  ),
+                verticalSpace(40),
+                Row(
+                  children: [
+                    Container(
+                      width:100.w ,
+                      height: 1.h,
+                      color: ColorManager.lightGrey,
+                    ),
+                    horizontalSpace(8),
+                    Text(
+                                   S.of(context).orCompleteBy,
+                      style: StylesManager.font23LightGrayRegular,
+                    ),
+                    horizontalSpace(8),
+                    Container(
+                      width:100.w ,
+                      height: 1.h,
+                      color: ColorManager.lightGrey,
+                    ),
+                  ],
                 ),
                 verticalSpace(40),
 

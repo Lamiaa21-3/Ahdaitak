@@ -25,9 +25,17 @@ class MessageLookup extends MessageLookupByLibrary {
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
     ),
+    "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
+    "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
+      "لا اريد استلام إعلانات تسويقية",
+    ),
+    "ensurePhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "تأكيد رقم الجوال",
+    ),
     "exclusiveOffersAndDiscounts": MessageLookupByLibrary.simpleMessage(
       "عروض وخصومات حصرية",
     ),
+    "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
     ),
@@ -35,11 +43,22 @@ class MessageLookup extends MessageLookupByLibrary {
       " منتجات جديدة ومثيرة ",
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
+    "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
+    "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
+      "سيتم ارسال كود للتحقق من رقم الهاتف",
+    ),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
     ),
     "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع"),
+    "termsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "الشروط والاحكام",
+    ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
+    "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(
+      "بالاستمرار فإنك توافق على",
+    ),
     "youCanTurnItOffAtAnyTime": MessageLookupByLibrary.simpleMessage(
       "يمكنك إيقاف تشغيله في أي وقت ",
     ),

@@ -8,5 +8,14 @@
   "youCanTurnItOffAtAnyTime":"يمكنك إيقاف تشغيله في أي وقت ",
   "welcomBack":"اهلا بعودتك !",
   "loginWithGoogle":"سجل باستخدام جوجل",
-  "completeUsingAnotherMethod":"اكمل باستخدام طريقة اخرى"
+  "completeUsingAnotherMethod":"اكمل باستخدام طريقة اخرى",
+  "login":"تسجيل الدخول",
+  "sendCodeForVerification":"سيتم ارسال كود للتحقق من رقم الهاتف",
+  "doNotWantToReceiveMarketingAds":"لا اريد استلام إعلانات تسويقية",
+  "ensurePhoneNumber":"تأكيد رقم الجوال",
+  "orCompleteBy":"او اكمل باستخدام",
+  "withContinueYouAgree":"بالاستمرار فإنك توافق على",
+  "termsAndConditions":"الشروط والاحكام",
+  "privacyPolicy":"سياسة الخصوصية ",
+  "cookies":"ملفات تعريف الارتباط"
 }

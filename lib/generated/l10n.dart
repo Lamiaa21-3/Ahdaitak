@@ -139,6 +139,91 @@ class S {
       args: [],
     );
   }
+
+  /// `تسجيل الدخول`
+  String get login {
+    return Intl.message('تسجيل الدخول', name: 'login', desc: '', args: []);
+  }
+
+  /// `سيتم ارسال كود للتحقق من رقم الهاتف`
+  String get sendCodeForVerification {
+    return Intl.message(
+      'سيتم ارسال كود للتحقق من رقم الهاتف',
+      name: 'sendCodeForVerification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لا اريد استلام إعلانات تسويقية`
+  String get doNotWantToReceiveMarketingAds {
+    return Intl.message(
+      'لا اريد استلام إعلانات تسويقية',
+      name: 'doNotWantToReceiveMarketingAds',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تأكيد رقم الجوال`
+  String get ensurePhoneNumber {
+    return Intl.message(
+      'تأكيد رقم الجوال',
+      name: 'ensurePhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `او اكمل باستخدام`
+  String get orCompleteBy {
+    return Intl.message(
+      'او اكمل باستخدام',
+      name: 'orCompleteBy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `بالاستمرار فإنك توافق على`
+  String get withContinueYouAgree {
+    return Intl.message(
+      'بالاستمرار فإنك توافق على',
+      name: 'withContinueYouAgree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الشروط والاحكام`
+  String get termsAndConditions {
+    return Intl.message(
+      'الشروط والاحكام',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `سياسة الخصوصية `
+  String get privacyPolicy {
+    return Intl.message(
+      'سياسة الخصوصية ',
+      name: 'privacyPolicy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ملفات تعريف الارتباط`
+  String get cookies {
+    return Intl.message(
+      'ملفات تعريف الارتباط',
+      name: 'cookies',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
