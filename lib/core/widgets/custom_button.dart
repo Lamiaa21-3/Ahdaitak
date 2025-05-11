@@ -9,14 +9,14 @@ class CustomButton extends StatelessWidget {
   final String text;
   final void Function()? function;
   final EdgeInsets? padding;
-  final String ? image;
+
 
   const CustomButton({
     super.key,
     required this.text,
     this.function,
     this.padding,
-    required this.backgroundColor, this.textStyle, this.image,
+    required this.backgroundColor, this.textStyle,
   });
 
   @override
@@ -33,15 +33,10 @@ class CustomButton extends StatelessWidget {
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
           ),
         ),
-        child: Row(
-          children: [
-            horizontalSpace(8),
-            Image.asset(image!),
-            horizontalSpace(12),
+        child:
             Text(text, style:textStyle??StylesManager.font30White500 ),
 
-          ],
-        ),
+
       ),
     );
   }

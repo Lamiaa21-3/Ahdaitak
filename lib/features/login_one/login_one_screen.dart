@@ -4,6 +4,7 @@ import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
+import 'package:ahdydic/features/onboarding/onboarding_one/widgets/onboarding_one_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -31,11 +32,8 @@ class LoginOneScreen extends StatelessWidget {
               S.of(context).welcomBack,
               style: StylesManager.font24DartPurpleBold,
             ),
-            CustomButton(
-              text: S.of(context).loginWithGoogle,
-              backgroundColor: ColorManager.darkPurple,
-              image:ImagesManager.googleLoginOne
-              ,
+            OnboardingOneButton(
+
             ),
             verticalSpace(12),
             LoginOneRowDivider(),
