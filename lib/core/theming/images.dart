@@ -15,4 +15,13 @@ class ImagesManager{
   static const  loginOneBackground ='assets/images/login_one_background.png';
 
   static const  googleLoginOne ='assets/images/google_login_one.png';
+  static const  person ='assets/images/person.png';
+  static const  mobilePhone ='assets/images/mobile_phone.png';
+  static const  countries ='assets/images/countries.png';
+
+
+  static const  we ='assets/images/we.png';
+  static const  vodafone ='assets/images/vodafone.png';
+  static const  etsilate ='assets/images/etsilate.png';
+  static const  orange ='assets/images/orange.png';
 }

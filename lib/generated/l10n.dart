@@ -224,6 +224,76 @@ class S {
       args: [],
     );
   }
+
+  /// `مرحبا بكم في أهديتك`
+  String get welcomToAhdidic {
+    return Intl.message(
+      'مرحبا بكم في أهديتك',
+      name: 'welcomToAhdidic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ارسل اول شحن الى مصر في 3 ثوان `
+  String get sendFirstShipmentToEgypt {
+    return Intl.message(
+      'ارسل اول شحن الى مصر في 3 ثوان ',
+      name: 'sendFirstShipmentToEgypt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `بدء تعبئة الرصيد`
+  String get startRechargingTheBalance {
+    return Intl.message(
+      'بدء تعبئة الرصيد',
+      name: 'startRechargingTheBalance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التواصل مع الناس منذ عام 2006`
+  String get connectingWithPeopleSince {
+    return Intl.message(
+      'التواصل مع الناس منذ عام 2006',
+      name: 'connectingWithPeopleSince',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `البلدان`
+  String get countries {
+    return Intl.message('البلدان', name: 'countries', desc: '', args: []);
+  }
+
+  /// `المرسلين`
+  String get messengers {
+    return Intl.message('المرسلين', name: 'messengers', desc: '', args: []);
+  }
+
+  /// `شحن الرصيد`
+  String get balanceRecharge {
+    return Intl.message(
+      'شحن الرصيد',
+      name: 'balanceRecharge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `موثوق بها من قبل شركائنا`
+  String get trustedByOurPartners {
+    return Intl.message(
+      'موثوق بها من قبل شركائنا',
+      name: 'trustedByOurPartners',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

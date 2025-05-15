@@ -1,5 +1,6 @@
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 
 import 'package:ahdydic/core/theming/styles.dart';
@@ -47,6 +48,9 @@ class LoginScreen extends StatelessWidget {
                 RowNumberField(),
                 LoginCheckBoxWithText(),
                 CustomButton(
+                  function: (){
+                    context.pushNamed(Routes.loginThreeScreen);
+                  },
                   text:  S.of(context).ensurePhoneNumber,
                   backgroundColor: ColorManager.darkPurple,
                   textStyle: StylesManager.font30White500,

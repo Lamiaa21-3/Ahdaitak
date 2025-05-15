@@ -22,10 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "balanceRecharge": MessageLookupByLibrary.simpleMessage("شحن الرصيد"),
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
     ),
+    "connectingWithPeopleSince": MessageLookupByLibrary.simpleMessage(
+      "التواصل مع الناس منذ عام 2006",
+    ),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
+    "countries": MessageLookupByLibrary.simpleMessage("البلدان"),
     "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
       "لا اريد استلام إعلانات تسويقية",
     ),
@@ -39,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
     ),
+    "messengers": MessageLookupByLibrary.simpleMessage("المرسلين"),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
     ),
@@ -48,6 +54,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",
     ),
+    "sendFirstShipmentToEgypt": MessageLookupByLibrary.simpleMessage(
+      "ارسل اول شحن الى مصر في 3 ثوان ",
+    ),
+    "startRechargingTheBalance": MessageLookupByLibrary.simpleMessage(
+      "بدء تعبئة الرصيد",
+    ),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
     ),
@@ -55,7 +67,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والاحكام",
     ),
+    "trustedByOurPartners": MessageLookupByLibrary.simpleMessage(
+      "موثوق بها من قبل شركائنا",
+    ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
+    "welcomToAhdidic": MessageLookupByLibrary.simpleMessage(
+      "مرحبا بكم في أهديتك",
+    ),
     "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(
       "بالاستمرار فإنك توافق على",
     ),

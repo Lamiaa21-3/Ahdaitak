@@ -18,6 +18,20 @@ class StylesManager {
     fontWeight: FontWeightHelper.bold,
   );
 
+
+  static TextStyle font16PurplestLight = TextStyle(
+    fontSize: 16.sp,
+    color: Color(0xff533B5D),
+    fontWeight: FontWeightHelper.light,
+  );
+
+
+  static TextStyle font14MorePurpleMedium= TextStyle(
+    fontSize: 14.sp,
+    color: ColorManager.morePurple,
+    fontWeight: FontWeightHelper.medium,
+  );
+
 ////////////////////////////
   static TextStyle font23boldBlueBlod = TextStyle(
     fontSize: 18.sp,
@@ -96,6 +110,20 @@ class StylesManager {
     fontSize: 18.sp,
     color: ColorManager.pink,
     fontWeight: FontWeightHelper.medium,
+  );
+
+
+  static TextStyle font20DarkPurpleMedium = TextStyle(
+    fontSize: 20.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.medium,
+  );
+
+
+  static TextStyle font14PinkBold = TextStyle(
+    fontSize: 14.sp,
+    color: ColorManager.pink,
+    fontWeight: FontWeightHelper.bold,
   );
 
 }
