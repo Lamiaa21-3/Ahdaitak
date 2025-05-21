@@ -24,4 +24,5 @@ class ImagesManager{
   static const  vodafone ='assets/images/vodafone.png';
   static const  etsilate ='assets/images/etsilate.png';
   static const  orange ='assets/images/orange.png';
+  static const backgroundHome='assets/images/background_home.png';
 }

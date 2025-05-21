@@ -26,6 +26,9 @@
   "countries":"البلدان",
   "messengers":"المرسلين",
   "balanceRecharge":"شحن الرصيد",
-  "trustedByOurPartners":"موثوق بها من قبل شركائنا"
+  "trustedByOurPartners":"موثوق بها من قبل شركائنا",
+  "thereNoActivities":"لا يوجد انشطة حتى الآن",
+  "displayHerePeopleYourMessaged":"ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
+  "startMessaging":"ابدأ المراسلة"
 
 }

@@ -26,6 +26,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "اكمل باستخدام طريقة اخرى",
     ),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
+    "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
+      "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
+    ),
     "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
       "لا اريد استلام إعلانات تسويقية",
     ),
@@ -48,12 +51,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",
     ),
+    "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
     ),
     "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع"),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والاحكام",
+    ),
+    "thereNoActivities": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد انشطة حتى الآن",
     ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(

@@ -31,6 +31,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
     "countries": MessageLookupByLibrary.simpleMessage("البلدان"),
+    "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
+      "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
+    ),
     "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
       "لا اريد استلام إعلانات تسويقية",
     ),
@@ -57,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "sendFirstShipmentToEgypt": MessageLookupByLibrary.simpleMessage(
       "ارسل اول شحن الى مصر في 3 ثوان ",
     ),
+    "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "startRechargingTheBalance": MessageLookupByLibrary.simpleMessage(
       "بدء تعبئة الرصيد",
     ),
@@ -66,6 +70,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع"),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والاحكام",
+    ),
+    "thereNoActivities": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد انشطة حتى الآن",
     ),
     "trustedByOurPartners": MessageLookupByLibrary.simpleMessage(
       "موثوق بها من قبل شركائنا",

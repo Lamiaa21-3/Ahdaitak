@@ -1,4 +1,5 @@
 import 'package:ahdydic/core/routing/routes.dart';
+import 'package:ahdydic/features/home/home_page.dart';
 import 'package:ahdydic/features/login/login.dart';
 import 'package:ahdydic/features/login_one/login_one_screen.dart';
 import 'package:ahdydic/features/login_three/login_three_screen.dart';
@@ -53,7 +54,7 @@ class AppRouter {
       case Routes.homeScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return LoginScreen();
+            return HomePage();
           },
         );
       default:

@@ -25,7 +25,7 @@ class OnboardingTwoAppbar extends StatelessWidget {
           child: InkWell(
 
               onTap: (){
-                context.pushNamed(Routes.onBoardingThreeScreen);
+                context.pushNamed(Routes.homeScreen);
               },
               child: Text('تخطى',style: StylesManager.font30White500.copyWith(fontSize: 20),)),
         ),

@@ -294,6 +294,36 @@ class S {
       args: [],
     );
   }
+
+  /// `لا يوجد انشطة حتى الآن`
+  String get thereNoActivities {
+    return Intl.message(
+      'لا يوجد انشطة حتى الآن',
+      name: 'thereNoActivities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ستظهر هنا قائمة الأشخاص اللذين راسلتهم`
+  String get displayHerePeopleYourMessaged {
+    return Intl.message(
+      'ستظهر هنا قائمة الأشخاص اللذين راسلتهم',
+      name: 'displayHerePeopleYourMessaged',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ابدأ المراسلة`
+  String get startMessaging {
+    return Intl.message(
+      'ابدأ المراسلة',
+      name: 'startMessaging',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
