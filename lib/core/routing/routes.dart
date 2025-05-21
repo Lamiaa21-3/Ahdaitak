@@ -8,6 +8,7 @@ class Routes {
   static const String loginThreeScreen = '/loginThreeScreen';
   static const String topUpScreen = '/topUpScreen';
   static const String contactsScreen = '/contactsScreen';
+  static const String viewContactsScreen = '/viewContactsScreen';
 
 
 }
