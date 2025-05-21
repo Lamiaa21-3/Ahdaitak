@@ -29,6 +29,9 @@
   "trustedByOurPartners":"موثوق بها من قبل شركائنا",
   "thereNoActivities":"لا يوجد انشطة حتى الآن",
   "displayHerePeopleYourMessaged":"ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
-  "startMessaging":"ابدأ المراسلة"
+  "startMessaging":"ابدأ المراسلة",
+  "contacts":"جهات الإتصال",
+  "pleaseEnterPhone":"من فضلك ادخل رقم الهاتف ",
+  "WhatYouWantToSendTo":"المراد الارسال له"
 
 }

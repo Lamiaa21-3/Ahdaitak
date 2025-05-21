@@ -4,9 +4,11 @@ import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
+import 'package:ahdydic/features/top_up/top_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../core/routing/routes.dart';
 import '../../generated/l10n.dart';
 
 class HomePage extends StatelessWidget {
@@ -45,6 +47,9 @@ class HomePage extends StatelessWidget {
                 ),
                 verticalSpace(44),
                 CustomButton(
+                  function: (){
+                    context.pushNamed(Routes.topUpScreen);
+                  },
                   text: S.of(context).startMessaging,
                   backgroundColor: ColorManager.darkPurple,
                 ),

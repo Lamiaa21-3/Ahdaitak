@@ -22,9 +22,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "WhatYouWantToSendTo": MessageLookupByLibrary.simpleMessage(
+      "المراد الارسال له",
+    ),
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
     ),
+    "contacts": MessageLookupByLibrary.simpleMessage("جهات الإتصال"),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
       "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
@@ -47,6 +51,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
     "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل رقم الهاتف ",
+    ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",

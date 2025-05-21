@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "WhatYouWantToSendTo": MessageLookupByLibrary.simpleMessage(
+      "المراد الارسال له",
+    ),
     "balanceRecharge": MessageLookupByLibrary.simpleMessage("شحن الرصيد"),
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
@@ -29,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "connectingWithPeopleSince": MessageLookupByLibrary.simpleMessage(
       "التواصل مع الناس منذ عام 2006",
     ),
+    "contacts": MessageLookupByLibrary.simpleMessage("جهات الإتصال"),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
     "countries": MessageLookupByLibrary.simpleMessage("البلدان"),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
@@ -53,6 +57,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
     "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
+      "من فضلك ادخل رقم الهاتف ",
+    ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",

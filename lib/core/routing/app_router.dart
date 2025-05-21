@@ -5,6 +5,7 @@ import 'package:ahdydic/features/login_one/login_one_screen.dart';
 import 'package:ahdydic/features/login_three/login_three_screen.dart';
 import 'package:ahdydic/features/onboarding/onboarding_three/onboarding_three_screen.dart';
 import 'package:ahdydic/features/onboarding/onboarding_two/onboarding_two_screen.dart';
+import 'package:ahdydic/features/top_up/top_up_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -55,6 +56,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return HomePage();
+          },
+        );
+      case Routes.topUpScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return TopUpScreen();
           },
         );
       default:

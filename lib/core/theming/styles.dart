@@ -19,6 +19,13 @@ class StylesManager {
   );
 
 
+
+  static TextStyle font12WhiteRegular = TextStyle(
+    fontSize: 12.sp,
+    color: ColorManager.white,
+    fontWeight: FontWeightHelper.regular,
+  );
+
   static TextStyle font16PurplestLight = TextStyle(
     fontSize: 16.sp,
     color: Color(0xff533B5D),

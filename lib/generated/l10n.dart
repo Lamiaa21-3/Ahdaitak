@@ -324,6 +324,31 @@ class S {
       args: [],
     );
   }
+
+  /// `جهات الإتصال`
+  String get contacts {
+    return Intl.message('جهات الإتصال', name: 'contacts', desc: '', args: []);
+  }
+
+  /// `من فضلك ادخل رقم الهاتف `
+  String get pleaseEnterPhone {
+    return Intl.message(
+      'من فضلك ادخل رقم الهاتف ',
+      name: 'pleaseEnterPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المراد الارسال له`
+  String get WhatYouWantToSendTo {
+    return Intl.message(
+      'المراد الارسال له',
+      name: 'WhatYouWantToSendTo',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
