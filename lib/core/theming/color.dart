@@ -18,6 +18,7 @@ class ColorManager {
   static const Color white=Color(0xffFFFFFF);
   static const Color pink = Color(0xffD300C7);
   static const Color morePurple=Color(0xff412F49);
+  static const Color borderGrey=Color(0xffCED4D6);
 
 
 

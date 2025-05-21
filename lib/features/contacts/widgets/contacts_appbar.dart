@@ -8,8 +8,8 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class TopUpAppbar extends StatelessWidget {
-  const TopUpAppbar({super.key});
+class ContactsAppbar extends StatelessWidget {
+  const ContactsAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class TopUpAppbar extends StatelessWidget {
       children: [
         horizontalSpace(11),
         TextButton(onPressed: () {
-          context.pushNamed(Routes.contactsScreen);
+
 
         },
           style: ButtonStyle(

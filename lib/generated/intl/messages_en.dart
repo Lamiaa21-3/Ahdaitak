@@ -26,6 +26,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "المراد الارسال له",
     ),
     "balanceRecharge": MessageLookupByLibrary.simpleMessage("شحن الرصيد"),
+    "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
+      "اختر من جهات اتصالك",
+    ),
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
     ),
@@ -35,8 +38,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "contacts": MessageLookupByLibrary.simpleMessage("جهات الإتصال"),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
     "countries": MessageLookupByLibrary.simpleMessage("البلدان"),
+    "dataContactsPrivatedWellS": MessageLookupByLibrary.simpleMessage(
+      "بيانات الاتصال الخاصة بك محفوظة بشكل آمن",
+    ),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
       "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
+    ),
+    "doNotSendMessages": MessageLookupByLibrary.simpleMessage(
+      "لن نرسل رسائل إلى جهات اتصالك أبدًا",
     ),
     "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
       "لا اريد استلام إعلانات تسويقية",
@@ -61,6 +70,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "من فضلك ادخل رقم الهاتف ",
     ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
+    "selectedContactsWithoutNumber": MessageLookupByLibrary.simpleMessage(
+      "حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
+    ),
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",
     ),

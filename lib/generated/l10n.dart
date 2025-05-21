@@ -349,6 +349,46 @@ class S {
       args: [],
     );
   }
+
+  /// `اختر من جهات اتصالك`
+  String get chooseFromYourContacts {
+    return Intl.message(
+      'اختر من جهات اتصالك',
+      name: 'chooseFromYourContacts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم`
+  String get selectedContactsWithoutNumber {
+    return Intl.message(
+      'حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم',
+      name: 'selectedContactsWithoutNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لن نرسل رسائل إلى جهات اتصالك أبدًا`
+  String get doNotSendMessages {
+    return Intl.message(
+      'لن نرسل رسائل إلى جهات اتصالك أبدًا',
+      name: 'doNotSendMessages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `بيانات الاتصال الخاصة بك محفوظة بشكل آمن`
+  String get dataContactsPrivatedWellS {
+    return Intl.message(
+      'بيانات الاتصال الخاصة بك محفوظة بشكل آمن',
+      name: 'dataContactsPrivatedWellS',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

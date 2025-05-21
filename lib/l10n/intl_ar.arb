@@ -23,6 +23,11 @@
   "startMessaging":"ابدأ المراسلة",
   "contacts":"جهات الإتصال",
   "pleaseEnterPhone":"من فضلك ادخل رقم الهاتف ",
-  "WhatYouWantToSendTo":"المراد الارسال له"
+  "WhatYouWantToSendTo":"المراد الارسال له",
+  "chooseFromYourContacts":"اختر من جهات اتصالك",
+  "selectedContactsWithoutNumber":"حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
+"doNotSendMessages":"لن نرسل رسائل إلى جهات اتصالك أبدًا",
+  "dataContactsPrivatedWellS":"بيانات الاتصال الخاصة بك محفوظة بشكل آمن"
+
 
 }
