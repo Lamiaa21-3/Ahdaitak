@@ -26,4 +26,5 @@ class ImagesManager{
   static const  orange ='assets/images/orange.png';
   static const backgroundHome='assets/images/background_home.png';
   static const girle='assets/images/girle.png';
+  static const loginThreeStack='assets/images/login_three_stack.png';
 }

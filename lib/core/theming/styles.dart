@@ -17,7 +17,11 @@ class StylesManager {
     color: ColorManager.darkPurple,
     fontWeight: FontWeightHelper.bold,
   );
-
+  static TextStyle font18WhiteMedium = TextStyle(
+    fontSize: 18.sp,
+    color: ColorManager.white,
+    fontWeight: FontWeightHelper.medium,
+  );
   static TextStyle font14PinkRegular = TextStyle(
     fontSize: 14.sp,
     color: ColorManager.pink,
