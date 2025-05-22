@@ -389,6 +389,26 @@ class S {
       args: [],
     );
   }
+
+  /// `من تريد أن ترسل إليه؟`
+  String get whoDoYouWantToSendItTo {
+    return Intl.message(
+      'من تريد أن ترسل إليه؟',
+      name: 'whoDoYouWantToSendItTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ابحث في جهات الإتصال`
+  String get searchContacts {
+    return Intl.message(
+      'ابحث في جهات الإتصال',
+      name: 'searchContacts',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

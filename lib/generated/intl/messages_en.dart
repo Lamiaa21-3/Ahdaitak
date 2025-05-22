@@ -70,6 +70,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "من فضلك ادخل رقم الهاتف ",
     ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
+    "searchContacts": MessageLookupByLibrary.simpleMessage(
+      "ابحث في جهات الإتصال",
+    ),
     "selectedContactsWithoutNumber": MessageLookupByLibrary.simpleMessage(
       "حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
     ),
@@ -99,6 +102,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "welcomToAhdidic": MessageLookupByLibrary.simpleMessage(
       "مرحبا بكم في أهديتك",
+    ),
+    "whoDoYouWantToSendItTo": MessageLookupByLibrary.simpleMessage(
+      "من تريد أن ترسل إليه؟",
     ),
     "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(
       "بالاستمرار فإنك توافق على",

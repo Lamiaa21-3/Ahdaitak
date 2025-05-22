@@ -27,7 +27,9 @@
   "chooseFromYourContacts":"اختر من جهات اتصالك",
   "selectedContactsWithoutNumber":"حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
 "doNotSendMessages":"لن نرسل رسائل إلى جهات اتصالك أبدًا",
-  "dataContactsPrivatedWellS":"بيانات الاتصال الخاصة بك محفوظة بشكل آمن"
+  "dataContactsPrivatedWellS":"بيانات الاتصال الخاصة بك محفوظة بشكل آمن",
+  "whoDoYouWantToSendItTo":"من تريد أن ترسل إليه؟",
+  "searchContactss":"ابحث في جهات الإتصال"
 
 
 }

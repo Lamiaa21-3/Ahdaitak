@@ -82,6 +82,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "لا يوجد انشطة حتى الآن",
     ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
+    "whoDoYouWantToSendItTo": MessageLookupByLibrary.simpleMessage(
+      "من تريد أن ترسل إليه؟",
+    ),
     "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(
       "بالاستمرار فإنك توافق على",
     ),
