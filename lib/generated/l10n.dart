@@ -429,6 +429,36 @@ class S {
   String get home {
     return Intl.message('الرئيسية', name: 'home', desc: '', args: []);
   }
+
+  /// `قسائمنا في مصر تبدأ من 3.00 دولار أمريكي.`
+  String get couponsEgyptStartFrom {
+    return Intl.message(
+      'قسائمنا في مصر تبدأ من 3.00 دولار أمريكي.',
+      name: 'couponsEgyptStartFrom',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `استمتع بترفيه متواصل على بيجو لايف`
+  String get enjoyNonStopEntertainmentBigoLive {
+    return Intl.message(
+      'استمتع بترفيه متواصل على بيجو لايف',
+      name: 'enjoyNonStopEntertainmentBigoLive',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `مسح، تفعيل، توصيل باستخدام بيانات eSIM`
+  String get deleteAndDeliverByData {
+    return Intl.message(
+      'مسح، تفعيل، توصيل باستخدام بيانات eSIM',
+      name: 'deleteAndDeliverByData',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

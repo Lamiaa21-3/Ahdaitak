@@ -26,11 +26,13 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _pages = [
     HomeScreen(),
-    AccountScreen(),
+    GiftsScreen(),
     TopUpScreen(),
+    AccountScreen(),
+
     RecordScreen(),
 
-    GiftsScreen(),
+    // GiftsScreen(),
     // HomePage(),
 
 

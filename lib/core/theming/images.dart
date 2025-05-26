@@ -26,6 +26,10 @@ class ImagesManager{
   static const  orange ='assets/images/orange.png';
   static const backgroundHome='assets/images/background_home.png';
   static const girle='assets/images/girle.png';
+  static const bigoLive='assets/images/bigo_live.png';
+  static const esim='assets/images/esim.png';
+  static const giftBigo='assets/images/gift_bigo.png';
+  static const giftEsim='assets/images/esim.png';
   static const loginThreeStack='assets/images/login_three_stack.png';
   static const bottomNavigationBarImage ='assets/images/bottom_navigation_bar.png';
 }

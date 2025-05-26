@@ -34,8 +34,14 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "contacts": MessageLookupByLibrary.simpleMessage("جهات الإتصال"),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
+    "couponsEgyptStartFrom": MessageLookupByLibrary.simpleMessage(
+      "قسائمنا في مصر تبدأ من 3.00 دولار أمريكي.",
+    ),
     "dataContactsPrivatedWellS": MessageLookupByLibrary.simpleMessage(
       "بيانات الاتصال الخاصة بك محفوظة بشكل آمن",
+    ),
+    "deleteAndDeliverByData": MessageLookupByLibrary.simpleMessage(
+      "مسح، تفعيل، توصيل باستخدام بيانات eSIM",
     ),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
       "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
@@ -45,6 +51,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "doNotWantToReceiveMarketingAds": MessageLookupByLibrary.simpleMessage(
       "لا اريد استلام إعلانات تسويقية",
+    ),
+    "enjoyNonStopEntertainmentBigoLive": MessageLookupByLibrary.simpleMessage(
+      "استمتع بترفيه متواصل على بيجو لايف",
     ),
     "ensurePhoneNumber": MessageLookupByLibrary.simpleMessage(
       "تأكيد رقم الجوال",
