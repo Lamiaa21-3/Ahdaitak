@@ -8,14 +8,21 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class TopUpAppbar extends StatelessWidget {
-  const TopUpAppbar({super.key});
+class SendContactsAppbar extends StatelessWidget {
+  const SendContactsAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         horizontalSpace(11),
+        IconButton(
+          onPressed: () {
+            context.pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+        Spacer(),
         TextButton(onPressed: () {
           context.pushNamed(Routes.contactsScreen);
 
@@ -30,13 +37,8 @@ class TopUpAppbar extends StatelessWidget {
           ), child: Text(S.of(context).contacts,style: StylesManager.font12WhiteRegular,),
 
         ),
-        Spacer(),
-        IconButton(
-          onPressed: () {
-            context.pop();
-          },
-          icon: Icon(Icons.arrow_forward_ios),
-        ),
+
+        horizontalSpace(11),
 
       ],
     );

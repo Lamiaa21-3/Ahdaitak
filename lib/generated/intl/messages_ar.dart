@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "WhatYouWantToSendTo": MessageLookupByLibrary.simpleMessage(
       "المراد الارسال له",
     ),
+    "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
       "اختر من جهات اتصالك",
     ),
@@ -51,6 +52,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "exclusiveOffersAndDiscounts": MessageLookupByLibrary.simpleMessage(
       "عروض وخصومات حصرية",
     ),
+    "gifts": MessageLookupByLibrary.simpleMessage("الهدايا"),
+    "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
@@ -64,6 +67,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "من فضلك ادخل رقم الهاتف ",
     ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
+    "record": MessageLookupByLibrary.simpleMessage("السجل"),
     "selectedContactsWithoutNumber": MessageLookupByLibrary.simpleMessage(
       "حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
     ),

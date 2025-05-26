@@ -27,6 +27,11 @@ class StylesManager {
     color: ColorManager.pink,
     fontWeight: FontWeightHelper.regular,
   );
+  static TextStyle font12DarkGrayRegular = TextStyle(
+    fontSize: 12.sp,
+    color: ColorManager.darkGrey,
+    fontWeight: FontWeightHelper.regular,
+  );
 
   static TextStyle font12WhiteRegular = TextStyle(
     fontSize: 12.sp,

@@ -5,8 +5,8 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class LoginThreeAppbar extends StatelessWidget {
-  const LoginThreeAppbar({super.key});
+class HomeAppbar extends StatelessWidget {
+  const HomeAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {

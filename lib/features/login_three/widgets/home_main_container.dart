@@ -7,8 +7,8 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class LoginThreeMainContainer extends StatelessWidget {
-  const LoginThreeMainContainer({super.key});
+class HomeMainContainer extends StatelessWidget {
+  const HomeMainContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,29 +19,33 @@ class LoginThreeMainContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: ColorManager.grey, width: 1.w),
       ),
-      child: Column(
+      child: ListView(
         children: [
-          verticalSpace(21.h),
-          Text(
-            S.of(context).connectingWithPeopleSince,
-            style: StylesManager.font14MorePurpleMedium,
-          ),
-          verticalSpace(29),
-          LoginThreeInformationRow(),
-          verticalSpace(37),
-          Container(
-            width: 332.w,
-            height: 1.h,
-            color: ColorManager.lightGrey,
+          Column(
+            children: [
+              verticalSpace(21.h),
+              Text(
+                S.of(context).connectingWithPeopleSince,
+                style: StylesManager.font14MorePurpleMedium,
+              ),
+              verticalSpace(29),
+              HomeInformationRow(),
+              verticalSpace(37),
+              Container(
+                width: 332.w,
+                height: 1.h,
+                color: ColorManager.lightGrey,
 
+              ),
+              verticalSpace(16),
+              Text(
+                S.of(context).trustedByOurPartners,
+                style: StylesManager.font14MorePurpleMedium,
+              ),
+              verticalSpace(16),
+              HomeRowImages(),
+            ],
           ),
-          verticalSpace(16),
-          Text(
-            S.of(context).trustedByOurPartners,
-            style: StylesManager.font14MorePurpleMedium,
-          ),
-          verticalSpace(16),
-          LoginThreeRowImages(),
         ],
       ),
     );
@@ -50,8 +54,8 @@ class LoginThreeMainContainer extends StatelessWidget {
 
 
 
-class LoginThreeRowImages extends StatelessWidget {
-  const LoginThreeRowImages({super.key});
+class HomeRowImages extends StatelessWidget {
+  const HomeRowImages({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -75,8 +79,8 @@ class LoginThreeRowImages extends StatelessWidget {
 }
 
 
-class LoginThreeInformationRow extends StatelessWidget {
-  const LoginThreeInformationRow({super.key});
+class HomeInformationRow extends StatelessWidget {
+  const HomeInformationRow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -84,19 +88,19 @@ class LoginThreeInformationRow extends StatelessWidget {
       // mainAxisAlignment: MainAxisAlignment.center,
       children: [
         horizontalSpace(30),
-        LoginThreeItemRow(
+        HomeItemRow(
           image: ImagesManager.mobilePhone,
           rating: ' م 550',
           text: S.of(context).balanceRecharge,
         ),
         horizontalSpace(45),
-        LoginThreeItemRow(
+        HomeItemRow(
           image: ImagesManager.person,
           rating: '6.3 م',
           text: S.of(context).messengers,
         ),
         horizontalSpace(45),
-        LoginThreeItemRow(
+        HomeItemRow(
           image: ImagesManager.countries,
           rating: '+150',
           text: S.of(context).countries,
@@ -106,8 +110,8 @@ class LoginThreeInformationRow extends StatelessWidget {
   }
 }
 
-class LoginThreeItemRow extends StatelessWidget {
-  const LoginThreeItemRow({
+class HomeItemRow extends StatelessWidget {
+  const HomeItemRow({
     super.key,
     required this.image,
     required this.rating,

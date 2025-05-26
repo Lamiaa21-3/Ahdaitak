@@ -1,14 +1,14 @@
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
+import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
-import 'package:ahdydic/features/top_up/widgets/top_up_appbar.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../core/widgets/row_number_field.dart';
+import '../../core/routing/routes.dart';
 import '../../generated/l10n.dart';
 
 class TopUpScreen extends StatelessWidget {
@@ -18,23 +18,41 @@ class TopUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
-            TopUpAppbar(),
-            verticalSpace(30),
-            Text(
-              S.of(context).pleaseEnterPhone,
-              style: StylesManager.font24DarkPurpleRegular,
-            ),
-            Text(
-              S.of(context).WhatYouWantToSendTo,
-              style: StylesManager.font24DarkPurpleRegular,
-            ),
-            RowNumberField(),
-            verticalSpace(110),
-            CustomButton(
-              text: S.of(context).ensurePhoneNumber,
-              backgroundColor: ColorManager.darkPurple,
+            Column(
+              // crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(right: 300.0.w),
+                  child: IconButton(
+                    onPressed: () {
+                      context.pop();
+                    },
+                    icon: Icon(Icons.arrow_forward_ios),
+                  ),
+                ),
+                verticalSpace(100),
+                Image.asset(ImagesManager.backgroundHome),
+                verticalSpace(44),
+                Text(
+                  S.of(context).thereNoActivities,
+                  style: StylesManager.font24DarkPurpleRegular,
+                ),
+                verticalSpace(24),
+                Text(
+                  S.of(context).displayHerePeopleYourMessaged,
+                  style: StylesManager.font18PinkMedium,
+                ),
+                verticalSpace(44),
+                CustomButton(
+                  function: () {
+                    context.pushNamed(Routes.sendContracts);
+                  },
+                  text: S.of(context).startMessaging,
+                  backgroundColor: ColorManager.darkPurple,
+                ),
+              ],
             ),
           ],
         ),

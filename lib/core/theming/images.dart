@@ -27,4 +27,5 @@ class ImagesManager{
   static const backgroundHome='assets/images/background_home.png';
   static const girle='assets/images/girle.png';
   static const loginThreeStack='assets/images/login_three_stack.png';
+  static const bottomNavigationBarImage ='assets/images/bottom_navigation_bar.png';
 }

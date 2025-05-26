@@ -38,6 +38,10 @@
   "doNotSendMessages":"لن نرسل رسائل إلى جهات اتصالك أبدًا",
   "dataContactsPrivatedWellS":"بيانات الاتصال الخاصة بك محفوظة بشكل آمن",
   "whoDoYouWantToSendItTo":"من تريد أن ترسل إليه؟",
-  "searchContacts":"ابحث في جهات الإتصال"
+  "searchContacts":"ابحث في جهات الإتصال",
+  "account":"الحساب",
+  "record":"السجل",
+  "gifts":"الهدايا",
+  "home":"الرئيسية"
 
 }

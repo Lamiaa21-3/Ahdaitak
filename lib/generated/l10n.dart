@@ -409,6 +409,26 @@ class S {
       args: [],
     );
   }
+
+  /// `الحساب`
+  String get account {
+    return Intl.message('الحساب', name: 'account', desc: '', args: []);
+  }
+
+  /// `السجل`
+  String get record {
+    return Intl.message('السجل', name: 'record', desc: '', args: []);
+  }
+
+  /// `الهدايا`
+  String get gifts {
+    return Intl.message('الهدايا', name: 'gifts', desc: '', args: []);
+  }
+
+  /// `الرئيسية`
+  String get home {
+    return Intl.message('الرئيسية', name: 'home', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

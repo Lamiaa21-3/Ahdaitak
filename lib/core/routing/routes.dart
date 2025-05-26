@@ -9,6 +9,9 @@ class Routes {
   static const String topUpScreen = '/topUpScreen';
   static const String contactsScreen = '/contactsScreen';
   static const String viewContactsScreen = '/viewContactsScreen';
+  static const String accountScreen = '/accountScreen';
+  static const String recordScreen = '/recordScreen';
+  static const String sendContracts = '/sendContracts';
 
 
 }

@@ -29,7 +29,11 @@
 "doNotSendMessages":"لن نرسل رسائل إلى جهات اتصالك أبدًا",
   "dataContactsPrivatedWellS":"بيانات الاتصال الخاصة بك محفوظة بشكل آمن",
   "whoDoYouWantToSendItTo":"من تريد أن ترسل إليه؟",
-  "searchContactss":"ابحث في جهات الإتصال"
+  "searchContactss":"ابحث في جهات الإتصال",
+  "account":"الحساب",
+  "record":"السجل",
+  "gifts":"الهدايا",
+  "home":"الرئيسية"
 
 
 }
