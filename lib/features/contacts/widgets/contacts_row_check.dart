@@ -18,7 +18,7 @@ class ContactsRowCheck extends StatelessWidget {
       padding: EdgeInsets.only(right: 20.0.w),
       child: Row(
         children: [
-          Icon(Icons.check_circle, color: ColorManager.darkPurple),
+          Icon(Icons.check_circle, color: ColorManager.purple),
           horizontalSpace(15),
           SizedBox(
             width: 310.h,

@@ -32,4 +32,10 @@ class ImagesManager{
   static const giftEsim='assets/images/esim.png';
   static const loginThreeStack='assets/images/login_three_stack.png';
   static const bottomNavigationBarImage ='assets/images/bottom_navigation_bar.png';
+  static const amazon='assets/images/amazon.png';
+  static const sigma='assets/images/sigma.png';
+
+
+
+
 }

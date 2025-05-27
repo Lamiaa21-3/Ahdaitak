@@ -62,7 +62,7 @@ class HomeStackImage extends StatelessWidget {
           child: TextButton(
             onPressed: () {},
             style: ButtonStyle(
-              backgroundColor: WidgetStatePropertyAll(ColorManager.darkPurple),
+              backgroundColor: WidgetStatePropertyAll(ColorManager.purple),
               // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               side: WidgetStatePropertyAll(
                 BorderSide(color: ColorManager.pink, width: 1),

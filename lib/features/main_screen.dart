@@ -53,7 +53,7 @@ class _MainScreenState extends State<MainScreen> {
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        selectedItemColor: ColorManager.darkPurple,
+        selectedItemColor: ColorManager.purple,
 
         // selectedLabelStyle: TextStyle(
         //   fontWeight: FontWeight.bold,
@@ -63,11 +63,11 @@ class _MainScreenState extends State<MainScreen> {
         unselectedLabelStyle: StylesManager.font12DarkGrayRegular,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined,color: ColorManager.darkPurple,),
+            icon: Icon(Icons.home_outlined,color: ColorManager.purple,),
             label: S.of(context).home,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard,color: ColorManager.darkPurple,),
+            icon: Icon(Icons.card_giftcard,color: ColorManager.purple,),
             label: S.of(context).gifts,
           ),
           BottomNavigationBarItem(
@@ -86,11 +86,11 @@ class _MainScreenState extends State<MainScreen> {
             label: '', // You can set label if needed
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.access_time,color: ColorManager.darkPurple,),
+            icon: Icon(Icons.access_time,color: ColorManager.purple,),
             label: S.of(context).record,
           ),
           BottomNavigationBarItem(
-            icon:  Icon(Icons.person_2_outlined,color: ColorManager.darkPurple,),
+            icon:  Icon(Icons.person_2_outlined,color: ColorManager.purple,),
             label: S.of(context).account,
 
           ),

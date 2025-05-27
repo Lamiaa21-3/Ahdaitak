@@ -16,7 +16,7 @@ class OnboardingThreeCheckRow extends StatelessWidget {
       padding: EdgeInsets.only(right: 40.0.w, top: 20.h),
       child: Row(
         children: [
-          Icon(Icons.check_circle, color: ColorManager.darkPurple),
+          Icon(Icons.check_circle, color: ColorManager.purple),
           horizontalSpace(15),
           Text(text, style: StylesManager.font18BlackMedium),
         ],

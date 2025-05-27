@@ -43,7 +43,7 @@ class ViewContactsScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: ColorManager.darkPurple,
+        backgroundColor: ColorManager.purple,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
         child: Icon(Icons.list,color: ColorManager.white,),
         onPressed: () {},

@@ -21,7 +21,7 @@ class ContactsAppbar extends StatelessWidget {
 
         },
           style: ButtonStyle(
-            backgroundColor:  WidgetStatePropertyAll(ColorManager.darkPurple),
+            backgroundColor:  WidgetStatePropertyAll(ColorManager.purple),
             // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             minimumSize:  WidgetStatePropertyAll(Size(100.w, 30.h)),
             shape: WidgetStatePropertyAll(

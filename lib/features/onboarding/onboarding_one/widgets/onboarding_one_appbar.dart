@@ -19,7 +19,7 @@ class OnboardingOneAppbar extends StatelessWidget {
           onPressed: () {
             context.pop();
           },
-          icon: Icon(Icons.arrow_back_ios, color: ColorManager.darkPurple),
+          icon: Icon(Icons.arrow_back_ios, color: ColorManager.purple),
         ),
         InkWell(
 

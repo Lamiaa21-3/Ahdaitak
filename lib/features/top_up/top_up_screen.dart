@@ -50,7 +50,7 @@ class TopUpScreen extends StatelessWidget {
                     context.pushNamed(Routes.sendContracts);
                   },
                   text: S.of(context).startMessaging,
-                  backgroundColor: ColorManager.darkPurple,
+                  backgroundColor: ColorManager.purple,
                 ),
               ],
             ),

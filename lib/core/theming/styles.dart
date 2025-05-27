@@ -12,9 +12,14 @@ class StylesManager {
     color: ColorManager.teal,
     fontWeight: FontWeightHelper.bold,
   );
+  static TextStyle font16MorePurpleRegular = TextStyle(
+    fontSize: 16.sp,
+    color: ColorManager.morePurple,
+    fontWeight: FontWeightHelper.regular,
+  );
   static TextStyle font14DarkPurpleBold = TextStyle(
     fontSize: 14.sp,
-    color: ColorManager.darkPurple,
+    color: ColorManager.purple,
     fontWeight: FontWeightHelper.bold,
   );
   static TextStyle font18WhiteMedium = TextStyle(
@@ -79,7 +84,7 @@ class StylesManager {
   );
   static TextStyle font24DartPurpleBold = TextStyle(
     fontSize: 24.sp,
-    color: ColorManager.darkPurple,
+    color: ColorManager.purple,
     fontWeight: FontWeightHelper.bold,
   );
   static TextStyle font30White500 =  TextStyle(
@@ -106,7 +111,7 @@ class StylesManager {
   );
   static TextStyle font24DarkPurpleRegular = TextStyle(
     fontSize: 24.sp,
-    color: ColorManager.darkPurple,
+    color: ColorManager.purple,
     fontWeight: FontWeightHelper.medium,
   );
 
@@ -118,7 +123,7 @@ class StylesManager {
   );
   static TextStyle font42DarkPurpleRegular = TextStyle(
     fontSize: 42.sp,
-    color: ColorManager.darkPurple,
+    color: ColorManager.purple,
     fontWeight: FontWeightHelper.medium,
   );
   static TextStyle font20GreyMedium = TextStyle(
@@ -135,7 +140,7 @@ class StylesManager {
 
   static TextStyle font20DarkPurpleMedium = TextStyle(
     fontSize: 20.sp,
-    color: ColorManager.darkPurple,
+    color: ColorManager.purple,
     fontWeight: FontWeightHelper.medium,
   );
 

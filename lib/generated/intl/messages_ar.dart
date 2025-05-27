@@ -25,7 +25,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "WhatYouWantToSendTo": MessageLookupByLibrary.simpleMessage(
       "المراد الارسال له",
     ),
+    "WhetherToCelebrateImportantEventDigitalGift":
+        MessageLookupByLibrary.simpleMessage(
+          "سواء كان ذلك للاحتفال أو لحدث مهم أو مجرد شكر بسيط، أرسل هدية رقمية",
+        ),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+    "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
+    "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
     "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
       "اختر من جهات اتصالك",
     ),

@@ -52,7 +52,7 @@ class LoginScreen extends StatelessWidget {
                     context.pushNamed(Routes.loginThreeScreen);
                   },
                   text:  S.of(context).ensurePhoneNumber,
-                  backgroundColor: ColorManager.darkPurple,
+                  backgroundColor: ColorManager.purple,
                   textStyle: StylesManager.font30White500,
                 ),
                 verticalSpace(40),

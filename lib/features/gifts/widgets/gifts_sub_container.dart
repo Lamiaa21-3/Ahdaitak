@@ -2,6 +2,8 @@
 
 
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -42,11 +44,13 @@ class GiftsSubContainer extends StatelessWidget {
             height: 30.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
-              color: ColorManager.darkPurple,
+              color: ColorManager.purple,
             ),
             child: Center(
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(Routes.itemCardsScreen);
+                },
                 icon: Icon(
                   Icons.arrow_forward_ios,
                   color: ColorManager.white,

@@ -32,7 +32,7 @@ class OnboardingOneScreen extends StatelessWidget {
         OnboardingOneColumnTexts(),
           verticalSpace(30),
 
-          CustomButton(text: 'التالى', backgroundColor: ColorManager.darkPurple,function: (){
+          CustomButton(text: 'التالى', backgroundColor: ColorManager.purple,function: (){
             context.pushNamed(Routes.onBoardingTwoScreen,);
           },),
           verticalSpace(30),

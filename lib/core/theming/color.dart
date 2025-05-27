@@ -12,13 +12,14 @@ class ColorManager {
   static const Color amber=Color(0xffCAF201);
   static const Color darkGreen=Color(0xff367333);
   static const Color darkGrey=Color(0xff95A09F);
-  static const Color purple=Color(0xffC866C0);
-  static const Color darkPurple=Color(0xff533B5D);
+  static const Color morePink=Color(0xffC866C0);
+  static const Color purple=Color(0xff533B5D);
   static const Color darkBlue=Color(0xff001274);
   static const Color white=Color(0xffFFFFFF);
   static const Color pink = Color(0xffD300C7);
   static const Color morePurple=Color(0xff412F49);
   static const Color borderGrey=Color(0xffCED4D6);
+  static const Color darkPurple=Color(0xff533B5D);
 
 
 

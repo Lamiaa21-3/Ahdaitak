@@ -1,5 +1,6 @@
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
+import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
 import 'package:ahdydic/features/login/login.dart';
 import 'package:ahdydic/features/login_one/login_one_screen.dart';
@@ -66,6 +67,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return MainScreen();
+          },
+        );
+      case Routes.itemCardsScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return ItemCardsScreen();
           },
         );
       case Routes.sendContracts:

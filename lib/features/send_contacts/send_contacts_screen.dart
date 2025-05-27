@@ -33,7 +33,7 @@ class SendContactsScreen extends StatelessWidget {
             verticalSpace(110),
             CustomButton(
               text: S.of(context).ensurePhoneNumber,
-              backgroundColor: ColorManager.darkPurple,
+              backgroundColor: ColorManager.purple,
             ),
           ],
         ),

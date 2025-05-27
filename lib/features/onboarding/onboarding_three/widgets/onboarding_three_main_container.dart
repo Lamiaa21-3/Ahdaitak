@@ -51,7 +51,7 @@ class OnboardingThreeMainContainer extends StatelessWidget {
                   context.pushNamed(Routes.loginOneScreen);
                 },
                 text: S.of(context).next,
-                backgroundColor: ColorManager.darkPurple,
+                backgroundColor: ColorManager.purple,
               ),
               verticalSpace(35),
               Text(S.of(context).youCanTurnItOffAtAnyTime, style: StylesManager.font18BlackMedium),

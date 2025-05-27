@@ -459,6 +459,31 @@ class S {
       args: [],
     );
   }
+
+  /// `امازون`
+  String get amazon {
+    return Intl.message('امازون', name: 'amazon', desc: '', args: []);
+  }
+
+  /// `سواء كان ذلك للاحتفال أو لحدث مهم أو مجرد شكر بسيط، أرسل هدية رقمية`
+  String get WhetherToCelebrateImportantEventDigitalGift {
+    return Intl.message(
+      'سواء كان ذلك للاحتفال أو لحدث مهم أو مجرد شكر بسيط، أرسل هدية رقمية',
+      name: 'WhetherToCelebrateImportantEventDigitalGift',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `اشْتَرِ 7699.99 جنية`
+  String get buy99 {
+    return Intl.message(
+      'اشْتَرِ 7699.99 جنية',
+      name: 'buy99',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

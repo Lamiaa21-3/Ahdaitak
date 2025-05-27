@@ -23,7 +23,7 @@ class OnboardingOneButton extends StatelessWidget {
       child: TextButton(
         onPressed: (){},
         style: ButtonStyle(
-          backgroundColor:  WidgetStatePropertyAll(ColorManager.darkPurple),
+          backgroundColor:  WidgetStatePropertyAll(ColorManager.purple),
           // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
           minimumSize: const WidgetStatePropertyAll(Size(double.infinity, 50)),
           shape: WidgetStatePropertyAll(
