@@ -34,6 +34,9 @@ class ImagesManager{
   static const bottomNavigationBarImage ='assets/images/bottom_navigation_bar.png';
   static const amazon='assets/images/amazon.png';
   static const sigma='assets/images/sigma.png';
+  static const about='assets/images/about.png';
+  static const arrowLeft='assets/images/arrow_left.png';
+  static const arrowRight='assets/images/arrow_right.png';
 
 
 

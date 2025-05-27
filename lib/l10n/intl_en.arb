@@ -48,6 +48,11 @@
   "deleteAndDeliverByData":"مسح، تفعيل، توصيل باستخدام بيانات eSIM",
   "amazon": "امازون",
   "WhetherToCelebrateImportantEventDigitalGift": "سواء كان ذلك للاحتفال أو لحدث مهم أو مجرد شكر بسيط، أرسل هدية رقمية",
-  "buy99": "اشْتَرِ 7699.99 جنية"
+  "buy99": "اشْتَرِ 7699.99 جنية",
+  "help":"المساعدة",
+  "SendBalanceRecharge":"أرسل تعبئة رصيد",
+  "receiveBalanceRecharge":"استقبل تعبئة رصيد",
+  "aboutAhdytic":"عن اهديتك",
+  "privacyNotificationToFriendsFamily": "إشعار الخصوصية للأصدقاء والعائلة"
 
 }

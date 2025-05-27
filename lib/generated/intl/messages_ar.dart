@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "SendBalanceRecharge": MessageLookupByLibrary.simpleMessage(
+      "أرسل تعبئة رصيد",
+    ),
     "WhatYouWantToSendTo": MessageLookupByLibrary.simpleMessage(
       "المراد الارسال له",
     ),
@@ -29,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         MessageLookupByLibrary.simpleMessage(
           "سواء كان ذلك للاحتفال أو لحدث مهم أو مجرد شكر بسيط، أرسل هدية رقمية",
         ),
+    "aboutAhdytic": MessageLookupByLibrary.simpleMessage("عن اهديتك"),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
     "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
@@ -68,6 +72,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "عروض وخصومات حصرية",
     ),
     "gifts": MessageLookupByLibrary.simpleMessage("الهدايا"),
+    "help": MessageLookupByLibrary.simpleMessage("المساعدة"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
@@ -81,7 +86,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل رقم الهاتف ",
     ),
+    "privacyNotificationToFriendsFamily": MessageLookupByLibrary.simpleMessage(
+      "إشعار الخصوصية للأصدقاء والعائلة",
+    ),
     "privacyPolicy": MessageLookupByLibrary.simpleMessage("سياسة الخصوصية "),
+    "receiveBalanceRecharge": MessageLookupByLibrary.simpleMessage(
+      "استقبل تعبئة رصيد",
+    ),
     "record": MessageLookupByLibrary.simpleMessage("السجل"),
     "selectedContactsWithoutNumber": MessageLookupByLibrary.simpleMessage(
       "حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",

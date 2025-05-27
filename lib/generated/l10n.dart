@@ -484,6 +484,46 @@ class S {
       args: [],
     );
   }
+
+  /// `المساعدة`
+  String get help {
+    return Intl.message('المساعدة', name: 'help', desc: '', args: []);
+  }
+
+  /// `أرسل تعبئة رصيد`
+  String get SendBalanceRecharge {
+    return Intl.message(
+      'أرسل تعبئة رصيد',
+      name: 'SendBalanceRecharge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `استقبل تعبئة رصيد`
+  String get receiveBalanceRecharge {
+    return Intl.message(
+      'استقبل تعبئة رصيد',
+      name: 'receiveBalanceRecharge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عن اهديتك`
+  String get aboutAhdytic {
+    return Intl.message('عن اهديتك', name: 'aboutAhdytic', desc: '', args: []);
+  }
+
+  /// `إشعار الخصوصية للأصدقاء والعائلة`
+  String get privacyNotificationToFriendsFamily {
+    return Intl.message(
+      'إشعار الخصوصية للأصدقاء والعائلة',
+      name: 'privacyNotificationToFriendsFamily',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

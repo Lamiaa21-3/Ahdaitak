@@ -3,7 +3,8 @@ import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/features/account/account_screen.dart';
 import 'package:ahdydic/features/login_three/home_screen.dart';
-import 'package:ahdydic/features/record/record_screen.dart';
+import 'package:ahdydic/features/profile/profile_screen.dart';
+
 import 'package:ahdydic/features/top_up/top_up_screen.dart';
 
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _MainScreenState extends State<MainScreen> {
     TopUpScreen(),
     AccountScreen(),
 
-    RecordScreen(),
+    ProfileScreen(),
 
     // GiftsScreen(),
     // HomePage(),

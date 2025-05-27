@@ -1,5 +1,7 @@
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/theming/color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theming/styles.dart';
 
@@ -26,15 +28,20 @@ class CustomButton extends StatelessWidget {
       child: TextButton(
         onPressed: function,
         style: ButtonStyle(
+
           backgroundColor:  WidgetStatePropertyAll(backgroundColor),
           // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          minimumSize: const WidgetStatePropertyAll(Size(double.infinity, 50)),
+          minimumSize:  WidgetStatePropertyAll(Size(double.infinity, 45.h)),
           shape: WidgetStatePropertyAll(
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
+
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(35),
+              side: BorderSide(color: ColorManager.pink,width: 1)
+
+            ),
           ),
         ),
         child:
-            Text(text, style:textStyle??StylesManager.font30White500 ),
+            Text(text, style:textStyle??StylesManager.font18WhiteMedium ),
 
 
       ),

@@ -19,29 +19,35 @@ class GiftsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff846C8E),
-      body: Column(
-        children: [
-          verticalSpace(40),
-          Stack(
-            children: [Row(
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Column(
               children: [
-                Image.asset(ImagesManager.esim),
-                Padding(
-                  padding:  EdgeInsets.only(right: 40.0.w),
-                  child: Image.asset(ImagesManager.bigoLive),
+                verticalSpace(40),
+                Stack(
+                  children: [Row(
+                    children: [
+                      Image.asset(ImagesManager.esim),
+                      Padding(
+                        padding:  EdgeInsets.only(right: 40.0.w),
+                        child: Image.asset(ImagesManager.bigoLive),
+                      ),
+                    ],
+                  )],
                 ),
-              ],
-            )],
-          ),
 
-          GiftsMainContainer(),
-          // Image.asset(ImagesManager.esim),
-          // Positioned(
-          //     right: 133.w,
-          //  bottom: 500,
-          //     child: Image.asset(ImagesManager.bigoLive),
-          // ),
-        ],
+                GiftsMainContainer(),
+                // Image.asset(ImagesManager.esim),
+                // Positioned(
+                //     right: 133.w,
+                //  bottom: 500,
+                //     child: Image.asset(ImagesManager.bigoLive),
+                // ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

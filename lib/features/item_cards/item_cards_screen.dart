@@ -14,17 +14,19 @@ class ItemCardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff846C8E),
-      body: ListView(
-        children: [
-          Column(
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Column(
 
-            children: [
-              verticalSpace(60),
-              Image.asset(ImagesManager.amazon),
-              ItemCardsMainContainer(),
-            ],
-          ),
-        ],
+              children: [
+                verticalSpace(60),
+                Image.asset(ImagesManager.amazon),
+                ItemCardsMainContainer(),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -13,5 +13,6 @@ class Routes {
   static const String recordScreen = '/recordScreen';
   static const String sendContracts = '/sendContracts';
   static const String itemCardsScreen = '/itemCardsScreen';
+  static const String profileScreen = '/profileScreen';
 
 }
