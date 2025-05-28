@@ -11,14 +11,14 @@ class CustomButton extends StatelessWidget {
   final String text;
   final void Function()? function;
   final EdgeInsets? padding;
-
-
+final double ? width;
+final double ? height;
   const CustomButton({
     super.key,
     required this.text,
     this.function,
     this.padding,
-    required this.backgroundColor, this.textStyle,
+    required this.backgroundColor, this.textStyle, this.width, this.height,
   });
 
   @override
@@ -31,7 +31,7 @@ class CustomButton extends StatelessWidget {
 
           backgroundColor:  WidgetStatePropertyAll(backgroundColor),
           // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          minimumSize:  WidgetStatePropertyAll(Size(double.infinity, 45.h)),
+          minimumSize:  WidgetStatePropertyAll(Size(width??double.infinity, height?? 45.h)),
           shape: WidgetStatePropertyAll(
 
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(35),

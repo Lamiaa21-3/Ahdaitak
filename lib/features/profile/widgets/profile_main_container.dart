@@ -1,4 +1,6 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
@@ -47,6 +49,9 @@ class ProfileMainContainer extends StatelessWidget {
             ProfileDivider(),
 
             ProfileRowItem(
+              onTap: (){
+                context.pushNamed(Routes.sendRechargeScreen);
+              },
               text: S.of(context).SendBalanceRecharge,
               widget: Image.asset(ImagesManager.arrowLeft),
             ),

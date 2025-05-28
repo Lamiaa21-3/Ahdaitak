@@ -10,6 +10,7 @@ import 'package:ahdydic/features/onboarding/onboarding_three/onboarding_three_sc
 import 'package:ahdydic/features/onboarding/onboarding_two/onboarding_two_screen.dart';
 
 import 'package:ahdydic/features/send_contacts/send_contacts_screen.dart';
+import 'package:ahdydic/features/send_recharge/send_recharge_screen.dart';
 
 import 'package:ahdydic/features/view_contacts/view_contacts_screen.dart';
 
@@ -50,6 +51,16 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return LoginOneScreen();
+          },
+        );
+
+
+
+
+      case Routes.sendRechargeScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return SendRechargeScreen();
           },
         );
       // case Routes.loginThreeScreen:

@@ -35,9 +35,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutAhdytic": MessageLookupByLibrary.simpleMessage("عن اهديتك"),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
+    "beforeDiscount": MessageLookupByLibrary.simpleMessage("قبل الخصم"),
     "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
     "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
       "اختر من جهات اتصالك",
+    ),
+    "chooseTheAmountCharged": MessageLookupByLibrary.simpleMessage(
+      "قم بإختيار المبلغ المراد شحنه",
     ),
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
@@ -74,6 +78,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "gifts": MessageLookupByLibrary.simpleMessage("الهدايا"),
     "help": MessageLookupByLibrary.simpleMessage("المساعدة"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+    "howMuchYouWantToSend": MessageLookupByLibrary.simpleMessage(
+      "ما هو المبلغ الذي تريد إرساله ؟",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",

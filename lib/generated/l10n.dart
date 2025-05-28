@@ -524,6 +524,36 @@ class S {
       args: [],
     );
   }
+
+  /// `ما هو المبلغ الذي تريد إرساله ؟`
+  String get howMuchYouWantToSend {
+    return Intl.message(
+      'ما هو المبلغ الذي تريد إرساله ؟',
+      name: 'howMuchYouWantToSend',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `قم بإختيار المبلغ المراد شحنه`
+  String get chooseTheAmountCharged {
+    return Intl.message(
+      'قم بإختيار المبلغ المراد شحنه',
+      name: 'chooseTheAmountCharged',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `قبل الخصم`
+  String get beforeDiscount {
+    return Intl.message(
+      'قبل الخصم',
+      name: 'beforeDiscount',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

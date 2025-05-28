@@ -79,7 +79,7 @@ class StylesManager {
 
   static TextStyle font22DartPurpleRegular = TextStyle(
     fontSize: 22.sp,
-    color: Color(0xff3E6970),
+    color: ColorManager.morePurple,
     fontWeight: FontWeightHelper.regular,
   );
   static TextStyle font24DartPurpleBold = TextStyle(

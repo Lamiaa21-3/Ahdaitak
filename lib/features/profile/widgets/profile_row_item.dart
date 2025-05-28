@@ -10,23 +10,26 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../generated/l10n.dart';
 
 class ProfileRowItem extends StatelessWidget {
-  const ProfileRowItem({super.key, required this.text, required this.widget});
+  const ProfileRowItem({super.key, required this.text, required this.widget, this.onTap});
 
 
   final String text;
  final Widget widget;
-
+final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding:  EdgeInsets.symmetric(vertical: 10.h),
-      child: Row(
-        children: [
-          widget,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Row(
+          children: [
+            widget,
 
-          horizontalSpace(7),
-          Text(text,style: StylesManager.font20DarkPurpleMedium,),
-        ],
+            horizontalSpace(7),
+            Text(text,style: StylesManager.font20DarkPurpleMedium,),
+          ],
+        ),
       ),
     );
   }

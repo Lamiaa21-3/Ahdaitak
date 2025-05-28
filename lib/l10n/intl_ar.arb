@@ -43,6 +43,10 @@
   "SendBalanceRecharge":"أرسل تعبئة رصيد",
   "receiveBalanceRecharge":"استقبل تعبئة رصيد",
   "aboutAhdytic":"عن اهديتك",
-"privacyNotificationToFriendsFamily": "إشعار الخصوصية للأصدقاء والعائلة"
+"privacyNotificationToFriendsFamily": "إشعار الخصوصية للأصدقاء والعائلة",
+  "howMuchYouWantToSend":"ما هو المبلغ الذي تريد إرساله ؟",
+  "chooseTheAmountCharged":"قم بإختيار المبلغ المراد شحنه",
+  "beforeDiscount":"قبل الخصم"
+
 
 }
