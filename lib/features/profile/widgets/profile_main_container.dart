@@ -17,7 +17,7 @@ class ProfileMainContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 604.h,
+      height: 610.h,
       decoration: BoxDecoration(
         color: ColorManager.white,
         borderRadius: BorderRadius.only(

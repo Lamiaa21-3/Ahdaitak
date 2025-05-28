@@ -4,6 +4,7 @@ import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 
 import 'package:ahdydic/core/theming/styles.dart';
+import 'package:ahdydic/features/login/widgets/login_appbar.dart';
 import 'package:ahdydic/features/login/widgets/login_check_box_with_text.dart';
 import 'package:ahdydic/features/login/widgets/login_social_row.dart';
 import 'package:ahdydic/features/login/widgets/login_texts_row.dart';
@@ -26,16 +27,7 @@ class LoginScreen extends StatelessWidget {
             Column(
               // crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-
-                Padding(
-                  padding:  EdgeInsets.only(right: 300.0.w),
-                  child: IconButton(
-                    onPressed: () {
-                      context.pop();
-                    },
-                    icon: Icon(Icons.arrow_forward_ios, color: ColorManager.black),
-                  ),
-                ),
+                LoginAppbar(),
 
                 Text(
                 S.of(context).login,

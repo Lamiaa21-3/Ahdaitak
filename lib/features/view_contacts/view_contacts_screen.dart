@@ -2,6 +2,7 @@ import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/styles.dart';
+import 'package:ahdydic/features/view_contacts/widgets/view_contacts_appbar.dart';
 import 'package:ahdydic/features/view_contacts/widgets/view_contacts_text_form_field.dart';
 import 'package:ahdydic/features/view_contacts/widgets/views_contacts_list_view.dart';
 import 'package:flutter/material.dart';
@@ -21,19 +22,7 @@ class ViewContactsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding:  EdgeInsets.only(right: 320.0.w),
-                child: IconButton(
-                  onPressed: () {
-                    context.pop();
-                  },
-                  icon: Icon(Icons.arrow_forward_ios),
-                ),
-              ),
-              Text(
-                S.of(context).whoDoYouWantToSendItTo,
-                style: StylesManager.font24DarkPurpleRegular,
-              ),
+              ViewContactsAppbar(),
               verticalSpace(9),
               ViewContactsTextFormField(),
               verticalSpace(15),

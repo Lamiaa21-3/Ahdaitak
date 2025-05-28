@@ -2,7 +2,7 @@ import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/features/account/account_screen.dart';
-import 'package:ahdydic/features/login_three/home_screen.dart';
+
 import 'package:ahdydic/features/profile/profile_screen.dart';
 
 import 'package:ahdydic/features/top_up/top_up_screen.dart';
@@ -13,6 +13,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../generated/l10n.dart';
 
 import 'gifts/gifts_screen.dart';
+import 'home_screen/home_screen.dart';
 
 
 class MainScreen extends StatefulWidget {

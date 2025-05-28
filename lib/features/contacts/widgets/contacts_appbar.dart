@@ -16,6 +16,13 @@ class ContactsAppbar extends StatelessWidget {
     return Row(
       children: [
         horizontalSpace(11),
+        IconButton(
+          onPressed: () {
+            context.pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+        Spacer(),
         TextButton(onPressed: () {
 
 
@@ -30,13 +37,9 @@ class ContactsAppbar extends StatelessWidget {
           ), child: Text(S.of(context).contacts,style: StylesManager.font12WhiteRegular,),
 
         ),
-        Spacer(),
-        IconButton(
-          onPressed: () {
-            context.pop();
-          },
-          icon: Icon(Icons.arrow_forward_ios),
-        ),
+        horizontalSpace(11),
+
+
 
       ],
     );

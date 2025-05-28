@@ -49,6 +49,7 @@ class ContactsScreen extends StatelessWidget {
                     context.pushNamed(Routes.viewContactsScreen);
                   },
                 ),
+                horizontalSpace(11),
               ],
             ),
           ],

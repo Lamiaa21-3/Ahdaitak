@@ -18,43 +18,47 @@ class TopUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: ListView(
-          children: [
-            Column(
-              // crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(right: 300.0.w),
-                  child: IconButton(
-                    onPressed: () {
-                      context.pop();
-                    },
-                    icon: Icon(Icons.arrow_forward_ios),
+        child: SafeArea(
+
+          child: ListView(
+            children: [
+              Column(
+
+                // crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding:  EdgeInsets.only(left: 300.0.w),
+                    child: IconButton(
+                      onPressed: () {
+                        context.pop();
+                      },
+                      icon: Icon(Icons.arrow_back_ios),
+                    ),
                   ),
-                ),
-                verticalSpace(100),
-                Image.asset(ImagesManager.backgroundHome),
-                verticalSpace(44),
-                Text(
-                  S.of(context).thereNoActivities,
-                  style: StylesManager.font24DarkPurpleRegular,
-                ),
-                verticalSpace(24),
-                Text(
-                  S.of(context).displayHerePeopleYourMessaged,
-                  style: StylesManager.font18PinkMedium,
-                ),
-                verticalSpace(44),
-                CustomButton(
-                  function: () {
-                    context.pushNamed(Routes.sendContracts);
-                  },
-                  text: S.of(context).startMessaging,
-                  backgroundColor: ColorManager.purple,
-                ),
-              ],
-            ),
-          ],
+                  verticalSpace(50),
+                  Image.asset(ImagesManager.backgroundHome),
+                  verticalSpace(44),
+                  Text(
+                    S.of(context).thereNoActivities,
+                    style: StylesManager.font24DarkPurpleRegular,
+                  ),
+                  verticalSpace(24),
+                  Text(
+                    S.of(context).displayHerePeopleYourMessaged,
+                    style: StylesManager.font18PinkMedium,
+                  ),
+                  verticalSpace(44),
+                  CustomButton(
+                    function: () {
+                      context.pushNamed(Routes.sendContracts);
+                    },
+                    text: S.of(context).startMessaging,
+                    backgroundColor: ColorManager.purple,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

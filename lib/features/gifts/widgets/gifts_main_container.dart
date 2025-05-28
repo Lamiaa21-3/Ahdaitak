@@ -23,7 +23,7 @@ class _GiftsMainContainerState extends State<GiftsMainContainer> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 476.h,
+      height: 483.h,
       decoration: BoxDecoration(
         color: ColorManager.white,
         borderRadius: BorderRadius.only(

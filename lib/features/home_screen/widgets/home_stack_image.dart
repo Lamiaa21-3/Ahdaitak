@@ -1,39 +1,13 @@
 
-import 'package:ahdydic/core/theming/color.dart';
-import 'package:ahdydic/core/theming/images.dart';
 
-import 'package:ahdydic/core/theming/styles.dart';
 
-import 'package:ahdydic/features/login_three/widgets/home_appbar.dart';
-import 'package:ahdydic/features/login_three/widgets/home_main_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../generated/l10n.dart';
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          children: const [
-            Column(
-              children: [
-                HomeAppbar(),
-
-                HomeStackImage(),
-                HomeMainContainer(),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+import '../../../core/theming/color.dart';
+import '../../../core/theming/images.dart';
+import '../../../core/theming/styles.dart';
+import '../../../generated/l10n.dart';
 
 class HomeStackImage extends StatelessWidget {
   const HomeStackImage({super.key});
