@@ -1,3 +1,4 @@
+import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
@@ -16,15 +17,20 @@ class SendRechargeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: ColorManager.darkPurple,
         body: SafeArea(
-          child: Column(
+          child: ListView(
             children: [
-              Image.asset(ImagesManager.etsilate),
-              Text(
-                S.of(context).howMuchYouWantToSend,
-                style: StylesManager.font18WhiteMedium,
+              Column(
+                children: [
+                  Image.asset(ImagesManager.etsilate),
+                  verticalSpace(7),
+                  Text(
+                    S.of(context).howMuchYouWantToSend,
+                    style: StylesManager.font18WhiteMedium,
+                  ),
+                  verticalSpace(22),
+                  SendRechargeMainContainer(),
+                ],
               ),
-
-              SendRechargeMainContainer(),
             ],
           ),
         ),
