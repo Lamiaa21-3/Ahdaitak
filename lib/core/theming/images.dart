@@ -37,7 +37,7 @@ class ImagesManager{
   static const about='assets/images/about.png';
   static const arrowLeft='assets/images/arrow_left.png';
   static const arrowRight='assets/images/arrow_right.png';
-// static const etisalat='assets/images/etisalat.png';
+static const edit='assets/images/edit.png';
 
 
 

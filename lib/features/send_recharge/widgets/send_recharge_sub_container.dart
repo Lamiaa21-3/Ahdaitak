@@ -36,6 +36,8 @@ class SendRechargeSubContainer extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
+          Image.asset(ImagesManager.edit),
+              Spacer(),
               Column(
                 children: [
                   Text('Mama', style: StylesManager.font16MorePurpleRegular),

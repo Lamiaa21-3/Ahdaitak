@@ -21,13 +21,14 @@ class SendRechargeScreen extends StatelessWidget {
             children: [
               Column(
                 children: [
+                  verticalSpace(12),
                   Image.asset(ImagesManager.etsilate),
                   verticalSpace(7),
                   Text(
                     S.of(context).howMuchYouWantToSend,
                     style: StylesManager.font18WhiteMedium,
                   ),
-                  verticalSpace(22),
+                  verticalSpace(4),
                   SendRechargeMainContainer(),
                 ],
               ),
