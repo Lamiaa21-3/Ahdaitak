@@ -19,8 +19,9 @@ class OnboardingOneColumnTexts extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('أهديتك',style: StylesManager.font42DarkPurpleRegular.copyWith(fontWeight: FontWeightHelper.bold),),
-            Text('مرحبا بكم في',style: StylesManager.font42DarkPurpleRegular,),
+
+            Text('مرحبا بكم في',style: StylesManager.font26MorePurpleMedium,),
+            Text('أهديتك',style: StylesManager.font26MorePurpleMedium.copyWith(fontWeight: FontWeightHelper.bold),),
 
           ],
         ),
