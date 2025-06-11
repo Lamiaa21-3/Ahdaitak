@@ -25,7 +25,9 @@ class ContactsScreen extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                verticalSpace(30),
                 ContactsAppbar(),
+                verticalSpace(40),
                 ContactsListView(),
                 Padding(
                   padding: EdgeInsets.only(right: 20.0.w),

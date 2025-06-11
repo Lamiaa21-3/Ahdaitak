@@ -1,5 +1,8 @@
 
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/app_router.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/helper/spacing.dart';
@@ -15,7 +18,12 @@ class OnboardingTwoRowCountries extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        OnboardingTwoColumnFlagWithWord(text: 'مصر', image: ImagesManager.egypt,),
+        GestureDetector(
+            onTap: (){
+              context.pushNamed(Routes.onBoardingThreeScreen);
+            },
+
+            child: OnboardingTwoColumnFlagWithWord(text: 'مصر', image: ImagesManager.egypt,)),
         horizontalSpace(50),
         OnboardingTwoColumnFlagWithWord(text: 'السعودية', image: ImagesManager.sudia,),
         horizontalSpace(50),

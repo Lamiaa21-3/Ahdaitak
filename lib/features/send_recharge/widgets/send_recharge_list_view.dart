@@ -85,7 +85,7 @@ class _SendRechargeListViewState extends State<SendRechargeListView> {
                   ),
                   subtitle:   Text(
                     'جنيه',
-                    style: StylesManager.font22DartPurpleRegular,
+                    style: StylesManager.font22DartPurpleRegular.copyWith(fontSize: 18),
                   ),
                   trailing:  CustomButton(
                     width: 120.w,

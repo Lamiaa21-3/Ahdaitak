@@ -17,18 +17,16 @@ class ViewContactsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 30.0.w),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ViewContactsAppbar(),
-              verticalSpace(9),
-              ViewContactsTextFormField(),
-              verticalSpace(15),
-              ViewsContactsListView(),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            verticalSpace(30),
+            ViewContactsAppbar(),
+            verticalSpace(9),
+            ViewContactsTextFormField(),
+            verticalSpace(15),
+            ViewsContactsListView(),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(

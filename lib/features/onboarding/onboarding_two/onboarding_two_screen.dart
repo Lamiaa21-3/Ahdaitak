@@ -29,7 +29,7 @@ class OnboardingTwoScreen extends StatelessWidget {
                 'إلى أين ترسل تعبئة شحن ؟',
                 style: StylesManager.font30White500.copyWith(fontSize: 24.sp),
               ),
-              verticalSpace(10),
+              verticalSpace(27),
               OnboardingTwoMainContainer(),
             ],
           ),

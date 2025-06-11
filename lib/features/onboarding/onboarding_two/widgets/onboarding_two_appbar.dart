@@ -18,11 +18,12 @@ class OnboardingTwoAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
         crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: <Widget>[
         Image.asset(ImagesManager.onboardingTwo),
+        Spacer(),
         Padding(
           padding:  EdgeInsets.only(top: 8.0.h),
-          child: InkWell(
+          child: GestureDetector(
 
               onTap: (){
                 context.pushNamed(Routes.homeScreen);

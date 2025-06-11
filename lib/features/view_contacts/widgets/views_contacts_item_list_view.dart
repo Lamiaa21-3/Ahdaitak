@@ -14,7 +14,7 @@ class ViewsContactsItemListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: 8.0.h),
+      padding:  EdgeInsets.symmetric(vertical: 8.0.h,horizontal: 15.w),
       child: Container(
         height: 100.h,
         decoration: BoxDecoration(

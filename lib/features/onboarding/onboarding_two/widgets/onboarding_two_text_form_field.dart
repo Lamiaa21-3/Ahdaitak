@@ -24,7 +24,7 @@ class OnboardingTwoTextFormField extends StatelessWidget {
 
         style:  StylesManager.font17LightGrayRegular,
         decoration: InputDecoration(
-          suffixIcon: Icon(Icons.search_outlined,size: 20,),
+          prefixIcon: Icon(Icons.search_outlined,size: 20,),
           hintText: 'بلد البحث',
           isDense: true,
           contentPadding:

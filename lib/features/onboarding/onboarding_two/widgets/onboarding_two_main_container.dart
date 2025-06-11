@@ -18,7 +18,7 @@ class OnboardingTwoMainContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 420.h,
+      height: 460.h,
       decoration: BoxDecoration(
         color:ColorManager.white ,
 

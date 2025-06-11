@@ -19,6 +19,7 @@ class SendContactsScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
+            verticalSpace(30),
             SendContactsAppbar(),
             verticalSpace(30),
             Text(

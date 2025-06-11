@@ -22,12 +22,12 @@ class LoginOneScreen extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(right: 300.0.w),
+              padding:  EdgeInsets.only(left: 300.0),
               child: IconButton(
                 onPressed: () {
                   context.pop();
                 },
-                icon: Icon(Icons.arrow_forward_ios),
+                icon: Icon(Icons.arrow_back_ios),
               ),
             ),
             Image.asset(ImagesManager.loginOneBackground),

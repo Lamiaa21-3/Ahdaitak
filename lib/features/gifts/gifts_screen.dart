@@ -25,17 +25,16 @@ class GiftsScreen extends StatelessWidget {
             Column(
               children: [
                 verticalSpace(40),
-                Stack(
-                  children: [Row(
-                    children: [
-                      Image.asset(ImagesManager.esim),
-                      Padding(
-                        padding:  EdgeInsets.only(right: 40.0.w),
-                        child: Image.asset(ImagesManager.bigoLive),
-                      ),
-                    ],
-                  )],
+                Row(
+                  children: [
+                    Image.asset(ImagesManager.esim),
+                    Padding(
+                      padding:  EdgeInsets.only(right: 15.0.w),
+                      child: Image.asset(ImagesManager.bigoLive),
+                    ),
+                  ],
                 ),
+
 
                 GiftsMainContainer(),
                 // Image.asset(ImagesManager.esim),

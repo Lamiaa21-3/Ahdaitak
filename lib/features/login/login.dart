@@ -21,6 +21,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorManager.white,
       body: SafeArea(
         child: ListView(
           children: [
@@ -41,7 +42,7 @@ class LoginScreen extends StatelessWidget {
                 LoginCheckBoxWithText(),
                 CustomButton(
                   function: (){
-                    context.pushNamed(Routes.loginThreeScreen);
+                    context.pushNamed(Routes.homeScreen);
                   },
                   text:  S.of(context).ensurePhoneNumber,
                   backgroundColor: ColorManager.purple,

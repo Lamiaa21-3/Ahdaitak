@@ -1,6 +1,7 @@
 
 
 import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,9 +16,9 @@ class ViewContactsAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
 
-
+    mainAxisAlignment: MainAxisAlignment.start,
       children: [
-
+horizontalSpace(10),
         IconButton(
           onPressed: () {
             context.pop();

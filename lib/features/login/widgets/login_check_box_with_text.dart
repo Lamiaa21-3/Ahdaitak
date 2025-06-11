@@ -32,7 +32,7 @@ class _LoginCheckBoxWithTextState extends State<LoginCheckBoxWithText> {
               });
             },
           ),
-          Text('لا أرغب في تلقي اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
+          Text('لا اريد استلام اتصالات تسويقية',style: StylesManager.font23boldBlueBlod,),
 
 
         ],
