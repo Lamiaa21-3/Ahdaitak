@@ -22,14 +22,14 @@ class _SendRechargeMainContainerState extends State<SendRechargeMainContainer> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
+    return Expanded(
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
 
-        Expanded(
-          child: Container(
+          Container(
             width: double.infinity,
-            height: 630.h,
+            // height: 630.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(25),
@@ -49,15 +49,15 @@ class _SendRechargeMainContainerState extends State<SendRechargeMainContainer> {
               ],
             ),
           ),
-        ),
-        Positioned(
-            top: -25.h, // Adjust as needed
-            left: 0.w,
-            right: 0.w,
+          Positioned(
+              top: -25.h, // Adjust as needed
+              left: 0.w,
+              right: 0.w,
 
-            child: SendRechargeSubContainer()),
+              child: SendRechargeSubContainer()),
 
-      ],
+        ],
+      ),
     );
   }
 }

@@ -16,7 +16,7 @@ class OnboardingOneAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-horizontalSpace(170),
+    horizontalSpace(150),
         InkWell(
 
             onTap: (){

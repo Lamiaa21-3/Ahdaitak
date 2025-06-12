@@ -18,16 +18,19 @@ class OnboardingThreeScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Stack(
-            children: [
-              Image.asset(
-                ImagesManager.onboardingThree,
-                fit: BoxFit.fill,
-                width: double.infinity,
-                height: 812.h,
-              ),
-              OnboardingThreeMainContainer(),
-            ],
+          Expanded(
+
+            child: Stack(
+              children: [
+                Image.asset(
+                  ImagesManager.onboardingThree,
+                  fit: BoxFit.fill,
+                  width: double.infinity,
+                  height: 812.h,
+                ),
+                OnboardingThreeMainContainer(),
+              ],
+            ),
           ),
         ],
       ),

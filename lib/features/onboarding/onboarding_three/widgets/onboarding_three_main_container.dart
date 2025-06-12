@@ -22,39 +22,43 @@ class OnboardingThreeMainContainer extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 8.0.w),
         child: Container(
-          width: 360.w,
-          height: 430.h,
+          width: 350.w,
+          height: 410.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: ColorManager.white,
           ),
-          child: Column(
+          child: ListView(
             children: [
-              verticalSpace(37),
-              Text(
-                S.of(context).stayInformed,
-                style: StylesManager.font24DartPurpleBold,
-              ),
-              OnboardingThreeCheckRow(
-                text: S.of(context).statusUpdatesOperations,
-              ),
-              OnboardingThreeCheckRow(
-                text: S.of(context).exclusiveOffersAndDiscounts,
-              ),
-              OnboardingThreeCheckRow(
-                text: S.of(context).newAndExcitingProducts,
-              ),
-              verticalSpace(40),
+              Column(
+                children: [
+                  verticalSpace(37),
+                  Text(
+                    S.of(context).stayInformed,
+                    style: StylesManager.font24DartPurpleBold,
+                  ),
+                  OnboardingThreeCheckRow(
+                    text: S.of(context).statusUpdatesOperations,
+                  ),
+                  OnboardingThreeCheckRow(
+                    text: S.of(context).exclusiveOffersAndDiscounts,
+                  ),
+                  OnboardingThreeCheckRow(
+                    text: S.of(context).newAndExcitingProducts,
+                  ),
+                  verticalSpace(30),
 
-              CustomButton(
-                function: (){
-                  context.pushNamed(Routes.loginOneScreen);
-                },
-                text: S.of(context).next,
-                backgroundColor: ColorManager.purple,
+                  CustomButton(
+                    function: (){
+                      context.pushNamed(Routes.loginOneScreen);
+                    },
+                    text: S.of(context).next,
+                    backgroundColor: ColorManager.purple,
+                  ),
+                  verticalSpace(25),
+                  Text(S.of(context).youCanTurnItOffAtAnyTime, style: StylesManager.font18BlackMedium),
+                ],
               ),
-              verticalSpace(35),
-              Text(S.of(context).youCanTurnItOffAtAnyTime, style: StylesManager.font18BlackMedium),
             ],
           ),
         ),

@@ -16,29 +16,32 @@ class OnboardingTwoMainContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 460.h,
-      decoration: BoxDecoration(
-        color:ColorManager.white ,
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.6,
+      child: Container(
+        width: double.infinity,
+        // height: 460.h,
+        decoration: BoxDecoration(
+          color:ColorManager.white ,
 
-      ),
-      child: Column(
-        children: [
-          verticalSpace(23),
-          Text('البلدان الشعبية',style: StylesManager.font24DartPurpleBold,),
-          verticalSpace(23),
-          OnboardingTwoRowCountries(),
-          OnboardingTwoTextFormField(),
-          Padding(
-            padding:  EdgeInsets.only(left: 270.0.w),
-            child: Text('جميع البلدان',style: StylesManager.font14DarkPurpleBold,),
-          ),
+        ),
+        child: Column(
+          children: [
+            verticalSpace(23),
+            Text('البلدان الشعبية',style: StylesManager.font24DartPurpleBold,),
+            verticalSpace(23),
+            OnboardingTwoRowCountries(),
+            OnboardingTwoTextFormField(),
+            Padding(
+              padding:  EdgeInsets.only(left: 270.0.w),
+              child: Text('جميع البلدان',style: StylesManager.font14DarkPurpleBold,),
+            ),
 
 
 
-          OnboardingTwoListCountry(),
-        ],
+            OnboardingTwoListCountry(),
+          ],
+        ),
       ),
     );
   }

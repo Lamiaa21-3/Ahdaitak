@@ -21,28 +21,31 @@ class GiftsMainContainer extends StatefulWidget {
 class _GiftsMainContainerState extends State<GiftsMainContainer> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 490.h,
-      decoration: BoxDecoration(
-        color: ColorManager.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-        ),
-      ),
-      child: Column(
-        children: [
-          GiftsDropDown(),
-          Text(
-            S.of(context).couponsEgyptStartFrom,
-            style: StylesManager.font20DarkPurpleMedium,
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.7,
+      child: Container(
+        width: double.infinity,
+        // height: 490.h,
+        decoration: BoxDecoration(
+          color: ColorManager.white,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20),
+            topRight: Radius.circular(20),
           ),
-          verticalSpace(12),
-          GiftsSubContainer(),
-          verticalSpace(24),
-          GiftsSubContainer(),
-        ],
+        ),
+        child: Column(
+          children: [
+            GiftsDropDown(),
+            Text(
+              S.of(context).couponsEgyptStartFrom,
+              style: StylesManager.font20DarkPurpleMedium,
+            ),
+            verticalSpace(12),
+            GiftsSubContainer(),
+            verticalSpace(24),
+            GiftsSubContainer(),
+          ],
+        ),
       ),
     );
   }

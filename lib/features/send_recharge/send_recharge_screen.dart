@@ -17,23 +17,17 @@ class SendRechargeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: ColorManager.darkPurple,
         body: SafeArea(
-          child: ListView(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+          child: Column(
             children: [
-              Column(
-                children: [
-                  verticalSpace(12),
-                  Image.asset(ImagesManager.etsilate),
-                  verticalSpace(7),
-                  Text(
-                    S.of(context).howMuchYouWantToSend,
-                    style: StylesManager.font18WhiteMedium,
-                  ),
-                  verticalSpace(40),
-                  SendRechargeMainContainer(),
-                ],
+              verticalSpace(12),
+              Image.asset(ImagesManager.etsilate),
+              verticalSpace(7),
+              Text(
+                S.of(context).howMuchYouWantToSend,
+                style: StylesManager.font18WhiteMedium,
               ),
+              verticalSpace(40),
+              SendRechargeMainContainer(),
             ],
           ),
         ),

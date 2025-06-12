@@ -1,6 +1,3 @@
-
-
-
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/onboarding/onboarding_one/widgets/onboarding_one_appbar.dart';
@@ -21,32 +18,30 @@ class OnboardingOneScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffCCFFF8),
       body: SafeArea(
+        child: ListView(
+          children: [
+            OnboardingOneAppbar(),
+            verticalSpace(40),
+            Image.asset(
+              ImagesManager.onboardingOne,
+              height: 300.h,
+              width: 350.w,
+            ),
+            verticalSpace(50),
+            OnboardingOneColumnTexts(),
+            verticalSpace(30),
 
-         child:
-      ListView(
-        children: [
-        OnboardingOneAppbar(),
-        verticalSpace(40),
-        Image.asset(ImagesManager.onboardingOne, height: 300.h, width: 350.w,),
-        verticalSpace(50),
-        OnboardingOneColumnTexts(),
-          verticalSpace(30),
-
-          CustomButton(text: 'التالى', backgroundColor: ColorManager.purple,function: (){
-            context.pushNamed(Routes.onBoardingTwoScreen,);
-          },),
-          verticalSpace(30),
-      ],),),
+            CustomButton(
+              text: 'التالى',
+              backgroundColor: ColorManager.purple,
+              function: () {
+                context.pushNamed(Routes.onBoardingTwoScreen);
+              },
+            ),
+            verticalSpace(30),
+          ],
+        ),
+      ),
     );
   }
-
-
 }
-
-
-
-
-
-
-
-
