@@ -31,12 +31,13 @@ class OnboardingOneButton extends StatelessWidget {
           ),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             horizontalSpace(8),
 
             Image.asset(ImagesManager.googleLoginOne),
             horizontalSpace(12),
-            Text('سجل باستخدام جوجل', style:StylesManager.font30White500 ),
+            Text('سجل باستخدام جوجل', style:StylesManager.font18WhiteMedium ),
 
           ],
         ),

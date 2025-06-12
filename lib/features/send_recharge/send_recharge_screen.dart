@@ -18,6 +18,8 @@ class SendRechargeScreen extends StatelessWidget {
         backgroundColor: ColorManager.darkPurple,
         body: SafeArea(
           child: ListView(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
             children: [
               Column(
                 children: [
@@ -28,7 +30,7 @@ class SendRechargeScreen extends StatelessWidget {
                     S.of(context).howMuchYouWantToSend,
                     style: StylesManager.font18WhiteMedium,
                   ),
-                  verticalSpace(4),
+                  verticalSpace(40),
                   SendRechargeMainContainer(),
                 ],
               ),

@@ -1,6 +1,7 @@
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/routing/routes.dart';
+import 'package:ahdydic/core/theming/color.dart';
 
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
@@ -18,6 +19,7 @@ class LoginOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorManager.white,
       body: SafeArea(
         child: Column(
           children: [

@@ -26,32 +26,34 @@ class _SendRechargeMainContainerState extends State<SendRechargeMainContainer> {
       clipBehavior: Clip.none,
       children: [
 
-        Container(
-          width: double.infinity,
-          height: 700.h,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(25),
-              topLeft: Radius.circular(25),
-            ),
-            color: ColorManager.white,
-          ),
-          child: Column(
-            children: [
-              verticalSpace(90),
-              Text(
-                S.of(context).chooseTheAmountCharged,
-                style: StylesManager.font16MorePurpleRegular,
+        Expanded(
+          child: Container(
+            width: double.infinity,
+            height: 630.h,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(25),
+                topLeft: Radius.circular(25),
               ),
-              verticalSpace(10),
-           SendRechargeListView()
-            ],
+              color: ColorManager.white,
+            ),
+            child: Column(
+              children: [
+                verticalSpace(90),
+                Text(
+                  S.of(context).chooseTheAmountCharged,
+                  style: StylesManager.font16MorePurpleRegular,
+                ),
+                verticalSpace(10),
+             SendRechargeListView()
+              ],
+            ),
           ),
         ),
         Positioned(
-            top: -25, // Adjust as needed
-            left: 0,
-            right: 0,
+            top: -25.h, // Adjust as needed
+            left: 0.w,
+            right: 0.w,
 
             child: SendRechargeSubContainer()),
 

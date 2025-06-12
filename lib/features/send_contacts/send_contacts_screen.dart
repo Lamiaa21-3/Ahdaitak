@@ -17,26 +17,28 @@ class SendContactsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            verticalSpace(30),
-            SendContactsAppbar(),
-            verticalSpace(30),
-            Text(
-              S.of(context).pleaseEnterPhone,
-              style: StylesManager.font24DarkPurpleRegular,
-            ),
-            Text(
-              S.of(context).WhatYouWantToSendTo,
-              style: StylesManager.font24DarkPurpleRegular,
-            ),
-            RowNumberField(),
-            verticalSpace(110),
-            CustomButton(
-              text: S.of(context).ensurePhoneNumber,
-              backgroundColor: ColorManager.purple,
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              verticalSpace(30),
+              SendContactsAppbar(),
+              verticalSpace(30),
+              Text(
+                S.of(context).pleaseEnterPhone,
+                style: StylesManager.font24DarkPurpleRegular,
+              ),
+              Text(
+                S.of(context).WhatYouWantToSendTo,
+                style: StylesManager.font24DarkPurpleRegular,
+              ),
+              RowNumberField(),
+              verticalSpace(110),
+              CustomButton(
+                text: S.of(context).ensurePhoneNumber,
+                backgroundColor: ColorManager.purple,
+              ),
+            ],
+          ),
         ),
       ),
     );

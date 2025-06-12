@@ -18,6 +18,7 @@ class AhdydicApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(375, 812),
       minTextAdapt: true,
+      splitScreenMode: true,
       child: MaterialApp(
         locale: Locale('ar'),
         localizationsDelegates: [
