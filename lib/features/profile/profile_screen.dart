@@ -2,6 +2,7 @@
 
 
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/features/profile/widgets/profile_main_container.dart';
 import 'package:flutter/material.dart';
 
@@ -12,21 +13,19 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      
-      backgroundColor: Color(0xff846C8E),
-      body: SafeArea(
-        child: ListView(
-
-          children: [
-            Column(
-              children: [
-                ProfileAppbar(),
-                verticalSpace(30),
-                ProfileMainContainer(),
-              ],
-            ),
-          ],
+    return Directionality(
+      textDirection: TextDirection.rtl,
+      child: Scaffold(
+        extendBodyBehindAppBar: true,
+        backgroundColor: ColorManager.purple,
+        body: SafeArea(
+          child: Column(
+            children: [
+              ProfileAppbar(),
+              verticalSpace(20),
+              ProfileMainContainer(),
+            ],
+          ),
         ),
       ),
     );

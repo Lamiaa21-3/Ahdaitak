@@ -54,7 +54,8 @@ class _SendRechargeMainContainerState extends State<SendRechargeMainContainer> {
               left: 0.w,
               right: 0.w,
 
-              child: SendRechargeSubContainer()),
+              child: SendRechargeSubContainer(),
+          ),
 
         ],
       ),

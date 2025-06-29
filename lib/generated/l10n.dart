@@ -28,10 +28,9 @@ class S {
   static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final name =
-        (locale.countryCode?.isEmpty ?? false)
-            ? locale.languageCode
-            : locale.toString();
+    final name = (locale.countryCode?.isEmpty ?? false)
+        ? locale.languageCode
+        : locale.toString();
     final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -553,6 +552,56 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `الارسال الى مصر`
+  String get sendToEgypt {
+    return Intl.message(
+      'الارسال الى مصر',
+      name: 'sendToEgypt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المكافئات`
+  String get rewards {
+    return Intl.message('المكافئات', name: 'rewards', desc: '', args: []);
+  }
+
+  /// `تحديد مواعيد الارسال`
+  String get determineSendingDates {
+    return Intl.message(
+      'تحديد مواعيد الارسال',
+      name: 'determineSendingDates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `وسائل الدفع`
+  String get paymentMethods {
+    return Intl.message(
+      'وسائل الدفع',
+      name: 'paymentMethods',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `صندوق الرسائل`
+  String get messageBox {
+    return Intl.message(
+      'صندوق الرسائل',
+      name: 'messageBox',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الاعدادات`
+  String get settings {
+    return Intl.message('الاعدادات', name: 'settings', desc: '', args: []);
   }
 }
 

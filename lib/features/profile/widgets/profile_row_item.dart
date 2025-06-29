@@ -19,14 +19,14 @@ final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: 10.h),
+      padding:  EdgeInsets.symmetric(vertical: 13.h),
       child: GestureDetector(
         onTap: onTap,
         child: Row(
           children: [
             widget,
 
-            horizontalSpace(7),
+            horizontalSpace(12),
             Text(text,style: StylesManager.font20DarkPurpleMedium,),
           ],
         ),

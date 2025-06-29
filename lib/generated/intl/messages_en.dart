@@ -62,6 +62,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "deleteAndDeliverByData": MessageLookupByLibrary.simpleMessage(
       "مسح، تفعيل، توصيل باستخدام بيانات eSIM",
     ),
+    "determineSendingDates": MessageLookupByLibrary.simpleMessage(
+      "تحديد مواعيد الارسال",
+    ),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
       "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
     ),
@@ -90,12 +93,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
     ),
+    "messageBox": MessageLookupByLibrary.simpleMessage("صندوق الرسائل"),
     "messengers": MessageLookupByLibrary.simpleMessage("المرسلين"),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
     "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "paymentMethods": MessageLookupByLibrary.simpleMessage("وسائل الدفع"),
     "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل رقم الهاتف ",
     ),
@@ -107,6 +112,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "استقبل تعبئة رصيد",
     ),
     "record": MessageLookupByLibrary.simpleMessage("السجل"),
+    "rewards": MessageLookupByLibrary.simpleMessage("المكافئات"),
     "searchContacts": MessageLookupByLibrary.simpleMessage(
       "ابحث في جهات الإتصال",
     ),
@@ -119,6 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "sendFirstShipmentToEgypt": MessageLookupByLibrary.simpleMessage(
       "ارسل اول شحن الى مصر في 3 ثوان ",
     ),
+    "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
+    "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "startRechargingTheBalance": MessageLookupByLibrary.simpleMessage(
       "بدء تعبئة الرصيد",

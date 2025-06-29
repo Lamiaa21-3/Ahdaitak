@@ -38,6 +38,10 @@ class ImagesManager{
   static const arrowLeft='assets/images/arrow_left.png';
   static const arrowRight='assets/images/arrow_right.png';
 static const edit='assets/images/edit.png';
+  static const rewards='assets/images/rewards.png';
+  static const paymentMethod ='assets/images/payment_method.png';
+  static const messageBox ='assets/images/box_message.png';
+  static const settings='assets/images/settings.png';
 
 
 

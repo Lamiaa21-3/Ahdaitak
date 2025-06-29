@@ -6,94 +6,44 @@ import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
 import 'package:ahdydic/features/profile/widgets/profile_divider.dart';
+import 'package:ahdydic/features/profile/widgets/profile_main_container_item.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_item.dart';
+import 'package:ahdydic/features/profile/widgets/profile_sub_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../generated/l10n.dart';
+import '../../send_recharge/widgets/send_recharge_sub_container.dart';
 
 class ProfileMainContainer extends StatelessWidget {
   const ProfileMainContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.8,
-      child: Container(
-        width: double.infinity,
-        // height: 610.h,
-        decoration: BoxDecoration(
-          color: ColorManager.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(25),
-            topRight: Radius.circular(25),
+    return Expanded(
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
+            width: double.infinity,
+            // height: 610.h,
+            decoration: BoxDecoration(
+              color: ColorManager.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(25),
+                topRight: Radius.circular(25),
+              ),
+            ),
+            child: ProfileMainContainerItem(),
           ),
-        ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 25.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              verticalSpace(25),
-              ProfileRowItem(
-                text: S.of(context).help,
-                widget: CircleAvatar(
-                  backgroundColor: Colors.purple[700],
-                  radius: 12,
-                  child: Icon(
-                    Icons.question_mark,
-                    color: ColorManager.white,
-                    size: 15,
-                  ),
-                ),
-              ),
+          Positioned(
+            top: -25.h, // Adjust as needed
+            left: 0.w,
+            right: 0.w,
 
-              ProfileDivider(),
-
-              ProfileRowItem(
-                onTap: (){
-                  context.pushNamed(Routes.sendRechargeScreen);
-                },
-                text: S.of(context).SendBalanceRecharge,
-                widget: Image.asset(ImagesManager.arrowLeft),
-              ),
-
-              ProfileDivider(),
-              ProfileRowItem(
-                text: S.of(context).receiveBalanceRecharge,
-                widget: Image.asset(ImagesManager.arrowRight),
-              ),
-
-              // ProfileRowItem(),
-              ProfileDivider(),
-              ProfileRowItem(
-                text: S.of(context).aboutAhdytic,
-                widget: Image.asset(ImagesManager.about),
-              ),
-              ProfileDivider(),
-              verticalSpace(29),
-              Text(
-                S.of(context).termsAndConditions,
-                style: StylesManager.font14MorePurpleMedium,
-              ),
-              verticalSpace(9),
-              Text(
-                S.of(context).privacyNotificationToFriendsFamily,
-                style: StylesManager.font14MorePurpleMedium,
-              ),
-              verticalSpace(9),
-              Text(
-                S.of(context).privacyPolicy,
-                style: StylesManager.font14MorePurpleMedium,
-              ),
-              verticalSpace(22),
-              CustomButton(
-                text: S.of(context).login,
-                backgroundColor: ColorManager.darkPurple,
-              ),
-            ],
+            child: ProfileSubContainer(),
           ),
-        ),
+        ],
       ),
     );
   }

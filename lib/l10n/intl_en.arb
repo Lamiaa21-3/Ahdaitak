@@ -56,6 +56,12 @@
   "privacyNotificationToFriendsFamily": "إشعار الخصوصية للأصدقاء والعائلة",
   "howMuchYouWantToSend":"ما هو المبلغ الذي تريد إرساله ؟",
   "chooseTheAmountCharged":"قم بإختيار المبلغ المراد شحنه",
-  "beforeDiscount":"قبل الخصم"
+  "beforeDiscount":"قبل الخصم",
+  "sendToEgypt":"الارسال الى مصر",
+  "rewards":"المكافئات",
+  "determineSendingDates":"تحديد مواعيد الارسال",
+  "paymentMethods":"وسائل الدفع",
+  "messageBox":"صندوق الرسائل",
+  "settings":"الاعدادات"
 
 }

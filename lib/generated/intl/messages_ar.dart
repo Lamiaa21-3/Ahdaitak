@@ -57,6 +57,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "deleteAndDeliverByData": MessageLookupByLibrary.simpleMessage(
       "مسح، تفعيل، توصيل باستخدام بيانات eSIM",
     ),
+    "determineSendingDates": MessageLookupByLibrary.simpleMessage(
+      "تحديد مواعيد الارسال",
+    ),
     "displayHerePeopleYourMessaged": MessageLookupByLibrary.simpleMessage(
       "ستظهر هنا قائمة الأشخاص اللذين راسلتهم",
     ),
@@ -85,11 +88,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
     ),
+    "messageBox": MessageLookupByLibrary.simpleMessage("صندوق الرسائل"),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
     "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "paymentMethods": MessageLookupByLibrary.simpleMessage("وسائل الدفع"),
     "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل رقم الهاتف ",
     ),
@@ -101,12 +106,15 @@ class MessageLookup extends MessageLookupByLibrary {
       "استقبل تعبئة رصيد",
     ),
     "record": MessageLookupByLibrary.simpleMessage("السجل"),
+    "rewards": MessageLookupByLibrary.simpleMessage("المكافئات"),
     "selectedContactsWithoutNumber": MessageLookupByLibrary.simpleMessage(
       "حدد جهة الاتصال الخاصة بك على الفور، دون الحاجة إلى إدخال رقم",
     ),
     "sendCodeForVerification": MessageLookupByLibrary.simpleMessage(
       "سيتم ارسال كود للتحقق من رقم الهاتف",
     ),
+    "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
+    "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
