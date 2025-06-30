@@ -52,7 +52,18 @@
   "determineSendingDates":"تحديد مواعيد الارسال",
   "paymentMethods":"وسائل الدفع",
   "messageBox":"صندوق الرسائل",
-  "settings":"الاعدادات"
+  "settings":"الاعدادات",
+  "checkYourOrder":"تفقد طلبك !",
+  "youWillGetPoints":"سوف تحصل على +7 نقاط",
+  "Isent":"لقد ارسلت",
+  "stateTaxes":"ضرائب الدولة",
+  "willBeReceived":"سوف يتم استلام",
+  "vodafoneEgyptCreditsAreAddedToSpec":"تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات",
+  "addPromoCode":"إضافة برومو كود",
+  "apply":"تطبيق",
+  "cansel":"إلغاء",
+  "totalAmount":"اجمالي المبلغ",
+  "confirmPayment":"تأكيد الدفع"
 
 
 

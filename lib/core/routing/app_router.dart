@@ -13,6 +13,7 @@ import 'package:ahdydic/features/send_contacts/send_contacts_screen.dart';
 import 'package:ahdydic/features/send_recharge/send_recharge_screen.dart';
 
 import 'package:ahdydic/features/view_contacts/view_contacts_screen.dart';
+import 'package:ahdydic/features/your_order/your_order_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -32,6 +33,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  OnboardingTwoScreen();
+          },
+        );
+      case Routes.yourOrderScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  YourOrderScreen();
           },
         );
       case Routes.onBoardingThreeScreen:

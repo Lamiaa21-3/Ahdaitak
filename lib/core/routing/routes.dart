@@ -15,5 +15,6 @@ class Routes {
   static const String itemCardsScreen = '/itemCardsScreen';
   static const String profileScreen = '/profileScreen';
   static const String sendRechargeScreen = '/sendRechargeScreen';
+  static const String yourOrderScreen='/yourOrderScreen';
 
 }

@@ -603,6 +603,96 @@ class S {
   String get settings {
     return Intl.message('الاعدادات', name: 'settings', desc: '', args: []);
   }
+
+  /// `تفقد طلبك !`
+  String get checkYourOrder {
+    return Intl.message(
+      'تفقد طلبك !',
+      name: 'checkYourOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `سوف تحصل على +7 نقاط`
+  String get youWillGetPoints {
+    return Intl.message(
+      'سوف تحصل على +7 نقاط',
+      name: 'youWillGetPoints',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لقد ارسلت`
+  String get Isent {
+    return Intl.message('لقد ارسلت', name: 'Isent', desc: '', args: []);
+  }
+
+  /// `ضرائب الدولة`
+  String get stateTaxes {
+    return Intl.message('ضرائب الدولة', name: 'stateTaxes', desc: '', args: []);
+  }
+
+  /// `سوف يتم استلام`
+  String get willBeReceived {
+    return Intl.message(
+      'سوف يتم استلام',
+      name: 'willBeReceived',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات`
+  String get vodafoneEgyptCreditsAreAddedToSpec {
+    return Intl.message(
+      'تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات',
+      name: 'vodafoneEgyptCreditsAreAddedToSpec',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إضافة برومو كود`
+  String get addPromoCode {
+    return Intl.message(
+      'إضافة برومو كود',
+      name: 'addPromoCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تطبيق`
+  String get apply {
+    return Intl.message('تطبيق', name: 'apply', desc: '', args: []);
+  }
+
+  /// `إلغاء`
+  String get cansel {
+    return Intl.message('إلغاء', name: 'cansel', desc: '', args: []);
+  }
+
+  /// `اجمالي المبلغ`
+  String get totalAmount {
+    return Intl.message(
+      'اجمالي المبلغ',
+      name: 'totalAmount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تأكيد الدفع`
+  String get confirmPayment {
+    return Intl.message(
+      'تأكيد الدفع',
+      name: 'confirmPayment',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

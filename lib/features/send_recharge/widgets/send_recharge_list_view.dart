@@ -2,6 +2,8 @@
 
 
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -43,6 +45,9 @@ class _SendRechargeListViewState extends State<SendRechargeListView> {
               setState(() {
                 selectedIndex = index;
               });
+              context.pushNamed(
+                Routes.yourOrderScreen
+              );
             },
             child: Padding(
               padding:  EdgeInsets.symmetric(horizontal: 10.0.w),

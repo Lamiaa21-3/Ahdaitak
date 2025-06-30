@@ -1,5 +1,7 @@
 
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,35 +17,42 @@ class ViewsContactsItemListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding:  EdgeInsets.symmetric(vertical: 8.0.h,horizontal: 15.w),
-      child: Container(
-        height: 100.h,
-        decoration: BoxDecoration(
-          color: ColorManager.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1), // shadow color
-              spreadRadius: 1, // how much the shadow spreads
-              blurRadius: 2, // how blurry the shadow is
-              offset: Offset(0, 5), // changes position of shadow (x, y)
-            ),
-          ],
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(width: 1, color: ColorManager.borderGrey),
-        ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0.w, vertical: 12.h),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Column(
-                children: [
-                  Text('Mama', style: StylesManager.font24DarkPurpleRegular),
-                  Text('0192938444', style: StylesManager.font14PinkRegular),
-                ],
+      child: GestureDetector(
+        onTap: (){
+          context.pushNamed(
+            Routes.yourOrderScreen
+          );
+        },
+        child: Container(
+          height: 100.h,
+          decoration: BoxDecoration(
+            color: ColorManager.white,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1), // shadow color
+                spreadRadius: 1, // how much the shadow spreads
+                blurRadius: 2, // how blurry the shadow is
+                offset: Offset(0, 5), // changes position of shadow (x, y)
               ),
-              horizontalSpace(10),
-              Image.asset(ImagesManager.girle),
             ],
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(width: 1, color: ColorManager.borderGrey),
+          ),
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15.0.w, vertical: 12.h),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Column(
+                  children: [
+                    Text('Mama', style: StylesManager.font24DarkPurpleRegular),
+                    Text('0192938444', style: StylesManager.font14PinkRegular),
+                  ],
+                ),
+                horizontalSpace(10),
+                Image.asset(ImagesManager.girle),
+              ],
+            ),
           ),
         ),
       ),

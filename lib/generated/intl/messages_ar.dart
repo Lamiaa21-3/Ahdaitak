@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Isent": MessageLookupByLibrary.simpleMessage("لقد ارسلت"),
     "SendBalanceRecharge": MessageLookupByLibrary.simpleMessage(
       "أرسل تعبئة رصيد",
     ),
@@ -34,9 +35,13 @@ class MessageLookup extends MessageLookupByLibrary {
         ),
     "aboutAhdytic": MessageLookupByLibrary.simpleMessage("عن اهديتك"),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+    "addPromoCode": MessageLookupByLibrary.simpleMessage("إضافة برومو كود"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
+    "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "beforeDiscount": MessageLookupByLibrary.simpleMessage("قبل الخصم"),
     "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
+    "cansel": MessageLookupByLibrary.simpleMessage("إلغاء"),
+    "checkYourOrder": MessageLookupByLibrary.simpleMessage("تفقد طلبك !"),
     "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
       "اختر من جهات اتصالك",
     ),
@@ -46,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "completeUsingAnotherMethod": MessageLookupByLibrary.simpleMessage(
       "اكمل باستخدام طريقة اخرى",
     ),
+    "confirmPayment": MessageLookupByLibrary.simpleMessage("تأكيد الدفع"),
     "contacts": MessageLookupByLibrary.simpleMessage("جهات الإتصال"),
     "cookies": MessageLookupByLibrary.simpleMessage("ملفات تعريف الارتباط"),
     "couponsEgyptStartFrom": MessageLookupByLibrary.simpleMessage(
@@ -116,6 +122,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
     "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
+    "stateTaxes": MessageLookupByLibrary.simpleMessage("ضرائب الدولة"),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
     ),
@@ -126,15 +133,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "thereNoActivities": MessageLookupByLibrary.simpleMessage(
       "لا يوجد انشطة حتى الآن",
     ),
+    "totalAmount": MessageLookupByLibrary.simpleMessage("اجمالي المبلغ"),
+    "vodafoneEgyptCreditsAreAddedToSpec": MessageLookupByLibrary.simpleMessage(
+      "تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات",
+    ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "whoDoYouWantToSendItTo": MessageLookupByLibrary.simpleMessage(
       "من تريد أن ترسل إليه؟",
     ),
+    "willBeReceived": MessageLookupByLibrary.simpleMessage("سوف يتم استلام"),
     "withContinueYouAgree": MessageLookupByLibrary.simpleMessage(
       "بالاستمرار فإنك توافق على",
     ),
     "youCanTurnItOffAtAnyTime": MessageLookupByLibrary.simpleMessage(
       "يمكنك إيقاف تشغيله في أي وقت ",
+    ),
+    "youWillGetPoints": MessageLookupByLibrary.simpleMessage(
+      "سوف تحصل على +7 نقاط",
     ),
   };
 }
