@@ -1,5 +1,7 @@
 
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/features/your_order/widgets/your_order_promo_code_container.dart';
+import 'package:ahdydic/features/your_order/widgets/your_order_warning_container.dart';
 import 'package:flutter/material.dart';
 
 import '../your_order_info_container.dart';
@@ -19,6 +21,10 @@ class YourOrderMainContainerItem extends StatelessWidget {
        children: [
          verticalSpace(25),
          YourOrderInfoContainer(),
+         verticalSpace(8),
+         YourOrderWarningContainer(),
+         verticalSpace(8),
+         YourOrderPromoCodeContainer(),
 
          
 

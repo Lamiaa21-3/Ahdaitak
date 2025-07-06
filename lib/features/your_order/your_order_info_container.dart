@@ -68,10 +68,10 @@ class YourOrderInfoContainer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(title, style: const TextStyle(fontSize: 14)),
-          // Text(
-          //   value,
-          //   style:  StylesManager.
-          // ),
+          Text(
+            value,
+            style:  StylesManager.font16MorePurpleMedium,
+          ),
         ],
       ),
     );

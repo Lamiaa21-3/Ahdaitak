@@ -43,6 +43,7 @@ static const edit='assets/images/edit.png';
   static const messageBox ='assets/images/box_message.png';
   static const settings='assets/images/settings.png';
   static const starOrder='assets/images/star_order.png';
+  static const warning='assets/images/warning.png';
 
 
 
