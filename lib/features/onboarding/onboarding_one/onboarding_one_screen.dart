@@ -16,18 +16,19 @@ class OnboardingOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffCCFFF8),
+backgroundColor: ColorManager.white,
       body: SafeArea(
         child: ListView(
           children: [
+            verticalSpace(30),
             OnboardingOneAppbar(),
-            verticalSpace(40),
+            verticalSpace(60),
             Image.asset(
               ImagesManager.onboardingOne,
               height: 300.h,
               width: 350.w,
             ),
-            verticalSpace(50),
+            verticalSpace(100),
             OnboardingOneColumnTexts(),
             verticalSpace(30),
 
