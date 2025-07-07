@@ -693,6 +693,41 @@ class S {
       args: [],
     );
   }
+
+  /// `البلدان الشعبية`
+  String get localCountries {
+    return Intl.message(
+      'البلدان الشعبية',
+      name: 'localCountries',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `جميع البلدان`
+  String get allCountries {
+    return Intl.message(
+      'جميع البلدان',
+      name: 'allCountries',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إلى أين ترسل تعبئة شحن ؟`
+  String get whereYouWantSendCharge {
+    return Intl.message(
+      'إلى أين ترسل تعبئة شحن ؟',
+      name: 'whereYouWantSendCharge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تخطى`
+  String get skip {
+    return Intl.message('تخطى', name: 'skip', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

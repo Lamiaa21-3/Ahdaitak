@@ -7,7 +7,7 @@ class ImagesManager{
   static const  onboardingOne ='assets/images/onboarding_one.png';
   static const  onboardingTwo ='assets/images/onboarding_two.png';
   static const  onboardingThree ='assets/images/onboarding_three.jpeg';
-  static const  egypt ='assets/images/eygpt.png';
+  static const  egypt ='assets/images/egypt.png';
   static const  afghnastin ='assets/images/afghnastin.png';
   static const  falbin ='assets/images/falbin.png';
   static const  sudia ='assets/images/sudia.png';

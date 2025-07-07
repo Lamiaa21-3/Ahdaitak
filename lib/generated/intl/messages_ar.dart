@@ -36,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutAhdytic": MessageLookupByLibrary.simpleMessage("عن اهديتك"),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "addPromoCode": MessageLookupByLibrary.simpleMessage("إضافة برومو كود"),
+    "allCountries": MessageLookupByLibrary.simpleMessage("جميع البلدان"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
     "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "beforeDiscount": MessageLookupByLibrary.simpleMessage("قبل الخصم"),
@@ -90,6 +91,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "howMuchYouWantToSend": MessageLookupByLibrary.simpleMessage(
       "ما هو المبلغ الذي تريد إرساله ؟",
     ),
+    "localCountries": MessageLookupByLibrary.simpleMessage("البلدان الشعبية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
@@ -121,6 +123,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
     "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+    "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "stateTaxes": MessageLookupByLibrary.simpleMessage("ضرائب الدولة"),
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
@@ -138,6 +141,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات",
     ),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
+    "whereYouWantSendCharge": MessageLookupByLibrary.simpleMessage(
+      "إلى أين ترسل تعبئة شحن ؟",
+    ),
     "whoDoYouWantToSendItTo": MessageLookupByLibrary.simpleMessage(
       "من تريد أن ترسل إليه؟",
     ),

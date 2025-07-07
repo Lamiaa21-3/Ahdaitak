@@ -16,7 +16,7 @@ class OnboardingOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-backgroundColor: ColorManager.white,
+      backgroundColor: ColorManager.white,
       body: SafeArea(
         child: ListView(
           children: [

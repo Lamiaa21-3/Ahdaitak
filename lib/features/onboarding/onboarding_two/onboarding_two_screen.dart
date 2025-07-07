@@ -18,18 +18,16 @@ class OnboardingTwoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorManager.darkBlue,
+      backgroundColor: ColorManager.purple,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
 
             children: [
+              verticalSpace(20),
               OnboardingTwoAppbar(),
-              Text(
-                'إلى أين ترسل تعبئة شحن ؟',
-                style: StylesManager.font30White500.copyWith(fontSize: 24.sp),
-              ),
-              verticalSpace(27),
+
+              verticalSpace(60),
               OnboardingTwoMainContainer(),
             ],
           ),

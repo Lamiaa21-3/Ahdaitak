@@ -18,16 +18,20 @@ class OnboardingTwoRowCountries extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+
+
+
+
+        OnboardingTwoColumnFlagWithWord(text: 'الفلبين', image:  ImagesManager.falbin,),
+        horizontalSpace(50),
+        OnboardingTwoColumnFlagWithWord(text: 'السعودية', image: ImagesManager.sudia,),
+        horizontalSpace(50),
         GestureDetector(
             onTap: (){
               context.pushNamed(Routes.onBoardingThreeScreen);
             },
 
             child: OnboardingTwoColumnFlagWithWord(text: 'مصر', image: ImagesManager.egypt,)),
-        horizontalSpace(50),
-        OnboardingTwoColumnFlagWithWord(text: 'السعودية', image: ImagesManager.sudia,),
-        horizontalSpace(50),
-        OnboardingTwoColumnFlagWithWord(text: 'الفلبين', image:  ImagesManager.falbin,),
       ],
     );
   }

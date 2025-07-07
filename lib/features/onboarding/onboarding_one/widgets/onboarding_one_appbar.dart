@@ -1,6 +1,4 @@
-import 'package:ahdydic/core/helper/extensions.dart';
-import 'package:ahdydic/core/helper/spacing.dart';
-import 'package:ahdydic/core/routing/routes.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

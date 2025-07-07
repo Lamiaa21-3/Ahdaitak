@@ -36,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutAhdytic": MessageLookupByLibrary.simpleMessage("عن اهديتك"),
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "addPromoCode": MessageLookupByLibrary.simpleMessage("إضافة برومو كود"),
+    "allCountries": MessageLookupByLibrary.simpleMessage("جميع البلدان"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
     "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "balanceRecharge": MessageLookupByLibrary.simpleMessage("شحن الرصيد"),
@@ -95,6 +96,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "howMuchYouWantToSend": MessageLookupByLibrary.simpleMessage(
       "ما هو المبلغ الذي تريد إرساله ؟",
     ),
+    "localCountries": MessageLookupByLibrary.simpleMessage("البلدان الشعبية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
@@ -133,6 +135,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
     "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+    "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "startRechargingTheBalance": MessageLookupByLibrary.simpleMessage(
       "بدء تعبئة الرصيد",
@@ -158,6 +161,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "welcomToAhdidic": MessageLookupByLibrary.simpleMessage(
       "مرحبا بكم في أهديتك",
+    ),
+    "whereYouWantSendCharge": MessageLookupByLibrary.simpleMessage(
+      "إلى أين ترسل تعبئة شحن ؟",
     ),
     "whoDoYouWantToSendItTo": MessageLookupByLibrary.simpleMessage(
       "من تريد أن ترسل إليه؟",

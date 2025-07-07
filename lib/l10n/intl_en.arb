@@ -73,6 +73,10 @@
   "apply":"تطبيق",
   "cansel":"إلغاء",
   "totalAmount":"اجمالي المبلغ",
-  "confirmPayment":"تأكيد الدفع"
+  "confirmPayment":"تأكيد الدفع",
+  "localCountries":"البلدان الشعبية",
+  "allCountries":"جميع البلدان",
+  "whereYouWantSendCharge":"إلى أين ترسل تعبئة شحن ؟",
+  "skip":"تخطى"
 
 }
