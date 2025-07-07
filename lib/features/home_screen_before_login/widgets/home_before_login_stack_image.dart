@@ -9,8 +9,8 @@ import '../../../core/theming/images.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class HomeStackImage extends StatelessWidget {
-  const HomeStackImage({super.key});
+class HomeBeforeLoginStackImage extends StatelessWidget {
+  const HomeBeforeLoginStackImage({super.key});
 
   @override
   Widget build(BuildContext context) {

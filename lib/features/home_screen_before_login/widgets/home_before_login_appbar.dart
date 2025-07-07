@@ -1,3 +1,5 @@
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -5,8 +7,8 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class HomeAppbar extends StatelessWidget {
-  const HomeAppbar({super.key});
+class HomeBeforeLoginAppbar extends StatelessWidget {
+  const HomeBeforeLoginAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,9 @@ class HomeAppbar extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              context.pushNamed(Routes.loginOneScreen);
+            },
             style: ButtonStyle(
               shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(

@@ -47,7 +47,7 @@ class OnboardingThreeMainContainer extends StatelessWidget {
 
                     CustomButton(
                       function: () {
-                        context.pushNamed(Routes.loginOneScreen);
+                        context.pushNamed(Routes.homeScreen);
                       },
                       text: S.of(context).next,
                       backgroundColor: ColorManager.purple,

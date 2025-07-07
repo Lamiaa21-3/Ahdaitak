@@ -13,7 +13,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../generated/l10n.dart';
 
 import 'gifts/gifts_screen.dart';
-import 'home_screen/home_screen.dart';
+
+import 'home_screen_before_login/home_screen_before_login.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    HomeScreen(),
+    HomeScreenBeforeLogin(),
     GiftsScreen(),
     TopUpScreen(),
     AccountScreen(),
