@@ -54,10 +54,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `ابق على اطلاع`
+  /// `ابق على اطلاع!`
   String get stayInformed {
     return Intl.message(
-      'ابق على اطلاع',
+      'ابق على اطلاع!',
       name: 'stayInformed',
       desc: '',
       args: [],

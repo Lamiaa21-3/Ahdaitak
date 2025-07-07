@@ -144,7 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "statusUpdatesOperations": MessageLookupByLibrary.simpleMessage(
       "تحديثات الحالة على عمليات التعبئة",
     ),
-    "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع"),
+    "stayInformed": MessageLookupByLibrary.simpleMessage("ابق على اطلاع!"),
     "termsAndConditions": MessageLookupByLibrary.simpleMessage(
       "الشروط والاحكام",
     ),
