@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/helper/spacing.dart';
 import '../../../core/theming/color.dart';
+import '../../../core/widgets/custom_appbar.dart';
+import '../../../generated/l10n.dart';
 
 
 class LoginTwoScreen extends StatelessWidget {
@@ -21,7 +23,7 @@ class LoginTwoScreen extends StatelessWidget {
             Column(
               children: [
                 verticalSpace(24),
-                LoginTwoAppbar(),
+                CustomAppbar(text: S.of(context).login,),
                 verticalSpace(30),
                 LoginTwoMainContainer(),
               ],

@@ -25,6 +25,7 @@ class ImagesManager{
   static const  etsilate ='assets/images/etsilate.png';
   static const  orange ='assets/images/orange.png';
   static const backgroundHome='assets/images/background_home.png';
+  static const recordBackground='assets/images/record_background.png';
   static const girle='assets/images/girle.png';
   static const bigoLive='assets/images/bigo_live.png';
   static const esim='assets/images/esim.png';

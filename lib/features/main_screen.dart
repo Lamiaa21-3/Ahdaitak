@@ -1,9 +1,10 @@
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
-import 'package:ahdydic/features/account/account_screen.dart';
+
 
 import 'package:ahdydic/features/profile/profile_screen.dart';
+import 'package:ahdydic/features/record/record_screen.dart';
 
 import 'package:ahdydic/features/top_up/top_up_screen.dart';
 
@@ -13,8 +14,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../generated/l10n.dart';
 
 import 'gifts/gifts_screen.dart';
+import 'home_screen/home_screen_before_login/home_screen_before_login.dart';
 
-import 'home_screen_before_login/home_screen_before_login.dart';
+
 
 
 class MainScreen extends StatefulWidget {
@@ -38,7 +40,7 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreenBeforeLogin(),
     GiftsScreen(),
     TopUpScreen(),
-    AccountScreen(),
+    RecordScreen(),
 
     ProfileScreen(),
 
