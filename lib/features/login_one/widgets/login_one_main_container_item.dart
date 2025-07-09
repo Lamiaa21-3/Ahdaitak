@@ -1,5 +1,7 @@
 import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/theming/color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/helper/spacing.dart';
 import '../../../core/routing/routes.dart';
@@ -30,7 +32,7 @@ class LoginOneMainContainerItem extends StatelessWidget {
             LoginOneRowDivider(),
             InkWell(
               onTap: () {
-                context.pushNamed(Routes.loginScreen);
+                context.pushNamed(Routes.loginTwoScreen);
               },
               child: Text(
                 S.of(context).completeUsingAnotherMethod,

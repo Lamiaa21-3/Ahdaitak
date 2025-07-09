@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../core/helper/spacing.dart';
 import '../../../core/theming/images.dart';
 
-class LoginSocialRow extends StatelessWidget {
-  const LoginSocialRow({super.key});
+class LoginTwoSocialRow extends StatelessWidget {
+  const LoginTwoSocialRow({super.key});
 
   @override
   Widget build(BuildContext context) {

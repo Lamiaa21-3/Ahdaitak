@@ -8,8 +8,8 @@ import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class LoginTextsRow extends StatelessWidget {
-  const LoginTextsRow({super.key});
+class LoginTwoTextsRow extends StatelessWidget {
+  const LoginTwoTextsRow({super.key});
 
   @override
   Widget build(BuildContext context) {

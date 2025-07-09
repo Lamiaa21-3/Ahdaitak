@@ -2,7 +2,7 @@ import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
 import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
-import 'package:ahdydic/features/login/login.dart';
+
 import 'package:ahdydic/features/login_one/login_one_screen.dart';
 
 import 'package:ahdydic/features/main_screen.dart';
@@ -17,6 +17,7 @@ import 'package:ahdydic/features/your_order/your_order_screen.dart';
 
 import 'package:flutter/material.dart';
 
+import '../../features/login_two/login_two_screen.dart';
 import '../../features/onboarding/onboarding_one/onboarding_one_screen.dart';
 
 
@@ -48,10 +49,10 @@ class AppRouter {
           },
         );
 
-      case Routes.loginScreen:
+      case Routes.loginTwoScreen:
         return MaterialPageRoute(
           builder: (BuildContext context) {
-            return LoginScreen();
+            return LoginTwoScreen();
           },
         );
       case Routes.loginOneScreen:

@@ -17,23 +17,26 @@ class _RowNumberFieldState extends State<RowNumberField> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(top: 100.0.h,right: 23.w,left: 23.w,bottom: 23.h,),
+      padding:  EdgeInsets.symmetric(horizontal: 19.0),
       child: Row(
         children: [
           Container(
-              width: 100.w,
-              height: 70.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
-                ),
-                border: Border.all(color: ColorManager.grey,width: 1,),
+            width: 100.w,
+            height: 56, // تقليل الارتفاع
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.only(
+                topRight: Radius.circular(40),
+                bottomRight: Radius.circular(40),
               ),
+              border: Border.all(color: ColorManager.grey, width: 1),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(right: 24.0,top: 12),
               child: DropdownButton<String>(
                 value: dropdownValue,
                 icon: const Icon(Icons.keyboard_arrow_down),
                 elevation: 16,
+                isDense: true, // يقلل المسافة الداخلية
                 underline: Container(height: 0, color: Colors.white),
                 onChanged: (String? value) {
                   setState(() {
@@ -41,26 +44,21 @@ class _RowNumberFieldState extends State<RowNumberField> {
                   });
                 },
                 items: list.map<DropdownMenuItem<String>>((String value) {
-                  // Check if value looks like an image path
                   bool isImage = value.endsWith('.png') || value.endsWith('.jpg') || value.endsWith('.jpeg');
 
                   return DropdownMenuItem<String>(
                     value: value,
-                    child: Padding(
-                      padding:  EdgeInsets.only(top: 10.0.h,right: 24.w),
-                      child: isImage
-                          ? Image.asset(value, width: 32, height: 32) // or use Row to add text
-                          : Text(value),
-                    ),
+                    child: isImage
+                        ? Image.asset(value, width: 32, height: 32)
+                        : Text(value),
                   );
                 }).toList(),
-              )
-
-            // child: Image.asset('name'),
-
+              ),
+            ),
           ),
 
-          Expanded(child: AppTextFormField(hintText:'+20',validator: (value){},),),
+
+          Expanded(child: AppTextFormField(hintText:'20+',validator: (value){},),),
 
         ],
       ),

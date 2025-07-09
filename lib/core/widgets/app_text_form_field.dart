@@ -39,7 +39,7 @@ class AppTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 70.h,
+      height: 56.h,
       child: TextFormField(
         keyboardType: TextInputType.phone,
         textAlign: TextAlign.right,
@@ -55,7 +55,7 @@ class AppTextFormField extends StatelessWidget {
           isDense: true,
           contentPadding:
               contentPadding ??
-              EdgeInsets.symmetric(horizontal: 18.w, vertical: 30.h),
+              EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
           focusedBorder:
               focusedBorder ??
               OutlineInputBorder(

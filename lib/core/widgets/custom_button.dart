@@ -31,7 +31,7 @@ final double ? height;
 
           backgroundColor:  WidgetStatePropertyAll(backgroundColor),
           // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          minimumSize:  WidgetStatePropertyAll(Size(width??double.infinity, height?? 45.h)),
+          minimumSize:  WidgetStatePropertyAll(Size(width??double.infinity, height?? 56.h)),
           shape: WidgetStatePropertyAll(
 
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(35),
