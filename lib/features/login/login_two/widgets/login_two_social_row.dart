@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/helper/spacing.dart';
-import '../../../core/theming/images.dart';
+import '../../../../core/helper/spacing.dart';
+import '../../../../core/theming/images.dart';
+
 
 class LoginTwoSocialRow extends StatelessWidget {
   const LoginTwoSocialRow({super.key});

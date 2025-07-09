@@ -3,8 +3,9 @@
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/theming/color.dart';
-import '../../../core/theming/styles.dart';
+import '../../../../core/theming/color.dart';
+import '../../../../core/theming/styles.dart';
+
 
 class LoginOneAppbar extends StatelessWidget {
   const LoginOneAppbar({super.key});

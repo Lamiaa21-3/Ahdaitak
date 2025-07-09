@@ -1,14 +1,14 @@
 import 'package:ahdydic/core/helper/extensions.dart';
-import 'package:ahdydic/core/theming/color.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/helper/spacing.dart';
-import '../../../core/routing/routes.dart';
-import '../../../core/theming/images.dart';
-import '../../../core/theming/styles.dart';
-import '../../../generated/l10n.dart';
-import '../../onboarding/onboarding_one/widgets/onboarding_one_button.dart';
+import 'package:flutter/material.dart';
+
+
+import '../../../../core/helper/spacing.dart';
+import '../../../../core/routing/routes.dart';
+import '../../../../core/theming/images.dart';
+import '../../../../core/theming/styles.dart';
+import '../../../../generated/l10n.dart';
+import '../../../onboarding/onboarding_one/widgets/onboarding_one_button.dart';
 import 'login_one_row_divider.dart';
 
 class LoginOneMainContainerItem extends StatelessWidget {
