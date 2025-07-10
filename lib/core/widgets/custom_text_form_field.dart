@@ -12,11 +12,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
-import '../../../generated/l10n.dart';
 
-class ViewContactsTextFormField extends StatelessWidget {
-  const ViewContactsTextFormField({super.key});
-
+class CustomTextFormField extends StatelessWidget {
+  const CustomTextFormField({super.key, required this.hintText});
+final String hintText;
   @override
   Widget build(BuildContext context) {
     return   Padding(
@@ -25,7 +24,7 @@ class ViewContactsTextFormField extends StatelessWidget {
         style: StylesManager.font14DartBlueMedium,
         decoration: InputDecoration(
           prefixIcon: Icon(Icons.search,color: ColorManager.lightGrey,),
-          hintText: S.of(context).searchContacts,
+          hintText: hintText,
           isDense: true,
           // contentPadding: EdgeInsets.symmetric(
           //   horizontal: 18.w,
@@ -33,7 +32,7 @@ class ViewContactsTextFormField extends StatelessWidget {
           // ),
           contentPadding:
 
-              EdgeInsets.symmetric( vertical: 15.h),
+          EdgeInsets.symmetric( vertical: 15.h),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(32),
             borderSide: const BorderSide(

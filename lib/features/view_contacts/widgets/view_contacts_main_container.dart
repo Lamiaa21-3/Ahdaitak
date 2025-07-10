@@ -1,11 +1,12 @@
+import 'package:ahdydic/core/widgets/custom_text_form_field.dart';
 import 'package:ahdydic/features/view_contacts/widgets/view_contacts_sub_container.dart';
-import 'package:ahdydic/features/view_contacts/widgets/view_contacts_text_form_field.dart';
 import 'package:ahdydic/features/view_contacts/widgets/views_contacts_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/helper/spacing.dart';
 import '../../../core/theming/color.dart';
+import '../../../generated/l10n.dart';
 
 class ViewContactsMainContainer extends StatelessWidget {
   const ViewContactsMainContainer({super.key});
@@ -29,7 +30,7 @@ class ViewContactsMainContainer extends StatelessWidget {
             children: [
               verticalSpace(40),
 
-              ViewContactsTextFormField(),
+              CustomTextFormField(hintText: S.of(context).searchContacts),
               verticalSpace(15),
               ViewsContactsListView(),
             ],

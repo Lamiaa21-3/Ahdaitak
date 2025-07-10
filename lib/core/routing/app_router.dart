@@ -1,5 +1,6 @@
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
+import 'package:ahdydic/features/countries/countries_screen.dart';
 import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
 
@@ -127,6 +128,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  MainScreen();
+          },
+        );
+      case Routes.countriesScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  CountriesScreen();
           },
         );
       case Routes.recordScreen:
