@@ -139,6 +139,12 @@ class StylesManager {
     fontWeight: FontWeightHelper.medium,
     fontFamily: 'Tajawal',
   );
+  static TextStyle font18LightGrayRegular =  TextStyle(
+    fontSize: 18.sp,
+    color: ColorManager.lightGrey,
+    fontWeight: FontWeightHelper.medium,
+    fontFamily: 'Tajawal',
+  );
   ///////////////////////////////
   static TextStyle font30DarkGreenRegular =  TextStyle(
     fontSize: 30.sp,

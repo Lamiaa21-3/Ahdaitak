@@ -36,7 +36,7 @@ class RecordItemMainContainer extends StatelessWidget {
             verticalSpace(44),
             CustomButton(
               function: () {
-                context.pushNamed(Routes.sendContracts);
+                context.pushNamed(Routes.viewContactsScreen);
               },
               text: S.of(context).startMessaging,
               backgroundColor: ColorManager.purple,

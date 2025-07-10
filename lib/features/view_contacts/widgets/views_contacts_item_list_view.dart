@@ -16,7 +16,7 @@ class ViewsContactsItemListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: 8.0.h,horizontal: 15.w),
+      padding:  EdgeInsets.symmetric(vertical: 4.0.h,horizontal: 25.w),
       child: GestureDetector(
         onTap: (){
           context.pushNamed(
@@ -24,7 +24,7 @@ class ViewsContactsItemListView extends StatelessWidget {
           );
         },
         child: Container(
-          height: 100.h,
+          height: 90.h,
           decoration: BoxDecoration(
             color: ColorManager.white,
             boxShadow: [
@@ -32,7 +32,7 @@ class ViewsContactsItemListView extends StatelessWidget {
                 color: Colors.black.withOpacity(0.1), // shadow color
                 spreadRadius: 1, // how much the shadow spreads
                 blurRadius: 2, // how blurry the shadow is
-                offset: Offset(0, 5), // changes position of shadow (x, y)
+                offset: Offset(0, 2), // changes position of shadow (x, y)
               ),
             ],
             borderRadius: BorderRadius.circular(20),
@@ -44,6 +44,7 @@ class ViewsContactsItemListView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text('Mama', style: StylesManager.font24DarkPurpleRegular),
                     Text('0192938444', style: StylesManager.font14PinkRegular),

@@ -20,21 +20,24 @@ class ViewContactsTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return   Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 15.0.w),
+      padding:  EdgeInsets.symmetric(horizontal: 25.0.w),
       child: TextFormField(
         style: StylesManager.font14DartBlueMedium,
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.search),
+          prefixIcon: Icon(Icons.search,color: ColorManager.lightGrey,),
           hintText: S.of(context).searchContacts,
           isDense: true,
           // contentPadding: EdgeInsets.symmetric(
           //   horizontal: 18.w,
           //   vertical: 30.h,
           // ),
+          contentPadding:
+
+              EdgeInsets.symmetric( vertical: 15.h),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(32),
             borderSide: const BorderSide(
-              color: ColorManager.mainBlue,
+              color: ColorManager.purple,
               width: 1,
             ),
           ),
@@ -49,11 +52,11 @@ class ViewContactsTextFormField extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(32),
             borderSide: const BorderSide(
-              color: ColorManager.grey,
+              color: ColorManager.lightGrey,
               width: 1,
             ),
           ),
-          hintStyle: StylesManager.font23LightGrayRegular,
+          hintStyle: StylesManager.font18LightGrayRegular,
           fillColor: ColorManager.moreLightGray,
           filled: true,
         ),
