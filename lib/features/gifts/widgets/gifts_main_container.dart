@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -22,7 +19,7 @@ class _GiftsMainContainerState extends State<GiftsMainContainer> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.7,
+      height: 700.h,
       child: Container(
         width: double.infinity,
         // height: 490.h,
@@ -38,7 +35,9 @@ class _GiftsMainContainerState extends State<GiftsMainContainer> {
             GiftsDropDown(),
             Text(
               S.of(context).couponsEgyptStartFrom,
-              style: StylesManager.font20DarkPurpleMedium,
+              style: StylesManager.font18WhiteMedium.copyWith(
+                color: ColorManager.morePurple,
+              ),
             ),
             verticalSpace(12),
             GiftsSubContainer(),

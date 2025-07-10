@@ -75,6 +75,12 @@ class StylesManager {
     fontWeight: FontWeightHelper.regular,
     fontFamily: 'Tajawal',
   );
+  static TextStyle font12DarkPurpleRegular = TextStyle(
+    fontSize: 12.sp,
+    color: ColorManager.darkPurple,
+    fontWeight: FontWeightHelper.regular,
+    fontFamily: 'Tajawal',
+  );
 
   static TextStyle font16PurplestLight = TextStyle(
     fontSize: 16.sp,
@@ -159,8 +165,8 @@ class StylesManager {
     fontFamily: 'Tajawal',
   );
   static TextStyle font24DarkPurpleRegular = TextStyle(
-    fontSize: 24.sp,
-    color: ColorManager.purple,
+    fontSize: 22.sp,
+    color: ColorManager.morePurple,
     fontWeight: FontWeightHelper.medium,
     fontFamily: 'Tajawal',
   );

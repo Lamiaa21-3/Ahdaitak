@@ -28,7 +28,7 @@ class _RowNumberFieldState extends State<RowNumberField> {
                 topRight: Radius.circular(40),
                 bottomRight: Radius.circular(40),
               ),
-              border: Border.all(color: ColorManager.grey, width: 1),
+              border: Border.all(color: ColorManager.lightGrey, width: 1),
             ),
             child: Padding(
               padding: const EdgeInsets.only(right: 24.0,top: 12),

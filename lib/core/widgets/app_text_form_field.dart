@@ -64,7 +64,7 @@ class AppTextFormField extends StatelessWidget {
                   bottomLeft: Radius.circular(40),
                 ),
                 borderSide: const BorderSide(
-                  color: ColorManager.mainBlue,
+                  color: ColorManager.lightGrey,
                   width: 1,
                 ),
               ),
@@ -95,7 +95,7 @@ class AppTextFormField extends StatelessWidget {
                       bottomLeft: Radius.circular(40),
                     ),
                 borderSide: const BorderSide(
-                  color: ColorManager.grey,
+                  color: ColorManager.lightGrey,
                   width: 1,
                 ),
               ),

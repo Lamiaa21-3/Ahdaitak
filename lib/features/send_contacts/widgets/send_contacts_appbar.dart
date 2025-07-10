@@ -20,7 +20,7 @@ class SendContactsAppbar extends StatelessWidget {
           onPressed: () {
             context.pop();
           },
-          icon: Icon(Icons.arrow_back_ios),
+          icon: Icon(Icons.arrow_back_ios,color: ColorManager.white,),
         ),
         Spacer(),
         TextButton(onPressed: () {
@@ -28,13 +28,15 @@ class SendContactsAppbar extends StatelessWidget {
 
         },
           style: ButtonStyle(
-            backgroundColor:  WidgetStatePropertyAll(ColorManager.purple),
+            backgroundColor:  WidgetStatePropertyAll(ColorManager.white),
             // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             minimumSize:  WidgetStatePropertyAll(Size(100.w, 30.h)),
             shape: WidgetStatePropertyAll(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(35)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(35),
+                  side: BorderSide(color: ColorManager.pink,width: 1),),
+
             ),
-          ), child: Text(S.of(context).contacts,style: StylesManager.font12WhiteRegular,),
+          ), child: Text(S.of(context).contacts,style: StylesManager.font12DarkPurpleRegular,),
 
         ),
 

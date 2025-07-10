@@ -1,4 +1,5 @@
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/theming/color.dart';
 
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/features/gifts/widgets/gifts_main_container.dart';
@@ -18,7 +19,7 @@ class GiftsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff846C8E),
+      backgroundColor: ColorManager.purple,
       body: SafeArea(
         child: ListView(
           children: [

@@ -26,11 +26,12 @@ class GiftsSubContainer extends StatelessWidget {
         border: Border.all(color: ColorManager.grey, width: 1.w),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(ImagesManager.giftBigo),
           horizontalSpace(12),
           SizedBox(
-            width: 140,
+            width: 120,
             child: Text(
               S.of(context).enjoyNonStopEntertainmentBigoLive,
               style: StylesManager.font14MorePurpleMedium,
@@ -54,7 +55,7 @@ class GiftsSubContainer extends StatelessWidget {
                 icon: Icon(
                   Icons.arrow_forward_ios,
                   color: ColorManager.white,
-                  size: 14,
+                  size: 20,
                 ),
                 padding: EdgeInsets.zero, // 👈 Optional: removes extra padding
                 constraints: BoxConstraints(),

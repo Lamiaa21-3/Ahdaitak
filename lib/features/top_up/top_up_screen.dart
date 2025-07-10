@@ -50,7 +50,7 @@ class TopUpScreen extends StatelessWidget {
                   verticalSpace(44),
                   CustomButton(
                     function: () {
-                      context.pushNamed(Routes.sendContracts);
+                      // context.pushNamed(Routes.sendContracts);
                     },
                     text: S.of(context).startMessaging,
                     backgroundColor: ColorManager.purple,
