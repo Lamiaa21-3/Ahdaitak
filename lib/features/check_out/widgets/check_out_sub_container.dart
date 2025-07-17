@@ -1,15 +1,14 @@
-
-import 'package:ahdydic/core/helper/spacing.dart';
-import 'package:ahdydic/core/theming/images.dart';
-import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/helper/spacing.dart';
 import '../../../core/theming/color.dart';
+import '../../../core/theming/images.dart';
+import '../../../core/theming/styles.dart';
 import '../../../generated/l10n.dart';
 
-class YourOrderSubContainer extends StatelessWidget {
-  const YourOrderSubContainer({super.key});
+class CheckOutSubContainer extends StatelessWidget {
+  const CheckOutSubContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

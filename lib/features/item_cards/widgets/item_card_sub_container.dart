@@ -1,3 +1,5 @@
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -48,7 +50,11 @@ class _ItemCardsSubContainerState extends State<ItemCardsSubContainer> {
               ),
               horizontalSpace(30),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(
+                    Routes.yourOrderScreen
+                  );
+                },
                 style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(
                     ColorManager.darkPurple,

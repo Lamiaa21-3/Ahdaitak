@@ -47,7 +47,7 @@ class ContactsScreen extends StatelessWidget {
                 CustomButton(
                   text: S.of(context).chooseFromYourContacts,
                   backgroundColor: ColorManager.purple,
-                  function: () {
+                  onTap: () {
                     context.pushNamed(Routes.viewContactsScreen);
                   },
                 ),

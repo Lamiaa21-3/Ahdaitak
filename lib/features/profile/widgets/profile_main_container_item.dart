@@ -1,12 +1,10 @@
-import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/features/profile/widgets/profile_divider.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_drop_down.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/helper/spacing.dart';
-import '../../../core/routing/routes.dart';
+
 import '../../../core/theming/color.dart';
 import '../../../core/theming/images.dart';
 import '../../../core/theming/styles.dart';
@@ -106,7 +104,7 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ),
               verticalSpace(22),
               CustomButton(
-                text: S.of(context).login,
+                text: S.of(context).logout,
                 backgroundColor: ColorManager.darkPurple,
               ),
             ],

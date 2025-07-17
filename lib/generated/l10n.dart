@@ -728,6 +728,41 @@ class S {
   String get skip {
     return Intl.message('تخطى', name: 'skip', desc: '', args: []);
   }
+
+  /// `تاكيد الدفع`
+  String get ensurePayment {
+    return Intl.message(
+      'تاكيد الدفع',
+      name: 'ensurePayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إتمام الدفع`
+  String get paymentDone {
+    return Intl.message('إتمام الدفع', name: 'paymentDone', desc: '', args: []);
+  }
+
+  /// `كيف تريد الدفع؟`
+  String get howWantPay {
+    return Intl.message(
+      'كيف تريد الدفع؟',
+      name: 'howWantPay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `البطـاقـة`
+  String get card {
+    return Intl.message('البطـاقـة', name: 'card', desc: '', args: []);
+  }
+
+  /// `تسجيل الخروج`
+  String get logout {
+    return Intl.message('تسجيل الخروج', name: 'logout', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

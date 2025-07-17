@@ -46,7 +46,7 @@ class StylesManager {
     fontWeight: FontWeightHelper.bold,
   );
   static TextStyle font18WhiteMedium = TextStyle(
-    fontSize: 18.sp,
+    fontSize: 16.sp,
     color: ColorManager.white,
     fontWeight: FontWeightHelper.medium,
     fontFamily: 'Tajawal',

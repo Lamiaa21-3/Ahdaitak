@@ -42,7 +42,7 @@ class LoginTwoItemMainContainer extends StatelessWidget {
             RowNumberField(),
             LoginTwoCheckBoxWithText(),
             CustomButton(
-              function: () {
+              onTap: () {
                 context.pushNamed(Routes.homeScreen);
               },
               text: S.of(context).ensurePhoneNumber,

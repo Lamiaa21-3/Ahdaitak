@@ -49,7 +49,7 @@ class TopUpScreen extends StatelessWidget {
                   ),
                   verticalSpace(44),
                   CustomButton(
-                    function: () {
+                    onTap: () {
                       // context.pushNamed(Routes.sendContracts);
                     },
                     text: S.of(context).startMessaging,

@@ -77,6 +77,11 @@
   "localCountries":"البلدان الشعبية",
   "allCountries":"جميع البلدان",
   "whereYouWantSendCharge":"إلى أين ترسل تعبئة شحن ؟",
-  "skip":"تخطى"
+  "skip":"تخطى",
+  "ensurePayment":"تاكيد الدفع",
+  "paymentDone":"إتمام الدفع",
+  "howWantPay":"كيف تريد الدفع؟",
+  "card":"البطـاقـة",
+  "logout":"تسجيل الخروج"
 
 }

@@ -46,7 +46,7 @@ class OnboardingThreeMainContainer extends StatelessWidget {
                     verticalSpace(30),
 
                     CustomButton(
-                      function: () {
+                      onTap: () {
                         context.pushNamed(Routes.homeScreen);
                       },
                       text: S.of(context).next,

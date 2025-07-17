@@ -45,6 +45,9 @@ static const edit='assets/images/edit.png';
   static const settings='assets/images/settings.png';
   static const starOrder='assets/images/star_order.png';
   static const warning='assets/images/warning.png';
+  static const mestro='assets/images/mestro.png';
+  static const mestroCard='assets/images/mestro_card.png';
+  static const visa='assets/images/visa.png';
 
 
 

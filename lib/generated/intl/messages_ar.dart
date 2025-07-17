@@ -42,6 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "beforeDiscount": MessageLookupByLibrary.simpleMessage("قبل الخصم"),
     "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
     "cansel": MessageLookupByLibrary.simpleMessage("إلغاء"),
+    "card": MessageLookupByLibrary.simpleMessage("البطـاقـة"),
     "checkYourOrder": MessageLookupByLibrary.simpleMessage("تفقد طلبك !"),
     "chooseFromYourContacts": MessageLookupByLibrary.simpleMessage(
       "اختر من جهات اتصالك",
@@ -79,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "enjoyNonStopEntertainmentBigoLive": MessageLookupByLibrary.simpleMessage(
       "استمتع بترفيه متواصل على بيجو لايف",
     ),
+    "ensurePayment": MessageLookupByLibrary.simpleMessage("تاكيد الدفع"),
     "ensurePhoneNumber": MessageLookupByLibrary.simpleMessage(
       "تأكيد رقم الجوال",
     ),
@@ -91,17 +93,20 @@ class MessageLookup extends MessageLookupByLibrary {
     "howMuchYouWantToSend": MessageLookupByLibrary.simpleMessage(
       "ما هو المبلغ الذي تريد إرساله ؟",
     ),
+    "howWantPay": MessageLookupByLibrary.simpleMessage("كيف تريد الدفع؟"),
     "localCountries": MessageLookupByLibrary.simpleMessage("البلدان الشعبية"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
       "سجل باستخدام جوجل",
     ),
+    "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
     "messageBox": MessageLookupByLibrary.simpleMessage("صندوق الرسائل"),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
     ),
     "next": MessageLookupByLibrary.simpleMessage("التالى"),
     "orCompleteBy": MessageLookupByLibrary.simpleMessage("او اكمل باستخدام"),
+    "paymentDone": MessageLookupByLibrary.simpleMessage("إتمام الدفع"),
     "paymentMethods": MessageLookupByLibrary.simpleMessage("وسائل الدفع"),
     "pleaseEnterPhone": MessageLookupByLibrary.simpleMessage(
       "من فضلك ادخل رقم الهاتف ",

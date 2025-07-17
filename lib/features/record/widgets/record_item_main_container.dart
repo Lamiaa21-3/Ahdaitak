@@ -35,7 +35,7 @@ class RecordItemMainContainer extends StatelessWidget {
             ),
             verticalSpace(44),
             CustomButton(
-              function: () {
+              onTap: () {
                 context.pushNamed(Routes.viewContactsScreen);
               },
               text: S.of(context).startMessaging,

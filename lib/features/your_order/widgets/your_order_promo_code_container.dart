@@ -24,7 +24,7 @@ class _YourOrderPromoCodeContainerState
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFFF4F4F4),
+        color: const Color(0xFFF5F6F7),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -91,13 +91,14 @@ class _YourOrderPromoCodeContainerState
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF5B2A83),
+                      backgroundColor:ColorManager.morePurple,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
+                        side: BorderSide(color: ColorManager.pink,width: 1)
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 12),
                     ),
-                    child: const Text('تطبيق'),
+                    child:  Text('تطبيق',style: StylesManager.font12WhiteRegular,),
                   ),
                 ),
                 const SizedBox(width: 16),
@@ -105,13 +106,13 @@ class _YourOrderPromoCodeContainerState
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey,
+                      backgroundColor: ColorManager.grey,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 12),
                     ),
-                    child: const Text('إلغاء'),
+                    child:  Text('إلغاء',style: StylesManager.font12WhiteRegular,),
                   ),
                 ),
               ],

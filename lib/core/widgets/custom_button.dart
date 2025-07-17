@@ -9,14 +9,14 @@ class CustomButton extends StatelessWidget {
   final TextStyle? textStyle;
   final Color backgroundColor;
   final String text;
-  final void Function()? function;
+  final void Function()? onTap;
   final EdgeInsets? padding;
 final double ? width;
 final double ? height;
   const CustomButton({
     super.key,
     required this.text,
-    this.function,
+    this.onTap,
     this.padding,
     required this.backgroundColor, this.textStyle, this.width, this.height,
   });
@@ -26,7 +26,7 @@ final double ? height;
     return Padding(
       padding: padding ?? const EdgeInsets.only(left: 20.0, right: 20, top: 10),
       child: TextButton(
-        onPressed: function,
+        onPressed: onTap,
         style: ButtonStyle(
 
           backgroundColor:  WidgetStatePropertyAll(backgroundColor),

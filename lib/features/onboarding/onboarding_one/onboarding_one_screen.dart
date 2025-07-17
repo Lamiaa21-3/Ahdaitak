@@ -35,7 +35,7 @@ class OnboardingOneScreen extends StatelessWidget {
             CustomButton(
               text: 'التالى',
               backgroundColor: ColorManager.purple,
-              function: () {
+              onTap: () {
                 context.pushNamed(Routes.onBoardingTwoScreen);
               },
             ),
