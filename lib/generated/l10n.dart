@@ -763,6 +763,48 @@ class S {
   String get logout {
     return Intl.message('تسجيل الخروج', name: 'logout', desc: '', args: []);
   }
+
+  /// `الجوائز والمكافأت`
+  String get awardsAndRewards {
+    return Intl.message(
+      'الجوائز والمكافأت',
+      name: 'awardsAndRewards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الميداليات`
+  String get medals {
+    return Intl.message('الميداليات', name: 'medals', desc: '', args: []);
+  }
+
+  /// `كيف تعمل`
+  String get howItWork {
+    return Intl.message('كيف تعمل', name: 'howItWork', desc: '', args: []);
+  }
+
+  /// `اظهر الكل`
+  String get showAll {
+    return Intl.message('اظهر الكل', name: 'showAll', desc: '', args: []);
+  }
+
+  /// `ميدالياتي`
+  String get myMedals {
+    return Intl.message('ميدالياتي', name: 'myMedals', desc: '', args: []);
+  }
+
+  /// `قم بتعبئة الرصيد لشخص اخر`
+  String get topUpTheBalanceForSomeoneElse {
+    return Intl.message(
+      'قم بتعبئة الرصيد لشخص اخر',
+      name: 'topUpTheBalanceForSomeoneElse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the 'Earn 25 points' key
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

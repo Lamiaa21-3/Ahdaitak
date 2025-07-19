@@ -39,6 +39,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "allCountries": MessageLookupByLibrary.simpleMessage("جميع البلدان"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
     "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
+    "awardsAndRewards": MessageLookupByLibrary.simpleMessage(
+      "الجوائز والمكافأت",
+    ),
     "beforeDiscount": MessageLookupByLibrary.simpleMessage("قبل الخصم"),
     "buy99": MessageLookupByLibrary.simpleMessage("اشْتَرِ 7699.99 جنية"),
     "cansel": MessageLookupByLibrary.simpleMessage("إلغاء"),
@@ -90,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "gifts": MessageLookupByLibrary.simpleMessage("الهدايا"),
     "help": MessageLookupByLibrary.simpleMessage("المساعدة"),
     "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+    "howItWork": MessageLookupByLibrary.simpleMessage("كيف تعمل"),
     "howMuchYouWantToSend": MessageLookupByLibrary.simpleMessage(
       "ما هو المبلغ الذي تريد إرساله ؟",
     ),
@@ -100,7 +104,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "سجل باستخدام جوجل",
     ),
     "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+    "medals": MessageLookupByLibrary.simpleMessage("الميداليات"),
     "messageBox": MessageLookupByLibrary.simpleMessage("صندوق الرسائل"),
+    "myMedals": MessageLookupByLibrary.simpleMessage("ميدالياتي"),
     "newAndExcitingProducts": MessageLookupByLibrary.simpleMessage(
       " منتجات جديدة ومثيرة ",
     ),
@@ -128,6 +134,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "sendToEgypt": MessageLookupByLibrary.simpleMessage("الارسال الى مصر"),
     "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+    "showAll": MessageLookupByLibrary.simpleMessage("اظهر الكل"),
     "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
     "startMessaging": MessageLookupByLibrary.simpleMessage("ابدأ المراسلة"),
     "stateTaxes": MessageLookupByLibrary.simpleMessage("ضرائب الدولة"),
@@ -140,6 +147,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "thereNoActivities": MessageLookupByLibrary.simpleMessage(
       "لا يوجد انشطة حتى الآن",
+    ),
+    "topUpTheBalanceForSomeoneElse": MessageLookupByLibrary.simpleMessage(
+      "قم بتعبئة الرصيد لشخص اخر",
     ),
     "totalAmount": MessageLookupByLibrary.simpleMessage("اجمالي المبلغ"),
     "vodafoneEgyptCreditsAreAddedToSpec": MessageLookupByLibrary.simpleMessage(

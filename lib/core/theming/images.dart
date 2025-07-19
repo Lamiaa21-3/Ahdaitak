@@ -48,6 +48,7 @@ static const edit='assets/images/edit.png';
   static const mestro='assets/images/mestro.png';
   static const mestroCard='assets/images/mestro_card.png';
   static const visa='assets/images/visa.png';
+  static const rewardStar='assets/images/reward_star.png';
 
 
 

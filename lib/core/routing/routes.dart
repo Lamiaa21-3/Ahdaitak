@@ -18,4 +18,5 @@ class Routes {
   static const String yourOrderScreen='/yourOrderScreen';
   static const String countriesScreen='/countriesScreen';
   static const String checkOutScreen='/checkOutScreen';
+  static const String rewardsScreen='/rewardsScreen';
 }

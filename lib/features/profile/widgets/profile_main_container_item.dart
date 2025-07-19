@@ -1,3 +1,5 @@
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/profile/widgets/profile_divider.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_drop_down.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_item.dart';
@@ -51,6 +53,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileDivider(),
               //rewards
               ProfileRowItem(
+                  onTap:(){
+                    context.pushNamed(Routes.rewardsScreen);
+                  },
                 text: S.of(context).rewards,
                 widget: Image.asset(ImagesManager.rewards),
               ),

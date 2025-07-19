@@ -82,6 +82,13 @@
   "paymentDone":"إتمام الدفع",
   "howWantPay":"كيف تريد الدفع؟",
   "card":"البطـاقـة",
-  "logout":"تسجيل الخروج"
+  "logout":"تسجيل الخروج",
+  "awardsAndRewards":"الجوائز والمكافأت",
+  "medals":"الميداليات",
+  "howItWork":"كيف تعمل",
+  "showAll":"اظهر الكل",
+  "myMedals":"ميدالياتي",
+  "topUpTheBalanceForSomeoneElse":"قم بتعبئة الرصيد لشخص اخر",
+  "Earn 25 points":"اكسب 25 نقطة"
 
 }
