@@ -19,6 +19,12 @@ class StylesManager {
     fontWeight: FontWeightHelper.medium,
     fontFamily: 'Tajawal',
   );
+  static TextStyle font15MorePurpleBold = TextStyle(
+    fontSize: 15.sp,
+    color: ColorManager.morePurple,
+    fontWeight: FontWeightHelper.bold,
+    fontFamily: 'Tajawal',
+  );
 
   static TextStyle font18MorePopularBold = TextStyle(
     fontSize: 18.sp,
