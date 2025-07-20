@@ -9,6 +9,7 @@ import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
 
 import 'package:ahdydic/features/main_screen.dart';
+import 'package:ahdydic/features/medal_info/medal_info_screen.dart';
 import 'package:ahdydic/features/onboarding/onboarding_three/onboarding_three_screen.dart';
 import 'package:ahdydic/features/onboarding/onboarding_two/onboarding_two_screen.dart';
 import 'package:ahdydic/features/rewards/rewards_screen.dart';
@@ -161,6 +162,13 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  MainScreen();
+          },
+        );
+
+      case Routes.medalInfoScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  MedalInfoScreen();
           },
         );
       default:

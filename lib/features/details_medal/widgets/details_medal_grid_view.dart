@@ -1,6 +1,8 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../core/routing/routes.dart';
 import '../../../core/theming/color.dart';
 import '../../../core/theming/images.dart';
 import '../../../core/theming/styles.dart';
@@ -61,7 +63,12 @@ class DetailsMedalGridView extends StatelessWidget {
           childAspectRatio: 1,
         ),
         itemBuilder: (context, index) {
-          return RewardCard(data: rewards[index]);
+          return GestureDetector(
+              onTap: (){
+                context.pushNamed(Routes.medalInfoScreen);
+              },
+
+              child: RewardCard(data: rewards[index]));
         },
       ),
     );
