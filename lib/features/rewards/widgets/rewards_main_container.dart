@@ -2,6 +2,7 @@ import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
+import 'package:ahdydic/core/theming/font_weight_helper.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 
@@ -29,7 +30,7 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 700.h,
+      height: 750.h,
       decoration: BoxDecoration(
         color: ColorManager.white,
         borderRadius: BorderRadius.only(
@@ -295,8 +296,7 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                           ),
                           Spacer(),
                           GestureDetector(
-
-                            onTap: (){
+                            onTap: () {
                               context.pushNamed(Routes.detailsMedalScreen);
                             },
                             child: Text(
@@ -321,13 +321,84 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
 
   Widget _buildHistoryContainer() {
     return Container(
+
       margin: const EdgeInsets.all(16),
-      padding: const EdgeInsets.all(20),
+      // padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.green[100],
+        color: ColorManager.white,
         borderRadius: BorderRadius.circular(15),
       ),
-      child: const Text('📜 محتوى السجل'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'سجل النقاط',
+            style: StylesManager.font16MorePurpleRegular.copyWith(
+              fontWeight: FontWeightHelper.bold,
+            ),
+          ),
+          verticalSpace(5),
+          SizedBox(
+            height: 800.h,
+            child: ListView.separated(
+              itemBuilder: (_, _) {
+                return Container(
+                  height: 90.h,
+                  width: 350.w,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: ColorManager.borderGrey,
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Row(
+                    children: [
+                      horizontalSpace(12),
+                      Container(
+                        height: 65,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(7),
+                          border: Border.all(
+                            color: ColorManager.borderGrey,
+                            width: .5,
+                          ),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(ImagesManager.starOrder),
+                            verticalSpace(5),
+                            Text(
+                              '+55',
+                              style: StylesManager.font16MorePurpleRegular
+                                  .copyWith(fontWeight: FontWeightHelper.bold,),
+                            ),
+                          ],
+                        ),
+                      ),
+                      horizontalSpace(12),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('ميدالية الأرقام المحفوظة',style:  StylesManager.font16MorePurpleMedium,),
+                          Text('22 Jun 2025',style:  StylesManager.font14PinkRegular,),
+                        ],
+                      )
+                    ],
+                  ),
+                );
+              },
+              separatorBuilder: (_, _) {
+                return verticalSpace(12);
+              },
+              itemCount: 12,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -413,22 +484,22 @@ class RewardsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final rewards = [
       RewardData(
-      image: ImagesManager.bronzeMedal,
+        image: ImagesManager.bronzeMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
       ),
       RewardData(
-     image: ImagesManager.goldMedal,
+        image: ImagesManager.goldMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
       ),
       RewardData(
-       image: ImagesManager.bronzeMedal,
+        image: ImagesManager.bronzeMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
       ),
       RewardData(
-  image: ImagesManager.sliverMedal,
+        image: ImagesManager.sliverMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
       ),
@@ -455,15 +526,11 @@ class RewardsGrid extends StatelessWidget {
 }
 
 class RewardData {
-final String image;
+  final String image;
   final String title;
   final String date;
 
-  RewardData({
-  required this.image,
-    required this.title,
-    required this.date,
-  });
+  RewardData({required this.image, required this.title, required this.date});
 }
 
 class RewardCard extends StatelessWidget {
@@ -492,17 +559,21 @@ class RewardCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(data.image,width: 60,height: 60,),
+          Image.asset(data.image, width: 60, height: 60),
 
           Text(
             data.title,
-            style: StylesManager.font18PinkMedium.copyWith(color: ColorManager.purple),
+            style: StylesManager.font18PinkMedium.copyWith(
+              color: ColorManager.purple,
+            ),
             textAlign: TextAlign.center,
           ),
 
           Text(
             data.date,
-            style: StylesManager.font12WhiteRegular.copyWith(color: ColorManager.pink),
+            style: StylesManager.font12WhiteRegular.copyWith(
+              color: ColorManager.pink,
+            ),
           ),
         ],
       ),

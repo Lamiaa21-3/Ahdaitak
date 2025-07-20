@@ -12,7 +12,7 @@ class RewardsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorManager.purple,
       body: SafeArea(child:
-      Column(
+      ListView(
         children: [
           RewardsAppbar(),
           verticalSpace(22),
