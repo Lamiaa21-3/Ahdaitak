@@ -157,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "vodafoneEgyptCreditsAreAddedToSpec": MessageLookupByLibrary.simpleMessage(
       "تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات",
     ),
+    "watchAll": MessageLookupByLibrary.simpleMessage("شاهد الكل"),
     "welcomBack": MessageLookupByLibrary.simpleMessage("اهلا بعودتك !"),
     "whereYouWantSendCharge": MessageLookupByLibrary.simpleMessage(
       "إلى أين ترسل تعبئة شحن ؟",

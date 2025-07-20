@@ -50,6 +50,9 @@ static const edit='assets/images/edit.png';
   static const visa='assets/images/visa.png';
   static const rewardStar='assets/images/reward_star.png';
   static const medal='assets/images/medal.png';
+  static const bronzeMedal='assets/images/bronze_medal.png';
+  static const goldMedal='assets/images/gold_medal.png';
+  static const sliverMedal='assets/images/silver_medal.png';
 
 
 

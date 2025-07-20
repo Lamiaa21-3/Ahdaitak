@@ -823,6 +823,11 @@ class S {
       args: [],
     );
   }
+
+  /// `شاهد الكل`
+  String get watchAll {
+    return Intl.message('شاهد الكل', name: 'watchAll', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

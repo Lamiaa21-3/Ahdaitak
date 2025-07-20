@@ -99,7 +99,6 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
               child: TabBarView(
                 children: [
                   Column(
-
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       verticalSpace(33),
@@ -128,7 +127,7 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                   Image.asset(ImagesManager.medal),
                                   horizontalSpace(26),
                                   Column(
-                                    mainAxisAlignment :   MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         S
@@ -162,9 +161,10 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                           ),
                                         ),
                                         child: Row(
-
                                           children: [
-                                            Image.asset(ImagesManager.rewardStar,),
+                                            Image.asset(
+                                              ImagesManager.rewardStar,
+                                            ),
                                             horizontalSpace(4),
                                             Text(
                                               S.of(context).Earn25points,
@@ -174,7 +174,6 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                                     color: ColorManager.white,
                                                   ),
                                             ),
-
                                           ],
                                         ),
                                       ),
@@ -192,7 +191,6 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                     ],
                   ),
                   Column(
-
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       verticalSpace(33),
@@ -221,24 +219,24 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                   Image.asset(ImagesManager.medal),
                                   horizontalSpace(26),
                                   Column(
-                                    mainAxisAlignment :   MainAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text(
                                         S
                                             .of(context)
                                             .topUpTheBalanceForSomeoneElse,
                                         style:
-                                        StylesManager
-                                            .font14MorePurpleMedium,
+                                            StylesManager
+                                                .font14MorePurpleMedium,
                                       ),
                                       verticalSpace(12),
                                       TextButton(
                                         onPressed: () {},
                                         style: ButtonStyle(
                                           backgroundColor:
-                                          WidgetStatePropertyAll(
-                                            ColorManager.purple,
-                                          ),
+                                              WidgetStatePropertyAll(
+                                                ColorManager.purple,
+                                              ),
                                           // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                                           minimumSize: WidgetStatePropertyAll(
                                             Size(175.w, 31.h),
@@ -246,7 +244,7 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                           shape: WidgetStatePropertyAll(
                                             RoundedRectangleBorder(
                                               borderRadius:
-                                              BorderRadius.circular(10),
+                                                  BorderRadius.circular(10),
                                               side: BorderSide(
                                                 color: ColorManager.pink,
                                                 width: 1,
@@ -255,19 +253,19 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                                           ),
                                         ),
                                         child: Row(
-
                                           children: [
-                                            Image.asset(ImagesManager.rewardStar,),
+                                            Image.asset(
+                                              ImagesManager.rewardStar,
+                                            ),
                                             horizontalSpace(4),
                                             Text(
                                               S.of(context).Earn25points,
                                               style: StylesManager
                                                   .font14PinkRegular
                                                   .copyWith(
-                                                color: ColorManager.white,
-                                              ),
+                                                    color: ColorManager.white,
+                                                  ),
                                             ),
-
                                           ],
                                         ),
                                       ),
@@ -284,7 +282,27 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                       ),
                     ],
                   ),
-                  Center(child: Text('محتوى الإعدادات')),
+
+                  Column(
+                    children: [
+                      verticalSpace(30),
+                      Row(
+                        children: [
+                          Text(
+                            S.of(context).medals,
+                            style: StylesManager.font14DarkPurpleBold,
+                          ),
+                          Spacer(),
+                          Text(
+                            S.of(context).watchAll,
+                            style: StylesManager.font12MorePurpleMedium
+                                .copyWith(color: ColorManager.pink),
+                          ),
+                        ],
+                      ),
+                      RewardsGrid(),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -374,6 +392,110 @@ class _CustomTabsWithContentState extends State<CustomTabsWithContent> {
                 ),
               );
             }),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class RewardsGrid extends StatelessWidget {
+  const RewardsGrid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final rewards = [
+      RewardData(
+      image: ImagesManager.bronzeMedal,
+        title: 'ارقام محفوظة',
+        date: '22 Jun 2025',
+      ),
+      RewardData(
+     image: ImagesManager.goldMedal,
+        title: 'ارقام محفوظة',
+        date: '22 Jun 2025',
+      ),
+      RewardData(
+       image: ImagesManager.bronzeMedal,
+        title: 'ارقام محفوظة',
+        date: '22 Jun 2025',
+      ),
+      RewardData(
+  image: ImagesManager.sliverMedal,
+        title: 'ارقام محفوظة',
+        date: '22 Jun 2025',
+      ),
+    ];
+
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: GridView.builder(
+        shrinkWrap: true,
+        itemCount: rewards.length,
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 16,
+          mainAxisSpacing: 16,
+          childAspectRatio: 1,
+        ),
+        itemBuilder: (context, index) {
+          return RewardCard(data: rewards[index]);
+        },
+      ),
+    );
+  }
+}
+
+class RewardData {
+final String image;
+  final String title;
+  final String date;
+
+  RewardData({
+  required this.image,
+    required this.title,
+    required this.date,
+  });
+}
+
+class RewardCard extends StatelessWidget {
+  final RewardData data;
+
+  const RewardCard({super.key, required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200.h,
+      width: 142.w,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: ColorManager.borderGrey, width: 1),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 6,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(data.image,width: 60,height: 60,),
+
+          Text(
+            data.title,
+            style: StylesManager.font18PinkMedium.copyWith(color: ColorManager.purple),
+            textAlign: TextAlign.center,
+          ),
+
+          Text(
+            data.date,
+            style: StylesManager.font12WhiteRegular.copyWith(color: ColorManager.pink),
           ),
         ],
       ),
