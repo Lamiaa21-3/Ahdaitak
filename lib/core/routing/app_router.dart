@@ -2,6 +2,7 @@ import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/check_out/check_out_screen.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
 import 'package:ahdydic/features/countries/countries_screen.dart';
+import 'package:ahdydic/features/details_medal/details_medal_screen.dart';
 import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
 
@@ -148,6 +149,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  RewardsScreen();
+          },
+        );
+      case Routes.detailsMedalScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  DetailsMedalScreen();
           },
         );
       case Routes.recordScreen:

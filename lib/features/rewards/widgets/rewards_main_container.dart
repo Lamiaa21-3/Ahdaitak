@@ -1,8 +1,9 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
-import 'package:ahdydic/core/widgets/custom_button.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -293,10 +294,16 @@ class _RewardsMainContainerState extends State<RewardsMainContainer> {
                             style: StylesManager.font14DarkPurpleBold,
                           ),
                           Spacer(),
-                          Text(
-                            S.of(context).watchAll,
-                            style: StylesManager.font12MorePurpleMedium
-                                .copyWith(color: ColorManager.pink),
+                          GestureDetector(
+
+                            onTap: (){
+                              context.pushNamed(Routes.detailsMedalScreen);
+                            },
+                            child: Text(
+                              S.of(context).watchAll,
+                              style: StylesManager.font12MorePurpleMedium
+                                  .copyWith(color: ColorManager.pink),
+                            ),
                           ),
                         ],
                       ),
@@ -435,8 +442,8 @@ class RewardsGrid extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 16,
-          mainAxisSpacing: 16,
+          crossAxisSpacing: 30,
+          mainAxisSpacing: 15,
           childAspectRatio: 1,
         ),
         itemBuilder: (context, index) {

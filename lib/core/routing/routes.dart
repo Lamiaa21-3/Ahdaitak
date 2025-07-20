@@ -19,4 +19,5 @@ class Routes {
   static const String countriesScreen='/countriesScreen';
   static const String checkOutScreen='/checkOutScreen';
   static const String rewardsScreen='/rewardsScreen';
+  static const String detailsMedalScreen='/detailsMedalScreen';
 }
