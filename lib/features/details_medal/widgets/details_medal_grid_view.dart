@@ -13,36 +13,36 @@ class DetailsMedalGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rewards = [
-      RewardData(
+      DetailsRewardData(
         image: ImagesManager.bronzeMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
         descr: ' لقد قمت بإضافة رقم هاتفك الى التطبيق',
       ),
-      RewardData(
+      DetailsRewardData(
         image: ImagesManager.goldMedal,
         title:'ارقام محفوظة',
         date: '22 Jun 2025',
         descr: ' لقد قمت بإضافة رقم هاتفك الى التطبيق',
       ),
-      RewardData(
+      DetailsRewardData(
         image: ImagesManager.bronzeMedal,
         title:'ارقام محفوظة',
         date: '22 Jun 2025',
         descr:' لقد قمت بإضافة رقم هاتفك الى التطبيق'
       ),
-      RewardData(
+      DetailsRewardData(
         image: ImagesManager.sliverMedal,
         title:'ارقام محفوظة',
         date: '22 Jun 2025',
         descr: ' لقد قمت بإضافة رقم هاتفك الى التطبيق',
-      ),  RewardData(
+      ),  DetailsRewardData(
         image: ImagesManager.bronzeMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
         descr: ' لقد قمت بإضافة رقم هاتفك الى التطبيق',
       ),
-      RewardData(
+      DetailsRewardData(
         image: ImagesManager.sliverMedal,
         title: 'ارقام محفوظة',
         date: '22 Jun 2025',
@@ -68,20 +68,20 @@ class DetailsMedalGridView extends StatelessWidget {
                 context.pushNamed(Routes.medalInfoScreen);
               },
 
-              child: RewardCard(data: rewards[index]));
+              child: DetailsRewardCard(data: rewards[index]));
         },
       ),
     );
   }
 }
 
-class RewardData {
+class DetailsRewardData {
   final String image;
   final String title;
   final String descr;
   final String date;
 
-  RewardData({
+  DetailsRewardData({
     required this.descr,
     required this.image,
     required this.title,
@@ -89,10 +89,10 @@ class RewardData {
   });
 }
 
-class RewardCard extends StatelessWidget {
-  final RewardData data;
+class DetailsRewardCard extends StatelessWidget {
+  final DetailsRewardData data;
 
-  const RewardCard({super.key, required this.data});
+  const DetailsRewardCard({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
