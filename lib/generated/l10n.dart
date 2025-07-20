@@ -804,7 +804,25 @@ class S {
     );
   }
 
-  // skipped getter for the 'Earn 25 points' key
+  /// `اكسب 25 نقطة`
+  String get Earn25points {
+    return Intl.message(
+      'اكسب 25 نقطة',
+      name: 'Earn25points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `جمع الميداليات`
+  String get allMedals {
+    return Intl.message(
+      'جمع الميداليات',
+      name: 'allMedals',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

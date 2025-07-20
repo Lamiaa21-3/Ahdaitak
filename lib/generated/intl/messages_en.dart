@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Earn25points": MessageLookupByLibrary.simpleMessage("اكسب 25 نقطة"),
     "Isent": MessageLookupByLibrary.simpleMessage("لقد ارسلت"),
     "SendBalanceRecharge": MessageLookupByLibrary.simpleMessage(
       "أرسل تعبئة رصيد",
@@ -37,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "addPromoCode": MessageLookupByLibrary.simpleMessage("إضافة برومو كود"),
     "allCountries": MessageLookupByLibrary.simpleMessage("جميع البلدان"),
+    "allMedals": MessageLookupByLibrary.simpleMessage("جمع الميداليات"),
     "amazon": MessageLookupByLibrary.simpleMessage("امازون"),
     "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
     "awardsAndRewards": MessageLookupByLibrary.simpleMessage(
