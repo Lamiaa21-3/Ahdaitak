@@ -1,3 +1,4 @@
+import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomExpandableTile extends StatefulWidget {
@@ -86,6 +87,7 @@ class _CustomExpandableTileState extends State<CustomExpandableTile>
                 ],
               ),
             ),
+            
             AnimatedCrossFade(
               firstChild: SizedBox.shrink(),
               secondChild: Column(
@@ -97,7 +99,7 @@ class _CustomExpandableTileState extends State<CustomExpandableTile>
                       alignment: Alignment.centerRight,
                       child: Text(
                         q,
-                        style: TextStyle(fontSize: 14, color: Colors.black54),
+                        style: StylesManager.font12MorePurpleRegular,
                       ),
                     ),
                   ),

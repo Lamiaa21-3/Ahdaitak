@@ -2,7 +2,9 @@ import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
+import 'package:ahdydic/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'custom_expanded_tile.dart';
 import 'how_it_work_sub_container.dart';
@@ -49,7 +51,25 @@ class HowItWorksContainer extends StatelessWidget {
               'كيف يمكنني استكمال الطلب ؟',
             ],
           ),
-
+          CustomExpandableTile(
+            title: 'الميزات الخاصة بي',
+            questions: [
+              'كيف يمكنني ارسال الرصيد ؟',
+              'كيف يمكنني استقبال الرصيد ؟',
+              'اين يمكنني ارسال الرصيد ؟',
+              'كيف يمكنني استكمال الطلب ؟',
+            ],
+          ),
+          CustomExpandableTile(
+            title: '  بطاقة الهدايا الخاصة بي لا تعمل',
+            questions: [
+              'كيف يمكنني ارسال الرصيد ؟',
+              'كيف يمكنني استقبال الرصيد ؟',
+              'اين يمكنني ارسال الرصيد ؟',
+              'كيف يمكنني استكمال الطلب ؟',
+            ],
+          ),
+CustomButton(text: 'انظر الشروط والأحكام', backgroundColor: ColorManager.purple,height: 40.h,),
         ],
       ),
     );
