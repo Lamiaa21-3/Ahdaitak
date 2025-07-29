@@ -4,9 +4,9 @@ import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 
-class ShippingScheduleWarningContainer extends StatelessWidget {
-  const ShippingScheduleWarningContainer({super.key});
-
+class WarningContainer extends StatelessWidget {
+  const WarningContainer({super.key, required this.text});
+final String text;
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -26,7 +26,7 @@ class ShippingScheduleWarningContainer extends StatelessWidget {
          horizontalSpace(8),
           Expanded(
             child: Text(
-              'بالنسبة للشحن التلقائي الدولي، قد يختلف المبلغ الذي تدفعه مقابل الشحن في كل تاريخ دفع وفقًا لأسعار الصرف الأجنبي',
+              text,
               style: StylesManager.font14MorePurpleMedium,
               // textAlign: TextAlign.right,
               // textDirection: TextDirection.rtl,

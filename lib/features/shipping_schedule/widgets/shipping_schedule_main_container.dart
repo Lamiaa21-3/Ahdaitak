@@ -2,7 +2,7 @@ import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/font_weight_helper.dart';
 import 'package:ahdydic/core/theming/styles.dart';
-import 'package:ahdydic/features/shipping_schedule/widgets/shipping_schedule_warning_container.dart';
+import 'package:ahdydic/core/widgets/warning_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,7 +35,7 @@ class ShippingScheduleMainContainer extends StatelessWidget {
               ),
             ),
             verticalSpace(60),
-            ShippingScheduleWarningContainer(),
+            WarningContainer(text:               'بالنسبة للشحن التلقائي الدولي، قد يختلف المبلغ الذي تدفعه مقابل الشحن في كل تاريخ دفع وفقًا لأسعار الصرف الأجنبي',),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:ahdydic/core/routing/routes.dart';
+import 'package:ahdydic/features/automatic_charging_operations/automatic_charging_operations_screen.dart';
 import 'package:ahdydic/features/check_out/check_out_screen.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
 import 'package:ahdydic/features/countries/countries_screen.dart';
@@ -171,6 +172,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  MedalInfoScreen();
+          },
+        );
+      case Routes.automaticChargingOperationsScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  AutomaticChargingOperationsScreen();
           },
         );
       case Routes.shippingScheduleScreen:

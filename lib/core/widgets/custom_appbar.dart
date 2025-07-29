@@ -15,7 +15,7 @@ final String text;
   @override
   Widget build(BuildContext context) {
     return   Padding(
-      padding:  EdgeInsets.only(left: 180.0.w
+      padding:  EdgeInsets.only(left: 160.0.w
       ),
       child: Text.rich(
 

@@ -65,7 +65,7 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               //determineSendingDates
               ProfileRowItem(
                 onTap: (){
-                  context.pushNamed(Routes.shippingScheduleScreen);
+                  context.pushNamed(Routes.automaticChargingOperationsScreen);
                 },
                 text: S.of(context).determineSendingDates,
                 widget: Image.asset(ImagesManager.arrowRight),
