@@ -1,4 +1,6 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
@@ -69,7 +71,14 @@ class HowItWorksContainer extends StatelessWidget {
               'كيف يمكنني استكمال الطلب ؟',
             ],
           ),
-CustomButton(text: 'انظر الشروط والأحكام', backgroundColor: ColorManager.purple,height: 40.h,),
+          CustomButton(
+            text: 'انظر الشروط والأحكام',
+            backgroundColor: ColorManager.purple,
+            height: 40.h,
+            onTap: () {
+              context.pushNamed(Routes.termsAndConditionsRewardsScreen);
+            },
+          ),
         ],
       ),
     );
