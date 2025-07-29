@@ -22,4 +22,5 @@ class Routes {
   static const String detailsMedalScreen='/detailsMedalScreen';
   static const String medalInfoScreen='/medalInfoScreen';
   static const String termsAndConditionsRewardsScreen='/termsAndConditionsRewardsScreen';
+  static const String shippingScheduleScreen='/shippingScheduleScreen';
 }

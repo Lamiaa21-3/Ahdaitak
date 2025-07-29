@@ -64,6 +64,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileDivider(),
               //determineSendingDates
               ProfileRowItem(
+                onTap: (){
+                  context.pushNamed(Routes.shippingScheduleScreen);
+                },
                 text: S.of(context).determineSendingDates,
                 widget: Image.asset(ImagesManager.arrowRight),
               ),
