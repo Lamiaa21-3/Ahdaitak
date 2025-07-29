@@ -24,4 +24,20 @@ class Routes {
   static const String termsAndConditionsRewardsScreen='/termsAndConditionsRewardsScreen';
   static const String shippingScheduleScreen='/shippingScheduleScreen';
   static const String automaticChargingOperationsScreen='/automaticChargingOperationsScreen';
+
+
+
+
+
+  static const String messageBoxScreen='/messageBoxScreen';
+
+
+
+
+
+
+
+
+
+
 }

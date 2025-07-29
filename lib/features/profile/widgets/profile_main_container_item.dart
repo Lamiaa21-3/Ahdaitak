@@ -79,6 +79,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileDivider(),
               //messageBox
               ProfileRowItem(
+                onTap: (){
+                  context.pushNamed(Routes.messageBoxScreen);
+                },
                 text: S.of(context).messageBox,
                 widget: Image.asset(ImagesManager.messageBox),
               ),
