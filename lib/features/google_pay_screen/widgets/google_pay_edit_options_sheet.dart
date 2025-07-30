@@ -1,10 +1,12 @@
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/theming/color.dart';
 
-class c extends StatelessWidget {
+class GooglePayEditOptionsSheet extends StatelessWidget {
   const GooglePayEditOptionsSheet({super.key});
 
   @override
@@ -27,21 +29,26 @@ class c extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
           ),
-          _buildBottomSheetItem(context, 'تعديل رقم الهاتف',),
-          _buildBottomSheetItem(context, 'تعديل المنظم', ),
-          _buildBottomSheetItem(context, 'تعديل الكمية', ),
+          _buildBottomSheetItem(context, 'تعديل رقم الهاتف',(){
+            context.pop();
+            context.pushNamed(Routes.sendContracts);
+          }),
+          _buildBottomSheetItem(context, 'تعديل المنظم', (){
+
+            context.pushNamed(Routes.modifyOrganizerScreen);
+          }),
+          _buildBottomSheetItem(context, 'تعديل الكمية',(){
+            context.pop();
+            context.pushNamed(Routes.sendRechargeScreen);
+          } ),
         ],
       ),
     );
   }
 
-  Widget _buildBottomSheetItem(BuildContext context, String title) {
+  Widget _buildBottomSheetItem(BuildContext context, String title,void Function()? onTap) {
     return InkWell(
-      onTap: () {
-        Navigator.pop(context);
-        // هنا تقدر تروّح لأي صفحة تعديل حسب الزرار
-
-      },
+      onTap: onTap,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
