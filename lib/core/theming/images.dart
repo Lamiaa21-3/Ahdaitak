@@ -63,4 +63,6 @@ static const edit='assets/images/edit.png';
   static const orangeLine='assets/images/orange_line.png';
   static const weLine='assets/images/we_line.png';
   static const vodafoneLine='assets/images/vodafone_line.png';
+  static const rechargeEtislate='assets/images/recharge_etislate.png';
+  static const image='assets/images/image.png';
 }

@@ -1,4 +1,5 @@
 import 'package:ahdydic/core/routing/routes.dart';
+import 'package:ahdydic/features/edit_profile/edit_profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/automatic_charging_operations/automatic_charging_operations_screen.dart';
@@ -97,7 +98,8 @@ class AppRouter {
 
       case Routes.termsAndConditionsRewardsScreen:
         return MaterialPageRoute(builder: (_) => TermsAndConditionsRewardsScreen());
-
+      case Routes.editProfileScreen:
+        return MaterialPageRoute(builder: (_) => EditProfileScreen());
     // دمج الحالات المكررة التي تعرض MainScreen
       case Routes.homeScreen:
       case Routes.topUpScreen:
