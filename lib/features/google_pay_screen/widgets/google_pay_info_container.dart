@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theming/font_weight_helper.dart';
 import '../../../core/theming/styles.dart';
+import 'google_pay_edit_options_sheet.dart';
 
 class GooglePayInfoContainer extends StatelessWidget {
   const GooglePayInfoContainer({super.key});
@@ -31,7 +32,19 @@ class GooglePayInfoContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(ImagesManager.etsilate),
-                Image.asset(ImagesManager.edit,color: ColorManager.darkPurple,),
+                GestureDetector(
+                    onTap: (){
+
+
+                      showModalBottomSheet(
+                        context: context,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                        ),
+                        builder: (context) => const GooglePayEditOptionsSheet(),
+                      );
+                    },
+                    child: Image.asset(ImagesManager.edit,color: ColorManager.darkPurple,)),
                 
 
               ],

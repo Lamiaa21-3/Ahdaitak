@@ -1,9 +1,11 @@
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/automatic_charging_operations/automatic_charging_operations_screen.dart';
+import 'package:ahdydic/features/card_payment_screen/card_payment_screen.dart';
 import 'package:ahdydic/features/check_out/check_out_screen.dart';
 import 'package:ahdydic/features/contacts/contacts_screen.dart';
 import 'package:ahdydic/features/countries/countries_screen.dart';
 import 'package:ahdydic/features/details_medal/details_medal_screen.dart';
+import 'package:ahdydic/features/google_pay_screen/google_pay_screen.dart';
 import 'package:ahdydic/features/item_cards/item_cards_screen.dart';
 
 
@@ -185,6 +187,18 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (BuildContext context) {
             return  AutomaticChargingOperationsScreen();
+          },
+        );
+      case Routes.googlePayScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  GooglePayScreen();
+          },
+        );
+      case Routes.cardPaymentScreen:
+        return MaterialPageRoute(
+          builder: (BuildContext context) {
+            return  CardPaymentScreen();
           },
         );
       case Routes.shippingScheduleScreen:

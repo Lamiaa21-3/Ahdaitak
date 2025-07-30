@@ -32,9 +32,9 @@ class Routes {
   static const String messageBoxScreen='/messageBoxScreen';
 
 
+  static const String googlePayScreen='/googlePayScreen';
 
-
-
+  static const String cardPaymentScreen='/cardPaymentScreen';
 
 
 

@@ -1,4 +1,6 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +28,9 @@ class GooglePayChangeMethod extends StatelessWidget {
             Text('جوجل باي', style: StylesManager.font18MorePopularBold),
             Spacer(),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(Routes.checkOutScreen);
+              },
               child: Text(
                 'تغيير',
                 style: StylesManager.font14PinkRegular,

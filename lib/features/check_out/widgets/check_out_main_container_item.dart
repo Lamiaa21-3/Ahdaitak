@@ -1,4 +1,6 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/font_weight_helper.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
@@ -52,16 +54,10 @@ class _CheckOutMainContainerItemState extends State<CheckOutMainContainerItem> {
           CustomButton(
             onTap:(){
               if (selectedMethod == 'google') {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => GooglePayScreen()),
-                );
+               context.pushNamed(Routes.googlePayScreen);
                 print('google');
               } else if (selectedMethod == 'card') {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => CardPaymentScreen()),
-                );
+                context.pushNamed(Routes.cardPaymentScreen);
                 print('card');
               }
             },
