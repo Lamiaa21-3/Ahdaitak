@@ -53,7 +53,7 @@ static const edit='assets/images/edit.png';
   static const bronzeMedal='assets/images/bronze_medal.png';
   static const goldMedal='assets/images/gold_medal.png';
   static const sliverMedal='assets/images/silver_medal.png';
-
+  static const googlePay='assets/images/google_pay.png';
   static const shecduleBackGround='assets/images/shecdule_back_ground.png';
 
 }

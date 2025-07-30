@@ -13,7 +13,7 @@ class CheckOutInfoContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150.h,
+      height: 100.h,
       decoration: BoxDecoration(
         color: ColorManager.white,
         borderRadius: BorderRadius.circular(16),
@@ -30,33 +30,30 @@ class CheckOutInfoContainer extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(ImagesManager.amazon),
+                Image.asset(ImagesManager.etsilate),
+                Image.asset(ImagesManager.edit,color: ColorManager.darkPurple,),
+                
 
               ],
             ),
-            verticalSpace(10),
-            Divider(),
-            verticalSpace(10),
+             verticalSpace(15),
             Row(
               children: [
-                Text(
-                  '500 ريال سعودي ',
-                  style: StylesManager.font12MorePurpleMedium,
-                ),
 
+
+
+                Text(
+                  '134 جنية',
+                  style: StylesManager.font18MorePopularBold,
+                ),
                 const Spacer(),
                 Text(
-                  'Amazon',
-                  style: StylesManager.font16MorePurpleMedium.copyWith(
-                    fontWeight: FontWeightHelper.bold,
-                  ),
+                  'Enas Omar',
+                  style: StylesManager.font18MorePopularBold,
                 ),
               ],
             ),
-            // Details
-            // _buildRow("لقد ارسلت", "191.43 جنيه"),
-            // _buildRow("ضرائب الدولة", "- 57.43 جنيه"),
-            // _buildRow("سوف يتم استلام", "134 جنيه"),
+
           ],
         ),
       ),
