@@ -34,4 +34,6 @@ class Routes {
   static const String cardPaymentScreen = '/cardPaymentScreen';
   static const String modifyOrganizerScreen = '/cardPaymentScreen';
   static const String editProfileScreen = '/editProfileScreen';
+
+  static const String aboutAhdydicScreen = '/aboutAhdydicScreen';
 }

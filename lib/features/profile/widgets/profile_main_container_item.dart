@@ -92,6 +92,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ),
               ProfileDivider(),
               ProfileRowItem(
+                onTap: (){
+                  context.pushNamed(Routes.aboutAhdydicScreen);
+                },
                 text: S.of(context).aboutAhdytic,
                 widget: Image.asset(ImagesManager.about),
               ),

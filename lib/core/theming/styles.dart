@@ -82,10 +82,11 @@ class StylesManager {
   );
   static TextStyle font12DarkGrayRegular = TextStyle(
     fontSize: 12.sp,
-    color: ColorManager.darkGrey,
+    color: ColorManager.darkerGrey,
     fontWeight: FontWeightHelper.regular,
     fontFamily: 'Tajawal',
   );
+
   static TextStyle font12MorePurpleMedium= TextStyle(
     fontSize: 12.sp,
     color: ColorManager.morePurple,

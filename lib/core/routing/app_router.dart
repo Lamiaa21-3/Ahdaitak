@@ -1,4 +1,5 @@
 import 'package:ahdydic/core/routing/routes.dart';
+import 'package:ahdydic/features/about_ahdydic/about_ahdydic_screen.dart';
 import 'package:ahdydic/features/edit_profile/edit_profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -95,7 +96,8 @@ class AppRouter {
 
       case Routes.shippingScheduleScreen:
         return MaterialPageRoute(builder: (_) => ShippingScheduleScreen());
-
+      case Routes.aboutAhdydicScreen:
+        return MaterialPageRoute(builder: (_) => AboutAhdydicScreen());
       case Routes.termsAndConditionsRewardsScreen:
         return MaterialPageRoute(builder: (_) => TermsAndConditionsRewardsScreen());
       case Routes.editProfileScreen:
