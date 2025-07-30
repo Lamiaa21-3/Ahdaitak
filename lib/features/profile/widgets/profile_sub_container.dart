@@ -1,10 +1,12 @@
 
 
 
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/helper/spacing.dart';
+import '../../../core/routing/routes.dart';
 import '../../../core/theming/color.dart';
 import '../../../core/theming/images.dart';
 import '../../../core/theming/styles.dart';
@@ -37,7 +39,14 @@ class ProfileSubContainer extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Image.asset(ImagesManager.edit),
+              GestureDetector(
+
+                  onTap: (){
+                    context.pushNamed(Routes.editProfileScreen);
+                    print('object');
+                  },
+
+                  child: Image.asset(ImagesManager.edit)),
               Spacer(),
               Column(
                 children: [

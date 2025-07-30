@@ -41,6 +41,7 @@ class SendRechargeSubContainer extends StatelessWidget {
           GestureDetector(onTap: (){
 
             context.pushNamed(Routes.editProfileScreen);
+            print('object');
           },child: Image.asset(ImagesManager.edit)),
               Spacer(),
               Column(

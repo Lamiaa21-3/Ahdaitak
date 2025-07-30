@@ -1,6 +1,7 @@
 import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
+import 'package:ahdydic/features/edit_profile/widgets/edit_profile_item_main_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,74 +27,7 @@ class EditProfileMainContainer extends StatelessWidget {
             ),
             color: ColorManager.white,
           ),
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 19.0.w),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                verticalSpace(120),
-                Text(
-                  'الاسم',
-                  style: StylesManager.font14PinkRegular.copyWith(
-                    color: ColorManager.purple,
-                  ),
-                ),
-                verticalSpace(5),
-                EditProfileTextFormField(
-                  hintText: 'Enas Omar',
-                  validator: (v) {},
-                ),
-                verticalSpace(30),
-                Text(
-                  'تاريخ الميلاد',
-                  style: StylesManager.font14PinkRegular.copyWith(
-                    color: ColorManager.purple,
-                  ),
-                ),
-                verticalSpace(5),
-                EditProfileTextFormField(
-                  prefixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.date_range_outlined),
-                  ),
-                  hintText: '',
-                  validator: (v) {},
-                ),
-                verticalSpace(30),
-                Text(
-                  'رقم الهاتف',
-                  style: StylesManager.font14PinkRegular.copyWith(
-                    color: ColorManager.purple,
-                  ),
-                ),
-                verticalSpace(5),
-                EditProfileTextFormField(
-                  hintText: '01146574880',
-                  validator: (v) {},
-                ),
-                verticalSpace(30),
-                Text(
-                  'البريد الالكتروني',
-                  style: StylesManager.font14PinkRegular.copyWith(
-                    color: ColorManager.purple,
-                  ),
-                ),
-                verticalSpace(5),
-                EditProfileTextFormField(
-                  prefixIcon: Icon(Icons.email),
-                  hintText: 'enas256@gmail.com',
-                  validator: (v) {},
-                ),
-                verticalSpace(50),
-                CustomButton(
-                  text: 'حفظ',
-                  backgroundColor: ColorManager.purple,
-                  width: 341.w,
-                  height: 43.h,
-                ),
-              ],
-            ),
-          ),
+          child: EditProfileItemMainContainer(),
         ),
         Positioned(
           top: -25.h, // Adjust as needed
