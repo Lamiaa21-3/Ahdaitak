@@ -1,4 +1,6 @@
+import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
@@ -49,6 +51,9 @@ class SendContactsScreen extends StatelessWidget {
                     RowNumberField(),
                     verticalSpace(53),
                     CustomButton(
+                      onTap: (){
+                        context.pushNamed(Routes.sendRechargeScreen);
+                      },
                       text: S.of(context).ensurePhoneNumber,
                       backgroundColor: ColorManager.purple,
                     ),

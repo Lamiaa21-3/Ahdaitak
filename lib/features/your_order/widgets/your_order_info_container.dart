@@ -7,61 +7,118 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/theming/font_weight_helper.dart';
 import '../../../core/theming/styles.dart';
 
-class YourOrderInfoContainer extends StatelessWidget {
+class YourOrderInfoContainer extends StatefulWidget {
   const YourOrderInfoContainer({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 150.h,
-      decoration: BoxDecoration(
-        color: ColorManager.white,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: ColorManager.grey, width: 1.w),
-      ),
+  State<YourOrderInfoContainer> createState() => _YourOrderInfoContainerState();
+}
 
+class _YourOrderInfoContainerState extends State<YourOrderInfoContainer> {
+  bool _isExpanded = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      color: ColorManager.white,
+      // margin: const EdgeInsets.all(16),
+      shape: RoundedRectangleBorder(
+
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: ColorManager.darkerGrey, width: 0.5),
+      ),
+      // elevation: 2,
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 10),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Header row
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(ImagesManager.amazon),
+                Image.asset(ImagesManager.etsilate),
 
-              ],
-            ),
-            verticalSpace(10),
-            Divider(),
-            verticalSpace(10),
-            Row(
-              children: [
-                Text(
-                  '500 ريال سعودي ',
-                  style: StylesManager.font12MorePurpleMedium,
-                ),
 
-                const Spacer(),
-                Text(
-                  'Amazon',
-                  style: StylesManager.font16MorePurpleMedium.copyWith(
-                    fontWeight: FontWeightHelper.bold,
+                IconButton(
+                  icon: Icon(
+                    _isExpanded
+                        ? Icons.keyboard_arrow_up
+                        : Icons.keyboard_arrow_down,
                   ),
+                  onPressed: () {
+                    setState(() {
+                      _isExpanded = !_isExpanded;
+                    });
+                  },
                 ),
+
+                /// Logo
               ],
             ),
-            // Details
-            // _buildRow("لقد ارسلت", "191.43 جنيه"),
-            // _buildRow("ضرائب الدولة", "- 57.43 جنيه"),
-            // _buildRow("سوف يتم استلام", "134 جنيه"),
+
+
+            AnimatedCrossFade(
+              firstChild: const SizedBox.shrink(),
+              secondChild: const YourOrderDetailsContent(),
+              crossFadeState:
+                  _isExpanded
+                      ? CrossFadeState.showSecond
+                      : CrossFadeState.showFirst,
+              duration: const Duration(milliseconds: 200),
+            ),
           ],
         ),
       ),
     );
   }
+}
 
+class YourOrderDetailsContent extends StatelessWidget {
+  const YourOrderDetailsContent({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+
+            Text(
+              '134 جنيه',
+              style: StylesManager.font18LightGrayRegular.copyWith(
+                color: ColorManager.purple,
+              ),
+            ),
+            Text('Enas Omar', style: StylesManager.font18MorePopularBold),
+          ],
+        ),
+        horizontalSpace(8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('لقد ارسلت', style: StylesManager.font12MorePurpleMedium),
+            Text('191.43 جنيه', style: StylesManager.font16MorePurpleMedium),
+          ],
+        ),
+        horizontalSpace(8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('ضرائب الدولة', style: StylesManager.font12MorePurpleMedium),
+            Text('- 57.43 جنيه', style: StylesManager.font16MorePurpleMedium),
+          ],
+        ),
+        horizontalSpace(8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('سوف يتم استلام', style: StylesManager.font12MorePurpleMedium),
+            Text('134 جنيه', style: StylesManager.font16MorePurpleMedium),
+          ],
+        ),
+      ],
+    );
+  }
 }

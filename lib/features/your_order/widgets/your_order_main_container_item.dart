@@ -6,6 +6,7 @@ import 'package:ahdydic/core/theming/styles.dart';
 import 'package:ahdydic/core/widgets/custom_button.dart';
 import 'package:ahdydic/features/your_order/widgets/your_order_details_container.dart';
 import 'package:ahdydic/features/your_order/widgets/your_order_promo_code_container.dart';
+import 'package:ahdydic/features/your_order/widgets/your_order_warning_container.dart';
 import 'package:flutter/material.dart';
 
 
@@ -18,7 +19,7 @@ class YourOrderMainContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 25.0),
+      padding: EdgeInsets.symmetric(horizontal: 12.0),
       child: ListView(
         children: [
           Column(
@@ -27,12 +28,12 @@ class YourOrderMainContainerItem extends StatelessWidget {
               verticalSpace(25),
               YourOrderInfoContainer(),
               verticalSpace(8),
-              // YourOrderWarningContainer(),
+              YourOrderWarningContainer(),
               verticalSpace(8),
               YourOrderPromoCodeContainer(),
-              verticalSpace(50),
+              verticalSpace(10),
               YourOrderDetailsContainer(),
-              verticalSpace(50),
+
               CustomButton(
                   onTap:(){
                     context.pushNamed(Routes.checkOutScreen);
@@ -42,6 +43,7 @@ class YourOrderMainContainerItem extends StatelessWidget {
                 height: 40,
 
               ),
+              verticalSpace(10),
             ],
           ),
         ],

@@ -2,6 +2,7 @@ import 'package:ahdydic/core/helper/spacing.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class YourOrderWarningContainer extends StatelessWidget {
   const YourOrderWarningContainer({super.key});
@@ -11,6 +12,8 @@ class YourOrderWarningContainer extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Container(
+        height: 65.h,
+        width: 366.w,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         // margin: const EdgeInsets.all(12),
         decoration: BoxDecoration(
@@ -18,23 +21,16 @@ class YourOrderWarningContainer extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+
           children: [
           Image.asset(ImagesManager.warning),
         horizontalSpace(8),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن',
-                    style: StylesManager.font12MorePurpleMedium,
-                  ),
-                  Text(
-                    'استخدامه إلا للمكالمات',
-                    style: StylesManager.font12MorePurpleMedium,
-                  ),
-                ],
+            SizedBox(
+              width: 280.w,
+              child: Text(
+                ' تتم إضافة أرصدة فودافون مصر إلى رصيد دولي خاص لا يمكن استخدامه إلا للمكالمات',
+                style: StylesManager.font12MorePurpleMedium,
+                maxLines: 2,
               ),
             ),
           ],
