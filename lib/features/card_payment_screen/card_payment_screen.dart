@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 
 class CardPaymentScreen extends StatelessWidget {
@@ -8,8 +5,6 @@ class CardPaymentScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(child: Text('lllll')),
-    );
+    return const Placeholder();
   }
 }

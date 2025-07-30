@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theming/font_weight_helper.dart';
 import '../../../core/theming/styles.dart';
+import '../../google_pay_screen/widgets/google_pay_edit_options_sheet.dart';
 
 class CheckOutInfoContainer extends StatelessWidget {
   const CheckOutInfoContainer({super.key});
@@ -31,7 +32,17 @@ class CheckOutInfoContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(ImagesManager.etsilate),
-                Image.asset(ImagesManager.edit,color: ColorManager.darkPurple,),
+                GestureDetector(
+                    onTap: (){
+                      showModalBottomSheet(
+                        context: context,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                        ),
+                        builder: (context) => const EditOptionsSheet(),
+                      );
+                    },
+                    child: Image.asset(ImagesManager.edit,color: ColorManager.darkPurple,)),
                 
 
               ],

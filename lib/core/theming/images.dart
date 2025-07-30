@@ -56,4 +56,11 @@ static const edit='assets/images/edit.png';
   static const googlePay='assets/images/google_pay.png';
   static const shecduleBackGround='assets/images/shecdule_back_ground.png';
   static const buttonGooglePay='assets/images/button_google_pay.png';
+
+
+  static const etisalateLine='assets/images/etisalate_line.png';
+
+  static const orangeLine='assets/images/orange_line.png';
+  static const weLine='assets/images/we_line.png';
+  static const vodafoneLine='assets/images/vodafone_line.png';
 }

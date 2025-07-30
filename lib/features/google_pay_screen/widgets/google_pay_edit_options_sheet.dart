@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theming/color.dart';
 
-class GooglePayEditOptionsSheet extends StatelessWidget {
-  const GooglePayEditOptionsSheet({super.key});
+class EditOptionsSheet extends StatelessWidget {
+  const EditOptionsSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
