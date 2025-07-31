@@ -1,6 +1,9 @@
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/about_ahdydic/about_ahdydic_screen.dart';
 import 'package:ahdydic/features/edit_profile/edit_profile_screen.dart';
+import 'package:ahdydic/features/help/help_screen.dart';
+import 'package:ahdydic/features/privacy/privacy_screen.dart';
+import 'package:ahdydic/features/terms_and_conditions/terms_and_conditions_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/automatic_charging_operations/automatic_charging_operations_screen.dart';
@@ -102,6 +105,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => TermsAndConditionsRewardsScreen());
       case Routes.editProfileScreen:
         return MaterialPageRoute(builder: (_) => EditProfileScreen());
+      case Routes.termsAndConditionsScreen:
+        return MaterialPageRoute(builder: (_) => TermsAndConditionsScreen());
+      case Routes.helpScreen:
+        return MaterialPageRoute(builder: (_) => HelpScreen());
+      case Routes.privacyScreen:
+        return MaterialPageRoute(builder: (_) => PrivacyScreen());
     // دمج الحالات المكررة التي تعرض MainScreen
       case Routes.homeScreen:
       case Routes.topUpScreen:

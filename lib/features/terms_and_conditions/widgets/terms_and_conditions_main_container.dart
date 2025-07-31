@@ -4,8 +4,8 @@ import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TermsAndConditionsRewardsMainContainer extends StatelessWidget {
-  const TermsAndConditionsRewardsMainContainer({super.key});
+class TermsAndConditionsMainContainer extends StatelessWidget {
+  const TermsAndConditionsMainContainer({super.key});
 
   @override
   Widget build(BuildContext context) {

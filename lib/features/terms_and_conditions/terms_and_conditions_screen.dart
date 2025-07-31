@@ -1,5 +1,5 @@
 import 'package:ahdydic/core/theming/color.dart';
-import 'package:ahdydic/features/terms_and_conditions_rewards/widgets/terms_and_conditions_rewards_main_container.dart';
+import 'package:ahdydic/features/terms_and_conditions/widgets/terms_and_conditions_main_container.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/widgets/custom_appbar.dart';

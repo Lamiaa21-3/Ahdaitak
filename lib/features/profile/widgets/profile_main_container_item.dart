@@ -5,6 +5,7 @@ import 'package:ahdydic/features/profile/widgets/profile_logout_dialog_item.dart
 import 'package:ahdydic/features/profile/widgets/profile_row_drop_down.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_item.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/helper/spacing.dart';
 
@@ -46,6 +47,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileRowDropDown(),
               //help
               ProfileRowItem(
+                onTap: (){
+                  context.pushNamed(Routes.helpScreen);
+                },
                 text: S.of(context).help,
                 widget: CircleAvatar(
                   backgroundColor: Colors.purple[700],
@@ -109,7 +113,7 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               verticalSpace(20),
               GestureDetector(
                 onTap: (){
-                  context.pushNamed(Routes.termsAndConditionsRewardsScreen);
+                  context.pushNamed(Routes.termsAndConditionsScreen);
                 },
                 child: Text(
                   S.of(context).termsAndConditions,
@@ -122,12 +126,19 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
                 style: StylesManager.font14MorePurpleMedium,
               ),
               verticalSpace(9),
-              Text(
-                S.of(context).privacyPolicy,
-                style: StylesManager.font14MorePurpleMedium,
+              GestureDetector(
+                onTap: (){
+                  context.pushNamed(Routes.privacyScreen);
+                },
+                child: Text(
+                  S.of(context).privacyPolicy,
+                  style: StylesManager.font14MorePurpleMedium,
+                ),
               ),
               verticalSpace(22),
               CustomButton(
+                height: 43.h,
+                width: 341.w,
                 onTap: () {
                   showLogoutDialog(context);
                 },

@@ -1,13 +1,12 @@
 import 'package:ahdydic/core/theming/color.dart';
+import 'package:ahdydic/features/privacy/widgets/privacy_main_container.dart';
 import 'package:ahdydic/features/terms_and_conditions_rewards/widgets/terms_and_conditions_rewards_main_container.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/widgets/custom_appbar.dart';
-import '../privacy/widgets/privacy_main_container.dart';
-import '../terms_and_conditions/widgets/terms_and_conditions_main_container.dart';
 
-class TermsAndConditionsRewardsScreen extends StatelessWidget {
-  const TermsAndConditionsRewardsScreen({super.key});
+class PrivacyScreen extends StatelessWidget {
+  const PrivacyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +14,8 @@ class TermsAndConditionsRewardsScreen extends StatelessWidget {
       backgroundColor: ColorManager.purple,
       body: ListView(
         children: [
-          CustomAppbar(text: 'الشروط والأحكام',),
-          TermsAndConditionsRewardsMainContainer(),
+          CustomAppbar(text: 'الخصوصية',),
+          PrivacyMainContainer(),
         ],
       ),
     );
