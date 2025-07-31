@@ -78,7 +78,7 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
                 onTap: () {
                   context.pushNamed(Routes.automaticChargingOperationsScreen);
                 },
-                text: S.of(context).determineSendingDates,
+                text:'جدولة عمليات الشحن',
                 widget: Image.asset(ImagesManager.arrowRight),
               ),
               ProfileDivider(),

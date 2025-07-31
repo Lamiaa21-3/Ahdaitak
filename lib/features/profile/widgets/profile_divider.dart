@@ -13,7 +13,7 @@ class ProfileDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return   Divider(
       height: 1,
-      color: ColorManager.lighterGrey,
+      color: ColorManager.dividerGray,
       endIndent: 20.w,
       indent: 20.w,
     );
