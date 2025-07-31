@@ -1,6 +1,7 @@
 import 'package:ahdydic/core/helper/extensions.dart';
 import 'package:ahdydic/core/routing/routes.dart';
 import 'package:ahdydic/features/profile/widgets/profile_divider.dart';
+import 'package:ahdydic/features/profile/widgets/profile_logout_dialog_item.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_drop_down.dart';
 import 'package:ahdydic/features/profile/widgets/profile_row_item.dart';
 import 'package:flutter/material.dart';
@@ -17,26 +18,33 @@ class ProfileMainContainerItem extends StatefulWidget {
   const ProfileMainContainerItem({super.key});
 
   @override
-  State<ProfileMainContainerItem> createState() => _ProfileMainContainerItemState();
+  State<ProfileMainContainerItem> createState() =>
+      _ProfileMainContainerItemState();
 }
 
 class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
-
+  void showLogoutDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder:
+          (context) => ProfileLogoutDialogItem()
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 25.0),
       child: ListView(
-
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+
             children: [
               verticalSpace(70),
 
               ProfileRowDropDown(),
-          //help
+              //help
               ProfileRowItem(
                 text: S.of(context).help,
                 widget: CircleAvatar(
@@ -53,18 +61,17 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileDivider(),
               //rewards
               ProfileRowItem(
-                  onTap:(){
-                    context.pushNamed(Routes.rewardsScreen);
-                  },
+                onTap: () {
+                  context.pushNamed(Routes.rewardsScreen);
+                },
                 text: S.of(context).rewards,
                 widget: Image.asset(ImagesManager.rewards),
               ),
 
-
               ProfileDivider(),
               //determineSendingDates
               ProfileRowItem(
-                onTap: (){
+                onTap: () {
                   context.pushNamed(Routes.automaticChargingOperationsScreen);
                 },
                 text: S.of(context).determineSendingDates,
@@ -79,7 +86,7 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ProfileDivider(),
               //messageBox
               ProfileRowItem(
-                onTap: (){
+                onTap: () {
                   context.pushNamed(Routes.messageBoxScreen);
                 },
                 text: S.of(context).messageBox,
@@ -92,16 +99,14 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ),
               ProfileDivider(),
               ProfileRowItem(
-                onTap: (){
+                onTap: () {
                   context.pushNamed(Routes.aboutAhdydicScreen);
                 },
                 text: S.of(context).aboutAhdytic,
                 widget: Image.asset(ImagesManager.about),
               ),
               ProfileDivider(),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20),
               Text(
                 S.of(context).termsAndConditions,
                 style: StylesManager.font14MorePurpleMedium,
@@ -118,6 +123,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ),
               verticalSpace(22),
               CustomButton(
+                onTap: () {
+                  showLogoutDialog(context);
+                },
                 text: S.of(context).logout,
                 backgroundColor: ColorManager.darkPurple,
               ),

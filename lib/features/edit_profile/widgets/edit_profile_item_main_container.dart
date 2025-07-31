@@ -1,15 +1,36 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:intl/intl.dart';
 
 import '../../../core/helper/spacing.dart';
 import '../../../core/theming/color.dart';
 import '../../../core/theming/styles.dart';
 import '../../../core/widgets/custom_button.dart';
+import 'edit_profile_calendar_dialog.dart';
 import 'edit_profile_text_form_field.dart';
 
-class EditProfileItemMainContainer extends StatelessWidget {
+class EditProfileItemMainContainer extends StatefulWidget {
   const EditProfileItemMainContainer({super.key});
+
+  @override
+  State<EditProfileItemMainContainer> createState() => _EditProfileItemMainContainerState();
+}
+
+class _EditProfileItemMainContainerState extends State<EditProfileItemMainContainer> {
+  final TextEditingController _dateController = TextEditingController();
+
+  void _openCalendarDialog() async {
+    DateTime? selectedDate = await showDialog(
+      context: context,
+      builder: (_) => CalendarDialog(),
+    );
+
+    if (selectedDate != null) {
+      setState(() {
+        _dateController.text = DateFormat('yyyy-MM-dd').format(selectedDate);
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,10 +47,7 @@ class EditProfileItemMainContainer extends StatelessWidget {
             ),
           ),
           verticalSpace(5),
-          EditProfileTextFormField(
-            hintText: 'Enas Omar',
-            validator: (v) {},
-          ),
+          EditProfileTextFormField(hintText: 'Enas Omar', validator: (v) {}),
           verticalSpace(30),
           Text(
             'تاريخ الميلاد',
@@ -39,11 +57,14 @@ class EditProfileItemMainContainer extends StatelessWidget {
           ),
           verticalSpace(5),
           EditProfileTextFormField(
+            controller: _dateController,
             prefixIcon: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                _openCalendarDialog();
+              },
               icon: Icon(Icons.date_range_outlined),
             ),
-            hintText: '',
+            hintText: _dateController.text,
             validator: (v) {},
           ),
           verticalSpace(30),
@@ -54,10 +75,7 @@ class EditProfileItemMainContainer extends StatelessWidget {
             ),
           ),
           verticalSpace(5),
-          EditProfileTextFormField(
-            hintText: '01146574880',
-            validator: (v) {},
-          ),
+          EditProfileTextFormField(hintText: '01146574880', validator: (v) {}),
           verticalSpace(30),
           Text(
             'البريد الالكتروني',
@@ -83,3 +101,5 @@ class EditProfileItemMainContainer extends StatelessWidget {
     );
   }
 }
+
+

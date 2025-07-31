@@ -21,6 +21,7 @@ class ColorManager {
   static const Color borderGrey=Color(0xffCED4D6);
   static const Color darkPurple=Color(0xff533B5D);
   static const Color darkerGrey=Color(0xff59697A);
+  static const Color buttonGray=Color(0xff8B8B8B);
 
 
 
