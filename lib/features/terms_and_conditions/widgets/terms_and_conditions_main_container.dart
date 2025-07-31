@@ -4,8 +4,8 @@ import 'package:ahdydic/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TermsAndConditionsMainContainer extends StatelessWidget {
-  const TermsAndConditionsMainContainer({super.key});
+class TermsAndConditionsRewardsMainContainer extends StatelessWidget {
+  const TermsAndConditionsRewardsMainContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class TermsAndConditionsMainContainer extends StatelessWidget {
           children: [
             verticalSpace(14),
             Text(
-              'شروط وأحكام المكافأت',
+              'المقدمة',
               style: StylesManager.font14DarkerGreySemiBold,
             ),
             verticalSpace(8),

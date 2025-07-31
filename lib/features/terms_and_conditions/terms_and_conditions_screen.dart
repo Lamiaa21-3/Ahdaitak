@@ -3,10 +3,9 @@ import 'package:ahdydic/features/terms_and_conditions_rewards/widgets/terms_and_
 import 'package:flutter/material.dart';
 
 import '../../core/widgets/custom_appbar.dart';
-import '../terms_and_conditions/widgets/terms_and_conditions_main_container.dart';
 
-class TermsAndConditionsRewardsScreen extends StatelessWidget {
-  const TermsAndConditionsRewardsScreen({super.key});
+class TermsAndConditionsScreen extends StatelessWidget {
+  const TermsAndConditionsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class TermsAndConditionsRewardsScreen extends StatelessWidget {
       body: ListView(
         children: [
           CustomAppbar(text: 'الشروط والأحكام',),
-          TermsAndConditionsRewardsMainContainer(),
+          TermsAndConditionsMainContainer(),
         ],
       ),
     );

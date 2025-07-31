@@ -106,10 +106,15 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
                 widget: Image.asset(ImagesManager.about),
               ),
               ProfileDivider(),
-              SizedBox(height: 20),
-              Text(
-                S.of(context).termsAndConditions,
-                style: StylesManager.font14MorePurpleMedium,
+              verticalSpace(20),
+              GestureDetector(
+                onTap: (){
+                  context.pushNamed(Routes.termsAndConditionsRewardsScreen);
+                },
+                child: Text(
+                  S.of(context).termsAndConditions,
+                  style: StylesManager.font14MorePurpleMedium,
+                ),
               ),
               verticalSpace(9),
               Text(
