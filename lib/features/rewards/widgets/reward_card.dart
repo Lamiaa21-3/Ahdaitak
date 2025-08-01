@@ -14,8 +14,8 @@ class RewardCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.h,
-      width: 142.w,
+      height: 230.h,
+      width: 233.w,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
@@ -28,27 +28,31 @@ class RewardCard extends StatelessWidget {
           ),
         ],
       ),
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(data.image, width: 60, height: 60),
+      padding:  EdgeInsets.symmetric(vertical: 16.h, horizontal: 8.w),
+      child: SingleChildScrollView(
 
-          Text(
-            data.title,
-            style: StylesManager.font18PinkMedium.copyWith(
-              color: ColorManager.purple,
-            ),
-            textAlign: TextAlign.center,
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize:   MainAxisSize.min,
+          children: [
+            Image.asset(data.image, width: 60, height: 60),
 
-          Text(
-            data.date,
-            style: StylesManager.font12WhiteRegular.copyWith(
-              color: ColorManager.pink,
+            Text(
+              data.title,
+              style: StylesManager.font18PinkMedium.copyWith(
+                color: ColorManager.purple,
+              ),
+              textAlign: TextAlign.center,
             ),
-          ),
-        ],
+
+            Text(
+              data.date,
+              style: StylesManager.font12WhiteRegular.copyWith(
+                color: ColorManager.pink,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

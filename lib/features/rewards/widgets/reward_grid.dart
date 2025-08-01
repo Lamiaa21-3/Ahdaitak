@@ -42,15 +42,15 @@ class RewardsGrid extends StatelessWidget {
     ];
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding:  EdgeInsets.all(10.0),
       child: GridView.builder(
         shrinkWrap: true,
         itemCount: rewards.length,
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 30,
-          mainAxisSpacing: 15,
+          crossAxisSpacing: 12,
+          mainAxisSpacing: 8,
           childAspectRatio: 1,
         ),
         itemBuilder: (context, index) {
