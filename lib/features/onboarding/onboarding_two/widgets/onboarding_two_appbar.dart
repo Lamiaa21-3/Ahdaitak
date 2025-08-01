@@ -16,43 +16,40 @@ class OnboardingTwoAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Image.asset(ImagesManager.onboardingTwo),
-        Spacer(),
-        Padding(
-          padding:  EdgeInsets.only(left: 15.0.w,),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              width: 95.w,
-              height: 35.h,
+      children: [
+        Image.asset(ImagesManager.onboardingTwo,width: 270,height: 280,),
+//horizontalSpace(22),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            width: 95.w,
+            height: 35.h,
 
-              decoration: BoxDecoration(
-                color: ColorManager.white,
-                borderRadius: BorderRadius.circular(32),
-                border: Border.all(color: ColorManager.pink, width: 1),
-              ),
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(20),
-                  onTap: () {
-                    context.pushNamed(Routes.onBoardingThreeScreen);
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      horizontalSpace(10),
-                      Text(
-                        S.of(context).skip,
-                        style: StylesManager.font14MorePurpleMedium.copyWith(
-                          color: ColorManager.purple,
-                        ),
+            decoration: BoxDecoration(
+              color: ColorManager.white,
+              borderRadius: BorderRadius.circular(32),
+              border: Border.all(color: ColorManager.pink, width: 1),
+            ),
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                borderRadius: BorderRadius.circular(20),
+                onTap: () {
+                  context.pushNamed(Routes.onBoardingThreeScreen);
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    horizontalSpace(10),
+                    Text(
+                      S.of(context).skip,
+                      style: StylesManager.font14MorePurpleMedium.copyWith(
+                        color: ColorManager.purple,
                       ),
-                      SizedBox(width: 6),
-                      Icon(Icons.arrow_right, size: 32, color:ColorManager.purple),
-                    ],
-                  ),
+                    ),
+                    SizedBox(width: 6),
+                    Icon(Icons.arrow_right, size: 32, color:ColorManager.purple),
+                  ],
                 ),
               ),
             ),
