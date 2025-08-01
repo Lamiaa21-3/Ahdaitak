@@ -37,7 +37,7 @@ class OnboardingTwoAppbar extends StatelessWidget {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(20),
                   onTap: () {
-                    context.pushNamed(Routes.homeScreen);
+                    context.pushNamed(Routes.onBoardingThreeScreen);
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

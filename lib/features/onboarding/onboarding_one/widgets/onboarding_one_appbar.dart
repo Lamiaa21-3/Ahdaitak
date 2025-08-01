@@ -1,4 +1,7 @@
 
+import 'package:ahdydic/core/helper/extensions.dart';
+import 'package:ahdydic/core/helper/spacing.dart';
+import 'package:ahdydic/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,7 +31,9 @@ class OnboardingOneAppbar extends StatelessWidget {
             color: Colors.transparent,
             child: InkWell(
               borderRadius: BorderRadius.circular(20),
-              onTap: (){},
+              onTap: (){
+                context.pushNamed(Routes.loginTwoScreen);
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
@@ -36,12 +41,12 @@ class OnboardingOneAppbar extends StatelessWidget {
                    S.of(context).login,
                     style: StylesManager.font18WhiteMedium.copyWith(fontSize: 14.sp),
                   ),
-                  SizedBox(width: 6),
-                  Icon(
-                    Icons.arrow_right,
-                    size: 32,
-                    color: Colors.white,
-                  ),
+                horizontalSpace(4),
+            Icon(
+              Icons.arrow_right,
+              size: 32,
+              color: Colors.white,
+            ),
                 ],
               ),
             ),

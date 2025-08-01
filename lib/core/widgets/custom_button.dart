@@ -24,7 +24,7 @@ final double ? height;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: padding ?? const EdgeInsets.only(left: 20.0, right: 20, top: 10),
+      padding: padding ?? const EdgeInsets.only(left: 0.0, right: 0,),
       child: TextButton(
         onPressed: onTap,
         style: ButtonStyle(

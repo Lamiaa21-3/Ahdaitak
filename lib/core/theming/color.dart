@@ -23,7 +23,7 @@ class ColorManager {
   static const Color darkerGrey=Color(0xff59697A);
   static const Color buttonGray=Color(0xff8B8B8B);
   static const Color dividerGray=Color(0xffDADADA);
-
+  static const Color red=Color(0xffF23141);
 
 
 }

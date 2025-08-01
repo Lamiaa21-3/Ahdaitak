@@ -25,7 +25,7 @@ class OnboardingThreeMainContainer extends StatelessWidget {
             width: 350.w,
             height: 410.h,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(14),
               color: ColorManager.white,
             ),
             child: ListView(
@@ -46,10 +46,14 @@ class OnboardingThreeMainContainer extends StatelessWidget {
                     verticalSpace(30),
 
                     CustomButton(
+                      padding: EdgeInsets.symmetric(horizontal: 13.w),
                       onTap: () {
                         context.pushNamed(Routes.homeScreen);
                       },
                       text: S.of(context).next,
+                      textStyle:StylesManager.font22WhiteMedium,
+                      height: 47.h,
+
                       backgroundColor: ColorManager.purple,
                     ),
                     verticalSpace(25),

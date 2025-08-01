@@ -98,6 +98,9 @@ class _ProfileMainContainerItemState extends State<ProfileMainContainerItem> {
               ),
               ProfileDivider(),
               ProfileRowItem(
+                onTap: (){
+                  context.pushNamed(Routes.settingScreen);
+                },
                 text: S.of(context).settings,
                 widget: Image.asset(ImagesManager.settings),
               ),

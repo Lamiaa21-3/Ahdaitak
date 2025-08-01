@@ -26,6 +26,7 @@ import '../../features/onboarding/onboarding_two/onboarding_two_screen.dart';
 import '../../features/rewards/rewards_screen.dart';
 import '../../features/send_contacts/send_contacts_screen.dart';
 import '../../features/send_recharge/send_recharge_screen.dart';
+import '../../features/settings/setting_screen.dart';
 import '../../features/shipping_schedule/shipping_schedule_screen.dart';
 import '../../features/terms_and_conditions_rewards/terms_and_conditions_rewards_screen.dart';
 import '../../features/view_contacts/view_contacts_screen.dart';
@@ -111,6 +112,9 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => HelpScreen());
       case Routes.privacyScreen:
         return MaterialPageRoute(builder: (_) => PrivacyScreen());
+        //SettingScreen
+      case Routes.settingScreen:
+        return MaterialPageRoute(builder: (_) => SettingScreen());
     // دمج الحالات المكررة التي تعرض MainScreen
       case Routes.homeScreen:
       case Routes.topUpScreen:
