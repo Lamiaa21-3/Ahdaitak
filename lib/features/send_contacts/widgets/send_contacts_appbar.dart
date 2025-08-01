@@ -24,7 +24,7 @@ class SendContactsAppbar extends StatelessWidget {
         ),
         Spacer(),
         TextButton(onPressed: () {
-          context.pushNamed(Routes.contactsScreen);
+          context.pushNamed(Routes.viewContactsScreen);
 
         },
           style: ButtonStyle(

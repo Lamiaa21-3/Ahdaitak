@@ -1,12 +1,15 @@
 import 'package:ahdydic/core/theming/color.dart';
 import 'package:ahdydic/core/theming/images.dart';
 import 'package:ahdydic/core/theming/styles.dart';
+import 'package:ahdydic/features/contacts/contacts_screen.dart';
 
 
 import 'package:ahdydic/features/profile/profile_screen.dart';
 import 'package:ahdydic/features/record/record_screen.dart';
+import 'package:ahdydic/features/send_contacts/send_contacts_screen.dart';
 
 import 'package:ahdydic/features/top_up/top_up_screen.dart';
+import 'package:ahdydic/features/view_contacts/view_contacts_screen.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -39,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     HomeScreenBeforeLogin(),
     GiftsScreen(),
-    TopUpScreen(),
+    ViewContactsScreen(),
     RecordScreen(),
 
     ProfileScreen(),
