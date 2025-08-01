@@ -29,6 +29,7 @@ import '../../features/send_recharge/send_recharge_screen.dart';
 import '../../features/settings/setting_screen.dart';
 import '../../features/shipping_schedule/shipping_schedule_screen.dart';
 import '../../features/terms_and_conditions_rewards/terms_and_conditions_rewards_screen.dart';
+import '../../features/unusual_payment_card/unusual_payment_card_screen.dart';
 import '../../features/view_contacts/view_contacts_screen.dart';
 import '../../features/your_order/your_order_screen.dart';
 
@@ -115,6 +116,8 @@ class AppRouter {
         //SettingScreen
       case Routes.settingScreen:
         return MaterialPageRoute(builder: (_) => SettingScreen());
+      case Routes.unusualPaymentCardScreen:
+        return MaterialPageRoute(builder: (_) => UnusualPaymentCardScreen());
     // دمج الحالات المكررة التي تعرض MainScreen
       case Routes.homeScreen:
       case Routes.topUpScreen:

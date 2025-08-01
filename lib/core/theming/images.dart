@@ -65,4 +65,5 @@ static const edit='assets/images/edit.png';
   static const vodafoneLine='assets/images/vodafone_line.png';
   static const rechargeEtislate='assets/images/recharge_etislate.png';
   static const image='assets/images/image.png';
+  static const cardAmazon ='assets/images/card_amazon.png';
 }

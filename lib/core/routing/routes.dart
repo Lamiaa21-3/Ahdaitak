@@ -40,4 +40,5 @@ class Routes {
   static const String helpScreen = '/helpScreen';
   static const String privacyScreen = '/privacyScreen';
   static const String settingScreen = '/settingScreen';
+  static const String unusualPaymentCardScreen = '/unusualPaymentCardScreen';
 }
