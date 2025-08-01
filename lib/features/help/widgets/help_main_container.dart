@@ -47,7 +47,7 @@ class HelpMainContainer extends StatelessWidget {
                 HelpExpandedContainer(text: 'مشكلة في ارسال الرصيد'),
                 HelpExpandedContainer(text: 'نادي الهدايا الخاص بنا'),
                 HelpExpandedContainer(text: 'كيف يمكنك دعوة صديق'),
-                verticalSpace(8),
+                verticalSpace(50),
               ],
             ),
           ],
