@@ -1,76 +1,46 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/theming/color.dart';
-import '../../../../core/theming/styles.dart';
-import '../../../../generated/l10n.dart';
-import 'home_before_login_information_row.dart';
-import 'home_before_login_row_images.dart';
-import 'home_before_login_sub_container.dart';
+import 'home_before_login_info_container.dart';
+import 'home_before_login_list_view_horizontal.dart';
+import 'home_before_login_row_words.dart';
+import 'home_before_login_stack_image.dart';
 
 class HomeBeforeLoginMainContainer extends StatelessWidget {
   const HomeBeforeLoginMainContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return    Container(
       clipBehavior: Clip.none,
-      children: [
-        Container(
-          width: 355.w,
-          // height: 320.h,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: ColorManager.grey, width: 1.w),
-          ),
-          child: ListView(
-            children: [
-              Column(
-                children: [
-                  verticalSpace(21.h),
-                  Text(
-                    S.of(context).connectingWithPeopleSince,
-                    style: StylesManager.font14MorePurpleMedium,
-                  ),
-                  verticalSpace(29),
-                  HomeBeforeLoginInformationRow(),
-                  verticalSpace(37),
-                  Container(
-                    width: 332.w,
-                    height: 1.h,
-                    color: ColorManager.lightGrey,
+      height: 800.h,
+      decoration: BoxDecoration(
+        color: ColorManager.white,
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(25),
+          topLeft: Radius.circular(25),
+        ),
+      ),
+      child: ListView(
+        children: [
+          Column(
 
-                  ),
-                  verticalSpace(16),
-                  Text(
-                    S.of(context).trustedByOurPartners,
-                    style: StylesManager.font14MorePurpleMedium,
-                  ),
-                  verticalSpace(16),
-                  HomeBeforeLoginRowImages(),
-                ],
-              ),
+            children: [
+              verticalSpace(20),
+              HomeBeforeLoginStackImage(),
+              HomeBeforeLoginInfoContainer(),
+              HomeBeforeLoginRowWords(),
+              SizedBox(
+                  height: 150.h,
+                  child: HomeBeforeLoginListViewHorizontal()),
+
+              verticalSpace(40),
             ],
           ),
-        ),
-        Positioned(
-          top: -290.h, // Adjust as needed
-          left: 0.w,
-          right: 0.w,
-
-          child: HomeBeforeLoginSubContainer(),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
-
-
-
-
-
-
-
