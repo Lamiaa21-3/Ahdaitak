@@ -66,4 +66,5 @@ static const edit='assets/images/edit.png';
   static const rechargeEtislate='assets/images/recharge_etislate.png';
   static const image='assets/images/image.png';
   static const cardAmazon ='assets/images/card_amazon.png';
+  static const homeNotification ='assets/images/home_notification.png';
 }
